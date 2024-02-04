@@ -4,7 +4,7 @@ aliases:
   - Intermediary
   - Controller
 tags:
-  - cleancode/designpatterns
+  - cleancode_designpatterns
 title: Mediator
 ---
 ---
