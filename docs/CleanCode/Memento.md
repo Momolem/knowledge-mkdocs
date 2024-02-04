@@ -3,7 +3,7 @@ share: true
 aliases:
   - Snapshot
 tags:
-  - cleancode/designpatterns
+  - cleancode_designpatterns
 title: Memento
 ---
 ---
