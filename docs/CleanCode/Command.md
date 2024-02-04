@@ -4,7 +4,7 @@ aliases:
   - Action
   - Transaction
 tags:
-  - cleancode/designpatterns
+  - cleancode_designpatterns
 title: Command
 ---
 ---
