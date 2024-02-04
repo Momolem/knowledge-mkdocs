@@ -4,7 +4,7 @@ aliases:
   - Event-Subscriber
   - Listener
 tags:
-  - cleancode/designpatterns
+  - cleancode_designpatterns
 title: Observer
 ---
 ---
