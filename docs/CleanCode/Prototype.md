@@ -3,7 +3,7 @@ share: true
 aliases:
   - Clone
 tags:
-  - cleancode/designpatterns
+  - cleancode_designpatterns
 title: Prototype
 ---
 ---
