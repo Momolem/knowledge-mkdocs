@@ -2,7 +2,7 @@
 aliases: 
 share: true
 tags:
-  - cleancode/designpatterns
+  - cleancode_designpatterns
 title: State
 ---
 ---
