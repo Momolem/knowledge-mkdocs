@@ -1,6 +1,6 @@
 site_name: Momolems Digital Garden # Change this to your site name
 site_description: Knowledge permanently grows here
-site_url: momolem.github.io/knowledge-mkdocs # Change this to your site URL
+site_url: https://momolem.github.io/knowledge-mkdocs # Change this to your site URL
 site_author: Moritz Vogel
 
 theme:
