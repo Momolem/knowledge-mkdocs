@@ -3,8 +3,8 @@ share: true
 aliases:
   - Entwurfsmuster
 tags:
-  - cleancode/designpatterns
-  - cleancode/refactoring
+  - cleancode_designpatterns
+  - cleancode_refactoring
 title: Design Patterns
 ---
 ---

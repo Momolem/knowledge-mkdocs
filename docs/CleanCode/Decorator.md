@@ -3,7 +3,7 @@ share: true
 aliases:
   - Wrapper
 tags:
-  - cleancode/designpatterns
+  - cleancode_designpatterns
 title: Decorator
 ---
 ---
