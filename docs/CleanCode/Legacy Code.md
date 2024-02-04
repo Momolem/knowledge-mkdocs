@@ -2,7 +2,7 @@
 aliases: 
 share: true
 tags:
-  - cleancode/refactoring
+  - cleancode_refactoring
 title: Legacy Code
 ---
 ---
