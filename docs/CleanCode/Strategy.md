@@ -3,7 +3,7 @@ share: true
 aliases:
   - Strategy Pattern
 tags:
-  - cleancode/designpatterns
+  - cleancode_designpatterns
 title: Strategy
 ---
 ---
