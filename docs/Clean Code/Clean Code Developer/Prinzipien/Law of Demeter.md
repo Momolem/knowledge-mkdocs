@@ -12,7 +12,8 @@ aliases: [LoD]
 tags: [cleancode]
 title: Law of Demeter
 ---
-tags: #cleancode 
+
+tags: 
 
 # Law of Demeter
 
