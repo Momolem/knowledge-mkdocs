@@ -11,7 +11,7 @@ share: true
 tags: [cleancode]
 title: Principle of Least Astonishment
 ---
-#cleancode 
+ 
 # Principle of Least Astonishment
 
 >**Warum?**
