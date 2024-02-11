@@ -11,6 +11,7 @@ share: true
 tags: [cleancode/refactoring]
 title: Legacy Code
 ---
-tags: #cleancode/refactoring
+
+tags:
 
 # Legacy Code
