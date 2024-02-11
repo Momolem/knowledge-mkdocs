@@ -7,6 +7,7 @@ tags:
   - is
 linter-yaml-title-alias: Sichtbarkeit von Systemzuständen und möglichen Aktionen
 ---
+
 - Verschiedene Modi erkennbar anzeigen
 - Ausblenden von nicht aktivierbaren Dialogelementen
 - Zulässige Wertbereiche anzeigen (numerische Werte)
