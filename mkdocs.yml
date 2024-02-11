@@ -5,7 +5,7 @@ site_author: Moritz Vogel
 
 theme:
     name: 'material'
-    logo: assets/meta/icon.png
+    logo: assets/meta/favicon.png
     favicon: assets/meta/favicon.ico
     custom_dir: overrides
     font: false
