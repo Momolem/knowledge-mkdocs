@@ -20,7 +20,7 @@ title: Interface Segregation Principle (ISP)
 >[!question] **Warum?**
 >Leistungsbeschreibungen, die unabhängig von einer konkreten Erfüllung sind, machen unabhängig.
 
-Das Interface Segregation Principle ([ISP](https://drive.google.com/file/d/0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi/view)) ist ein weiteres [SOLID](./SOLID.md) Prinzip. _Segregation_ bedeutet _Abtrennung_. Das Prinzip besagt, dass ein Client nicht von Details eines Service abhängig sein soll, die er gar nicht benötigt. Je weniger in dessen Interface enthalten ist, desto geringer ist die Kopplung zwischen den beiden Komponenten.
+Das Interface Segregation Principle ([ISP](https://drive.google.com/file/d/0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi/view)) ist ein weiteres [[./SOLID|SOLID]] Prinzip. _Segregation_ bedeutet _Abtrennung_. Das Prinzip besagt, dass ein Client nicht von Details eines Service abhängig sein soll, die er gar nicht benötigt. Je weniger in dessen Interface enthalten ist, desto geringer ist die Kopplung zwischen den beiden Komponenten.
 
 Stellen wir uns vor, wir müssten einen Stecker planen, mit dem ein Monitor an einen Computer angeschlossen werden soll. Wir entscheiden uns, einfach alle Signale die in einem Computer so anfallen, per Stecker zur Verfügung zu stellen. Der hat dann zwar einige Hundert Pins, aber dafür ist er maximal flexibel. Dummerweise ist damit die Kopplung ebenfalls maximal.
 
