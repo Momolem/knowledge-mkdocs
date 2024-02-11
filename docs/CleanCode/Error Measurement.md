@@ -24,4 +24,4 @@ Das Messen der Fehler kann durch Zählen oder durch Zeitnahme erfolgen. Dabei st
 
 Welche Fehler sind zu messen? Es sind nicht die Fehler, die während der Entwicklung auftreten. Die sind nicht zu vermeiden und führen hoffentlich dahin, dass am Ende einer Iteration ein fehlerfreies Produkt ausgeliefert wird. Vielmehr geht es um die Fehler, die nach einer Iteration zurückgemeldet werden vom Kunden bzw. seinem Stellvertreter (z.B. [Product Owner](Product%20Owner.md) oder Support). Das sind Fehler, die die Umsetzung neuer Anforderungen behindern. Zu messende Fehler sind also die, die auftreten, wenn man glaubt, dass es sie nicht geben dürfte ;-) Wann im Prozess ein Team diesen Punkt erreicht und flucht, weil da wieder so ein Fehler der sonstigen Arbeit dazwischenfunkt, ist teamindividuell zu bestimmen.
 
-Weiter geht es beim [blauen Grad](./Blauer%20Grad.md).
+Weiter geht es beim [blauen Grad](./Clean%20Code%20Developer/Grade/Blauer%20Grad.md).
