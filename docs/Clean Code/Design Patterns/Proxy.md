@@ -11,7 +11,8 @@ share: true
 tags: [cleancode/designpatterns]
 title: Proxy
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Proxy
 
