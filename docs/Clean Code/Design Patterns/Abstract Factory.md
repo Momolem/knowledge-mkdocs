@@ -11,7 +11,8 @@ share: true
 tags: [cleancode/designpatterns]
 title: Abstract Factory
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Abstract Factory
 
