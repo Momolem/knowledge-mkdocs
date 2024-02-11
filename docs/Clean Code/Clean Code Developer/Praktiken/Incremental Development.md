@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Incremental Development
 ---
-tags: #cleancode 
+
+tags: 
 
 # Incremental Development
 
