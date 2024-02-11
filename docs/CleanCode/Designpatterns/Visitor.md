@@ -21,7 +21,7 @@ tags:  #cleancode/designpatterns
 ## Problem
 Imagine that your team develops an app which works with geographic information structured as one colossal graph. Each node of the graph may represent a complex entity such as a city, but also more granular things like industries, sightseeing areas, etc. The nodes are connected with others if there’s a road between the real objects that they represent. Under the hood, each node type is represented by its own class, while each specific node is an object.
 
-![Exporting the graph into XML](https://refactoring.guru/images/patterns/diagrams/visitor/problem1.png)
+![[../../4dd2d9dee19bef1d6488f57584c12c8d_MD5.png|4dd2d9dee19bef1d6488f57584c12c8d_MD5]]
 
 Exporting the graph into XML.
 
@@ -29,7 +29,7 @@ At some point, you got a task to implement exporting the graph into XML format. 
 
 Unfortunately, the system architect refused to allow you to alter existing node classes. He said that the code was already in production and he didn’t want to risk breaking it because of a potential bug in your changes.
 
-![The XML export method had to be added into all node classes](https://refactoring.guru/images/patterns/diagrams/visitor/problem2-en.png)
+![[../../c17a91b327c6f5f1cc19a2d6c55c894a_MD5.png|c17a91b327c6f5f1cc19a2d6c55c894a_MD5]]
 
 The XML export method had to be added into all node classes, which bore the risk of breaking the whole application if any bugs slipped through along with the change.
 
@@ -92,7 +92,7 @@ Now, if we extract a common interface for all visitors, all existing nodes can w
 
 ##  Real-World Analogy
 
-![Insurance agent](https://refactoring.guru/images/patterns/content/visitor/visitor-comic-1.png)
+![[../../ca16d3e775deb5ef8950297c08068d41_MD5.png|ca16d3e775deb5ef8950297c08068d41_MD5]]
 
 A good insurance agent is always ready to offer different policies to various types of organizations.
 
@@ -104,7 +104,7 @@ Imagine a seasoned insurance agent who’s eager to get new customers. He can vi
 
 ##  Structure
 
-![Structure of the Visitor design pattern](https://refactoring.guru/images/patterns/diagrams/visitor/structure-en.png)
+![[../../195f83f749d134d2a5ac576c416fa1a7_MD5.png|195f83f749d134d2a5ac576c416fa1a7_MD5]]
 
 1.  The **Visitor** interface declares a set of visiting methods that can take concrete elements of an object structure as arguments. These methods may have the same names if the program is written in a language that supports overloading, but the type of their parameters must be different.
     
@@ -121,7 +121,7 @@ Imagine a seasoned insurance agent who’s eager to get new customers. He can vi
 
 In this example, the **Visitor** pattern adds XML export support to the class hierarchy of geometric shapes.
 
-![Structure of the Visitor pattern example](https://refactoring.guru/images/patterns/diagrams/visitor/example.png)
+![[../../dbff8d099b193c8afc9477a0301187bf_MD5.png|dbff8d099b193c8afc9477a0301187bf_MD5]]
 
 Exporting various types of objects into XML format via a visitor object.
 
