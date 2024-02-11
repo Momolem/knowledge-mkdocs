@@ -15,7 +15,7 @@ tags: [cleancode]
 linter-yaml-title-alias: Single Responsibility Principle (SRP)
 title: Single Responsibility Principle (SRP)
 ---
-#cleancode 
+ 
 # Single Responsibility Principle (SRP)
 
 >[!question]  **Warum?**
