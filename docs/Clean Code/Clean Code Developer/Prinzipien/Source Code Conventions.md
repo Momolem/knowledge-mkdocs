@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Source Code Conventions
 ---
-tags: #cleancode 
+
+tags: 
 
 # Source Code Conventions
 
