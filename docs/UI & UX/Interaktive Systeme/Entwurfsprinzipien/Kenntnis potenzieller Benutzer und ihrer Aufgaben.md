@@ -7,6 +7,7 @@ tags:
   - is
 linter-yaml-title-alias: Kenntnis potenzieller Benutzer und ihrer Aufgaben
 ---
+
 - Grundlegendes Prinzip, Voraussetzung für die Anwendung aller anderen Prinzipien
 - Prinzip muss von Anfang an beachtet werden
 - Entwickler muss sich umfassend über Benutzer informieren
