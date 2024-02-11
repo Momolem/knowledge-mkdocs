@@ -24,7 +24,7 @@ Imagine that you’re creating a stock market monitoring app. The app downloads 
 
 At some point, you decide to improve the app by integrating a smart 3rd-party analytics library. But there’s a catch: the analytics library only works with data in JSON format.
 
-![The structure of the app before integration with the analytics library](https://refactoring.guru/images/patterns/diagrams/adapter/problem-en.png)
+![[../../14ce68e702b1141c3e2c593ca0179ac4_MD5.png|14ce68e702b1141c3e2c593ca0179ac4_MD5]]
 
 You can’t use the analytics library “as is” because it expects the data in a format that’s incompatible with your app.
 
@@ -44,13 +44,13 @@ Adapters can not only convert data into various formats but can also help object
 
 Sometimes it’s even possible to create a two-way adapter that can convert the calls in both directions.
 
-![Adapter’s solution](https://refactoring.guru/images/patterns/diagrams/adapter/solution-en.png)
+![[../../c3bf611c6f74e848cca603de6dcf6dee_MD5.png|c3bf611c6f74e848cca603de6dcf6dee_MD5]]
 
 Let’s get back to our stock market app. To solve the dilemma of incompatible formats, you can create XML-to-JSON adapters for every class of the analytics library that your code works with directly. Then you adjust your code to communicate with the library only via these adapters. When an adapter receives a call, it translates the incoming XML data into a JSON structure and passes the call to the appropriate methods of a wrapped analytics object.
 
 ##  Real-World Analogy
 
-![The Adapter pattern example](https://refactoring.guru/images/patterns/content/adapter/adapter-comic-1-en.png)
+![[../../4891233b0ce8d55b32b037ec6d11eea0_MD5.png|4891233b0ce8d55b32b037ec6d11eea0_MD5]]
 
 A suitcase before and after a trip abroad.
 
@@ -62,7 +62,7 @@ When you travel from the US to Europe for the first time, you may get a surprise
 
 This implementation uses the object composition principle: the adapter implements the interface of one object and wraps the other one. It can be implemented in all popular programming languages.
 
-![Structure of the Adapter design pattern (the object adapter)](https://refactoring.guru/images/patterns/diagrams/adapter/structure-object-adapter.png)
+![[../../1c7b8a74cb278de3d25b20491ab63287_MD5.png|1c7b8a74cb278de3d25b20491ab63287_MD5]]
 
 1.  The **Client** is a class that contains the existing business logic of the program.
     
@@ -79,7 +79,7 @@ This implementation uses the object composition principle: the adapter implement
 
 This implementation uses inheritance: the adapter inherits interfaces from both objects at the same time. Note that this approach can only be implemented in programming languages that support multiple inheritance, such as C++.
 
-![Adapter design pattern (class adapter)](https://refactoring.guru/images/patterns/diagrams/adapter/structure-class-adapter.png)
+![[../../1aeab52a3ed0a8ee7bf849556eae8811_MD5.png|1aeab52a3ed0a8ee7bf849556eae8811_MD5]]
 
 1.  The **Class Adapter** doesn’t need to wrap any objects because it inherits behaviors from both the client and the service. The adaptation happens within the overridden methods. The resulting adapter can be used in place of an existing client class.
     
@@ -88,7 +88,7 @@ This implementation uses inheritance: the adapter inherits interfaces from both 
 
 This example of the **Adapter** pattern is based on the classic conflict between square pegs and round holes.
 
-![Structure of the Adapter pattern example](https://refactoring.guru/images/patterns/diagrams/adapter/example.png)
+![[../../8120e5f767ccd377d9e540a67eeacd81_MD5.png|8120e5f767ccd377d9e540a67eeacd81_MD5]]
 
 Adapting square pegs to round holes.
 
