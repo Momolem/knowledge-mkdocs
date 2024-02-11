@@ -19,7 +19,7 @@ title: Boy Scout Rule
 
 Das [[../index|Clean Code Developer]] Wertesystem lässt sich nicht mit einem Mal etablieren. Dafür braucht es Zeit. Vor allem, da ein [[../index|Clean Code Developer]] selten auf einer grünen Wiese und auch noch allein arbeitet, ist es schwer, die Prinzipien auf eine gesamte Codebasis anzuwenden. Wir glauben daher, dass es wichtig ist, sich nicht zu hohe Ziele zu setzen. Viel realistischer und motivierender ist es, nur kleine Fortschritte anzustreben – dafür aber kontinuierliche.
 
-Zum Fundament des Clean Code Development gehört deshalb für uns die Pfadfinderregel. Sie findet sich auch in [[../../Clean Code|Clean Code]] und lautet: 
+Zum Fundament des Clean Code Development gehört deshalb für uns die Pfadfinderregel. Sie findet sich auch in [[../../index|Clean Code]] und lautet: 
 >_Hinterlasse einen Ort immer in einem besseren Zustand als du ihn vorgefunden hast._
 
 Auf die Softwareentwicklung angewandt bedeutet das: [[../index|Clean Code Developer]] hinterlassen Code immer in einem „besseren Zustand“ als sie ihn vorgefunden haben. Nach getaner Arbeit stimmt der Code also mit dem Clean Code Development Wertesystem mehr überein als vorher.

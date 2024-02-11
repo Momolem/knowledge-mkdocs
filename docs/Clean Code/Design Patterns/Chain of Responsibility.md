@@ -18,14 +18,14 @@ tags:  #cleancode/designpatterns
 # Chain of Responsibility
 
 ## Intent
-**Chain of Responsibility** is a [[./Design Patterns#Behavioral|behavioral design pattern]] that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+**Chain of Responsibility** is a [[./index#Behavioral|behavioral design pattern]] that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
 ## Problem
 Imagine that you’re working on an online ordering system. You want to restrict access to the system so only authenticated users can create orders. Also, users who have administrative permissions must have full access to all orders.
 
 After a bit of planning, you realized that these checks must be performed sequentially. The application can attempt to authenticate a user to the system whenever it receives a request that contains the user’s credentials. However, if those credentials aren’t correct and authentication fails, there’s no reason to proceed with any other checks.
 
-![[../../92943ed742e01c52282ec8320c88ff70_MD5.png|92943ed742e01c52282ec8320c88ff70_MD5]]
+![[../../92943ed742e01c52282ec8320c88ff70_MD5.png|92943ed742e01c52282ec8320c88ff70_MD5.png]]
 
 The request must pass a series of checks before the ordering system itself can handle it.
 
@@ -38,7 +38,7 @@ During the next few months, you implemented several more of those sequential che
 -   Someone else suggested that you could speed up the system by returning cached results on repeated requests containing the same data. Hence, you added another check which lets the request pass through to the system only if there’s no suitable cached response.
     
 
-![[../../9bba06693c87b5a0214d1f87f8358e06_MD5.png|9bba06693c87b5a0214d1f87f8358e06_MD5]]
+![[../../9bba06693c87b5a0214d1f87f8358e06_MD5.png|9bba06693c87b5a0214d1f87f8358e06_MD5.png]]
 
 The bigger the code grew, the messier it became.
 
@@ -55,7 +55,7 @@ Here’s the best part: a handler can decide not to pass the request further dow
 
 In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it’s authentication checks or caching.
 
-![[../../0e2750a3ecb87cd5511cf009bc58f78b_MD5.png|0e2750a3ecb87cd5511cf009bc58f78b_MD5]]
+![[../../0e2750a3ecb87cd5511cf009bc58f78b_MD5.png|0e2750a3ecb87cd5511cf009bc58f78b_MD5.png]]
 
 Handlers are lined up one by one, forming a chain.
 
@@ -63,14 +63,14 @@ However, there’s a slightly different approach (and it’s a bit more canonica
 
 For instance, when a user clicks a button, the event propagates through the chain of GUI elements that starts with the button, goes along its containers (like forms or panels), and ends up with the main application window. The event is processed by the first element in the chain that’s capable of handling it. This example is also noteworthy because it shows that a chain can always be extracted from an object tree.
 
-![[../../45ba31b57ec8751bab5497aca7e79fdd_MD5.png|45ba31b57ec8751bab5497aca7e79fdd_MD5]]
+![[../../45ba31b57ec8751bab5497aca7e79fdd_MD5.png|45ba31b57ec8751bab5497aca7e79fdd_MD5.png]]
 
 A chain can be formed from a branch of an object tree.
 
 It’s crucial that all handler classes implement the same interface. Each concrete handler should only care about the following one having the `execute` method. This way you can compose chains at runtime, using various handlers without coupling your code to their concrete classes.
 
 ## Real-World Analogy
-![[../../846af96f2f368de62d67c34c1143cee3_MD5.png|846af96f2f368de62d67c34c1143cee3_MD5]]
+![[../../846af96f2f368de62d67c34c1143cee3_MD5.png|846af96f2f368de62d67c34c1143cee3_MD5.png]]
 
 A call to tech support can go through multiple operators.
 
@@ -84,7 +84,7 @@ Eventually, the operator passes your call to one of the engineers, who had proba
 
 ## Structure
 
-![[../../047a2d50d7e3851bad99234307e10901_MD5.png|047a2d50d7e3851bad99234307e10901_MD5]]
+![[../../047a2d50d7e3851bad99234307e10901_MD5.png|047a2d50d7e3851bad99234307e10901_MD5.png]]
 
 1.  The **Handler** declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
 2.  The **Base Handler** is an optional class where you can put the boilerplate code that’s common to all handler classes.
@@ -98,7 +98,7 @@ Eventually, the operator passes your call to one of the engineers, who had proba
 ## Pseudocode
 In this example, the **Chain of Responsibility** pattern is responsible for displaying contextual help information for active GUI elements.
 
-![[../../925f4fcd13e6138af2040bfacb70c869_MD5.png|925f4fcd13e6138af2040bfacb70c869_MD5]]
+![[../../925f4fcd13e6138af2040bfacb70c869_MD5.png|925f4fcd13e6138af2040bfacb70c869_MD5.png]]
 
 The GUI classes are built with the Composite pattern. Each element is linked to its container element. At any point, you can build a chain of elements that starts with the element itself and goes through all of its container elements.
 
@@ -106,7 +106,7 @@ The application’s GUI is usually structured as an object tree. For example, th
 
 A simple component can show brief contextual tooltips, as long as the component has some help text assigned. But more complex components define their own way of showing contextual help, such as showing an excerpt from the manual or opening a page in a browser.
 
-![[../../56092c19281007b94e1716bc9d85bf1e_MD5.png|56092c19281007b94e1716bc9d85bf1e_MD5]]
+![[../../56092c19281007b94e1716bc9d85bf1e_MD5.png|56092c19281007b94e1716bc9d85bf1e_MD5.png]]
 
 That’s how a help request traverses GUI objects.
 

@@ -16,14 +16,14 @@ tags:  #cleancode/designpatterns
 # Bridge
 
 ## Intent
-**Bridge** is a [[./Design Patterns#Structural|structural design pattern]] that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+**Bridge** is a [[./index#Structural|structural design pattern]] that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
 
 ## Problem
 _Abstraction?_ _Implementation?_ Sound scary? Stay calm and let’s consider a simple example.
 
 Say you have a geometric `Shape` class with a pair of subclasses: `Circle` and `Square`. You want to extend this class hierarchy to incorporate colors, so you plan to create `Red` and `Blue` shape subclasses. However, since you already have two subclasses, you’ll need to create four class combinations such as `BlueCircle` and `RedSquare`.
 
-![[../../cc36ef7222e20b4e2f8e23e094d165b3_MD5.png|cc36ef7222e20b4e2f8e23e094d165b3_MD5]]
+![[../../cc36ef7222e20b4e2f8e23e094d165b3_MD5.png|cc36ef7222e20b4e2f8e23e094d165b3_MD5.png]]
 
 Number of class combinations grows in geometric progression.
 
@@ -34,7 +34,7 @@ This problem occurs because we’re trying to extend the shape classes in two in
 
 The Bridge pattern attempts to solve this problem by switching from [[inheritance|inheritance]] to the object composition. What this means is that you extract one of the dimensions into a separate class hierarchy, so that the original classes will reference an object of the new hierarchy, instead of having all of its state and behaviors within one class.
 
-![[../../073d52dd9fb54109070cd02c0b3ad6f3_MD5.png|073d52dd9fb54109070cd02c0b3ad6f3_MD5]]
+![[../../073d52dd9fb54109070cd02c0b3ad6f3_MD5.png|073d52dd9fb54109070cd02c0b3ad6f3_MD5.png]]
 
 You can prevent the explosion of a class hierarchy by transforming it into several related hierarchies.
 
@@ -57,7 +57,7 @@ Generally speaking, you can extend such an app in two independent directions:
 
 In a worst-case scenario, this app might look like a giant spaghetti bowl, where hundreds of conditionals connect different types of GUI with various APIs all over the code.
 
-![[../../97e204d1ca00588b3e6d15d8dfe34ffe_MD5.png|97e204d1ca00588b3e6d15d8dfe34ffe_MD5]]
+![[../../97e204d1ca00588b3e6d15d8dfe34ffe_MD5.png|97e204d1ca00588b3e6d15d8dfe34ffe_MD5.png]]
 
 Making even a simple change to a monolithic codebase is pretty hard because you must understand the _entire thing_ very well. Making changes to smaller, well-defined modules is much easier.
 
@@ -68,7 +68,7 @@ Let’s try to solve this issue with the Bridge pattern. It suggests that we div
 -   Abstraction: the GUI layer of the app.
 -   Implementation: the operating systems’ APIs.
 
-![[../../d4cacc47baab81a988a67fb43173f4d7_MD5.png|d4cacc47baab81a988a67fb43173f4d7_MD5]]
+![[../../d4cacc47baab81a988a67fb43173f4d7_MD5.png|d4cacc47baab81a988a67fb43173f4d7_MD5.png]]
 
 One of the ways to structure a cross-platform application.
 
@@ -77,7 +77,7 @@ The abstraction object controls the appearance of the app, delegating the actual
 As a result, you can change the GUI classes without touching the API-related classes. Moreover, adding support for another operating system only requires creating a subclass in the implementation hierarchy.
 
 ## Structure
-![[../../a842c54657deb463ebc6814d3a8598a6_MD5.png|a842c54657deb463ebc6814d3a8598a6_MD5]]
+![[../../a842c54657deb463ebc6814d3a8598a6_MD5.png|a842c54657deb463ebc6814d3a8598a6_MD5.png]]
 1.  The **Abstraction** provides high-level control logic. It relies on the implementation object to do the actual low-level work.
 2.  The **Implementation** declares the interface that’s common for all concrete implementations. An abstraction can only communicate with an implementation object via methods that are declared here.
     The abstraction may list the same methods as the implementation, but usually the abstraction declares some complex behaviors that rely on a wide variety of primitive operations declared by the implementation.
@@ -88,7 +88,7 @@ As a result, you can change the GUI classes without touching the API-related cla
 ## Pseudocode
 This example illustrates how the **Bridge** pattern can help divide the monolithic code of an app that manages devices and their remote controls. The `Device` classes act as the implementation, whereas the `Remote`s act as the abstraction.
 
-![[../../b89b8f3f3fca7db7cb3d77d85acde869_MD5.png|b89b8f3f3fca7db7cb3d77d85acde869_MD5]]
+![[../../b89b8f3f3fca7db7cb3d77d85acde869_MD5.png|b89b8f3f3fca7db7cb3d77d85acde869_MD5.png]]
 
 The original class hierarchy is divided into two parts: devices and remote controls.
 

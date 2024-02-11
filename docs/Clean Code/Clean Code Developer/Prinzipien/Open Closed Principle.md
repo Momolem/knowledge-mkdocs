@@ -47,7 +47,7 @@ public double Preis() {
 }
 ```
 
-Das problematische an dieser Form der Implementierung ist, dass die Klasse modifiziert werden muss, wenn eine weitere Art der Preisberechnung erforderlich wird. Die Gefahr dabei ist, dass bei dieser Modifikation Fehler gemacht werden und die bisher schon vorhandenen Funktionen nicht mehr ordnungsgemäß funktionieren. Auch wenn automatisierte [[../../Unit Test|Unit Tests]] und [[../../Integration Tests|Integrationstests]] vorhanden sind besteht das Risiko, neue Bugs zu hinterlassen, weil man keine hundertprozentige Testabdeckung erreichen kann. Gesucht ist also generell ein Verfahren, welches die Klasse erweiterbar macht, ohne dass dazu die Klasse selbst modifiziert werden muss. Dies kann z.B. mit Hilfe des *[[../../Designpatterns/Strategy|Strategy Patterns]]* erreicht werden:
+Das problematische an dieser Form der Implementierung ist, dass die Klasse modifiziert werden muss, wenn eine weitere Art der Preisberechnung erforderlich wird. Die Gefahr dabei ist, dass bei dieser Modifikation Fehler gemacht werden und die bisher schon vorhandenen Funktionen nicht mehr ordnungsgemäß funktionieren. Auch wenn automatisierte [[../../Unit Test|Unit Tests]] und [[../../Integration Tests|Integrationstests]] vorhanden sind besteht das Risiko, neue Bugs zu hinterlassen, weil man keine hundertprozentige Testabdeckung erreichen kann. Gesucht ist also generell ein Verfahren, welches die Klasse erweiterbar macht, ohne dass dazu die Klasse selbst modifiziert werden muss. Dies kann z.B. mit Hilfe des *[[../../Design Patterns/Strategy|Strategy Patterns]]* erreicht werden:
 
 ```csharp
 public interface IPreisRechner {

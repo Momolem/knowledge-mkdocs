@@ -20,7 +20,7 @@ tags:  #cleancode/designpatterns
 Collections are one of the most used data types in programming. Nonetheless, a collection is just a container for a group of objects.
 
 ## Problem
-![[../../c2764d2c0108002c13aa44ed8f90abda_MD5.png|c2764d2c0108002c13aa44ed8f90abda_MD5]]
+![[../../c2764d2c0108002c13aa44ed8f90abda_MD5.png|c2764d2c0108002c13aa44ed8f90abda_MD5.png]]
 
 Various types of collections.
 
@@ -30,7 +30,7 @@ But no matter how a collection is structured, it must provide some way of access
 
 This may sound like an easy job if you have a collection based on a list. You just loop over all of the elements. But how do you sequentially traverse elements of a complex data structure, such as a tree? For example, one day you might be just fine with depth-first traversal of a tree. Yet the next day you might require breadth-first traversal. And the next week, you might need something else, like random access to the tree elements.
 
-![[../../59628ae22ae3519f711ae6966094c693_MD5.png|59628ae22ae3519f711ae6966094c693_MD5]]
+![[../../59628ae22ae3519f711ae6966094c693_MD5.png|59628ae22ae3519f711ae6966094c693_MD5.png]]
 
 The same collection can be traversed in several different ways.
 
@@ -42,7 +42,7 @@ On the other hand, the client code that’s supposed to work with various collec
 
 The main idea of the Iterator pattern is to extract the traversal behavior of a collection into a separate object called an _iterator_.
 
-![[../../09f4e10f8ee2843676a56ed9e6d8fcae_MD5.png|09f4e10f8ee2843676a56ed9e6d8fcae_MD5]]
+![[../../09f4e10f8ee2843676a56ed9e6d8fcae_MD5.png|09f4e10f8ee2843676a56ed9e6d8fcae_MD5.png]]
 
 Iterators implement various traversal algorithms. Several iterator objects can traverse the same collection at the same time.
 
@@ -54,7 +54,7 @@ All iterators must implement the same interface. This makes the client code comp
 
 ##  Real-World Analogy
 
-![[../../7d0a4f2d6ff75595cce27e4065269a5b_MD5.png|7d0a4f2d6ff75595cce27e4065269a5b_MD5]]
+![[../../7d0a4f2d6ff75595cce27e4065269a5b_MD5.png|7d0a4f2d6ff75595cce27e4065269a5b_MD5.png]]
 
 Various ways to walk around Rome.
 
@@ -68,7 +68,7 @@ All of these options—the random directions born in your head, the smartphone n
 
 ##  Structure
 
-![[../../1defa7f962d29e190c3cdbdb69261bc8_MD5.png|1defa7f962d29e190c3cdbdb69261bc8_MD5]]
+![[../../1defa7f962d29e190c3cdbdb69261bc8_MD5.png|1defa7f962d29e190c3cdbdb69261bc8_MD5.png]]
 
 1.  The **Iterator** interface declares the operations required for traversing a collection: fetching the next element, retrieving the current position, restarting iteration, etc.
     
@@ -87,7 +87,7 @@ All of these options—the random directions born in your head, the smartphone n
 
 In this example, the **Iterator** pattern is used to walk through a special kind of collection which encapsulates access to Facebook’s social graph. The collection provides several iterators that can traverse profiles in various ways.
 
-![[../../0f26913284284c5772aeb8ebe54c689d_MD5.png|0f26913284284c5772aeb8ebe54c689d_MD5]]
+![[../../0f26913284284c5772aeb8ebe54c689d_MD5.png|0f26913284284c5772aeb8ebe54c689d_MD5.png]]
 
 Example of iterating over social profiles.
 

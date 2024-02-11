@@ -22,7 +22,7 @@ Imagine that you’re creating a logistics management application. The first ver
 
 After a while, your app becomes pretty popular. Each day you receive dozens of requests from sea transportation companies to incorporate sea logistics into the app.
 
-![[../../58b75af8bd7bb6680d9fece363f16835_MD5.png|58b75af8bd7bb6680d9fece363f16835_MD5]]
+![[../../58b75af8bd7bb6680d9fece363f16835_MD5.png|58b75af8bd7bb6680d9fece363f16835_MD5.png]]
 
 Adding a new class to the program isn’t that simple if the rest of the code is already coupled to existing classes.
 
@@ -34,7 +34,7 @@ As a result, you will end up with pretty nasty code, riddled with conditionals t
 
 The Factory Method pattern suggests that you replace direct object construction calls (using the `new` operator) with calls to a special _factory_ method. Don’t worry: the objects are still created via the `new` operator, but it’s being called from within the factory method. Objects returned by a factory method are often referred to as _products._
 
-![[../../35a0763e2f23d1acc90e30243be316f2_MD5.png|35a0763e2f23d1acc90e30243be316f2_MD5]]
+![[../../35a0763e2f23d1acc90e30243be316f2_MD5.png|35a0763e2f23d1acc90e30243be316f2_MD5.png]]
 
 Subclasses can alter the class of objects being returned by the factory method.
 
@@ -42,19 +42,19 @@ At first glance, this change may look pointless: we just moved the constructor c
 
 There’s a slight limitation though: subclasses may return different types of products only if these products have a common base class or interface. Also, the factory method in the base class should have its return type declared as this interface.
 
-![[../../1e3595b2a033d439036854609b911ce1_MD5.png|1e3595b2a033d439036854609b911ce1_MD5]]
+![[../../1e3595b2a033d439036854609b911ce1_MD5.png|1e3595b2a033d439036854609b911ce1_MD5.png]]
 
 All products must follow the same interface.
 
 For example, both `Truck` and `Ship` classes should implement the `Transport` interface, which declares a method called `deliver`. Each class implements this method differently: trucks deliver cargo by land, ships deliver cargo by sea. The factory method in the `RoadLogistics` class returns truck objects, whereas the factory method in the `SeaLogistics` class returns ships.
 
-![[../../0d31c4ffe20352eee238fda8d1e3ccab_MD5.png|0d31c4ffe20352eee238fda8d1e3ccab_MD5]]
+![[../../0d31c4ffe20352eee238fda8d1e3ccab_MD5.png|0d31c4ffe20352eee238fda8d1e3ccab_MD5.png]]
 
 As long as all product classes implement a common interface, you can pass their objects to the client code without breaking it.
 
 The code that uses the factory method (often called the _client_ code) doesn’t see a difference between the actual products returned by various subclasses. The client treats all the products as abstract `Transport`. The client knows that all transport objects are supposed to have the `deliver` method, but exactly how it works isn’t important to the client.
 ## Structure
-![[../../b1bdf6e74e5cde26958b6e6ce764507f_MD5.png|b1bdf6e74e5cde26958b6e6ce764507f_MD5]]
+![[../../b1bdf6e74e5cde26958b6e6ce764507f_MD5.png|b1bdf6e74e5cde26958b6e6ce764507f_MD5.png]]
 
 1.  The **Product** declares the interface, which is common to all objects that can be produced by the creator and its subclasses.
     
@@ -72,7 +72,7 @@ The code that uses the factory method (often called the _client_ code) doesn’t
 ## Pseudocode
 This example illustrates how the **Factory Method** can be used for creating cross-platform UI elements without coupling the client code to concrete UI classes.
 
-![[../../e7ee19f1b856872f554a38a732a530f6_MD5.png|e7ee19f1b856872f554a38a732a530f6_MD5]]
+![[../../e7ee19f1b856872f554a38a732a530f6_MD5.png|e7ee19f1b856872f554a38a732a530f6_MD5.png]]
 
 The cross-platform dialog example.
 

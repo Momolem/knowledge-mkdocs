@@ -16,7 +16,7 @@ tags: #cleancode/designpatterns
 
 # Singleton
 ## Intent
-**Singleton** is a [[./Design Patterns#Creational|creational design pattern]] that lets you ensure that a class has **only one instance**, while providing a global access point to this instance.
+**Singleton** is a [[./index#Creational|creational design pattern]] that lets you ensure that a class has **only one instance**, while providing a global access point to this instance.
 
 ## Problem
 The Singleton pattern solves two problems at the same time, violating the _[[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]_:
@@ -28,7 +28,7 @@ The Singleton pattern solves two problems at the same time, violating the _[[..
     Note that this behavior is impossible to implement with a regular constructor since a constructor call **must** always return a new object by design.
     
 
-![[../../2c4e230c7684846d0fbda90ffa22a4f2_MD5.png|2c4e230c7684846d0fbda90ffa22a4f2_MD5]]
+![[../../2c4e230c7684846d0fbda90ffa22a4f2_MD5.png|2c4e230c7684846d0fbda90ffa22a4f2_MD5.png]]
 
 Clients may not even realize that they’re working with the same object all the time.
 
@@ -53,7 +53,7 @@ If your code has access to the Singleton class, then it’s able to call the Sin
 The government is an excellent example of the Singleton pattern. A country can have only one official government. Regardless of the personal identities of the individuals who form governments, the title, “The Government of X”, is a global point of access that identifies the group of people in charge.
 
 ## Structure
-![[../../d910100bc125f7da193e0893da65cd24_MD5.png|d910100bc125f7da193e0893da65cd24_MD5]]
+![[../../d910100bc125f7da193e0893da65cd24_MD5.png|d910100bc125f7da193e0893da65cd24_MD5.png]]
 
 ## Pseudocode
 

@@ -20,7 +20,7 @@ tags:  #cleancode/designpatterns
 ## Problem
 Why would you want to control access to an object? Here is an example: you have a massive object that consumes a vast amount of system resources. You need it from time to time, but not always.
 
-![[../../1588be86c4728a44c4ad3f4781be749e_MD5.png|1588be86c4728a44c4ad3f4781be749e_MD5]]
+![[../../1588be86c4728a44c4ad3f4781be749e_MD5.png|1588be86c4728a44c4ad3f4781be749e_MD5.png]]
 
 Database queries can be really slow.
 
@@ -32,7 +32,7 @@ In an ideal world, we’d want to put this code directly into our object’s cla
 
 The Proxy pattern suggests that you create a new proxy class with the same interface as an original service object. Then you update your app so that it passes the proxy object to all of the original object’s clients. Upon receiving a request from a client, the proxy creates a real service object and delegates all the work to it.
 
-![[../../83525c5a9c762b03dd023a0960444907_MD5.png|83525c5a9c762b03dd023a0960444907_MD5]]
+![[../../83525c5a9c762b03dd023a0960444907_MD5.png|83525c5a9c762b03dd023a0960444907_MD5.png]]
 
 The proxy disguises itself as a database object. It can handle lazy initialization and result caching without the client or the real database object even knowing.
 
@@ -40,7 +40,7 @@ But what’s the benefit? If you need to execute something either before or afte
 
 ##  Real-World Analogy
 
-![[../../52d57da5a6379246c322dcd63ea475c4_MD5.png|52d57da5a6379246c322dcd63ea475c4_MD5]]
+![[../../52d57da5a6379246c322dcd63ea475c4_MD5.png|52d57da5a6379246c322dcd63ea475c4_MD5.png]]
 
 Credit cards can be used for payments just the same as cash.
 
@@ -48,7 +48,7 @@ A credit card is a proxy for a bank account, which is a proxy for a bundle of ca
 
 ##  Structure
 
-![[../../84656d511512dcf835f5d709a36aa775_MD5.png|84656d511512dcf835f5d709a36aa775_MD5]]
+![[../../84656d511512dcf835f5d709a36aa775_MD5.png|84656d511512dcf835f5d709a36aa775_MD5.png]]
 
 1.  The **Service Interface** declares the interface of the Service. The proxy must follow this interface to be able to disguise itself as a service object.
     
@@ -65,7 +65,7 @@ A credit card is a proxy for a bank account, which is a proxy for a bundle of ca
 
 This example illustrates how the **Proxy** pattern can help to introduce lazy initialization and caching to a 3rd-party YouTube integration library.
 
-![[../../63150eeb956667d18b611b6b574830fd_MD5.png|63150eeb956667d18b611b6b574830fd_MD5]]
+![[../../63150eeb956667d18b611b6b574830fd_MD5.png|63150eeb956667d18b611b6b574830fd_MD5.png]]
 
 Caching results of a service with a proxy.
 

@@ -33,7 +33,7 @@ For instance, an app that uploads short funny videos with cats to social media c
 
 ##  Real-World Analogy
 
-![[../../de0352aab8526989fc0a4dfb1311120d_MD5.png|de0352aab8526989fc0a4dfb1311120d_MD5]]
+![[../../de0352aab8526989fc0a4dfb1311120d_MD5.png|de0352aab8526989fc0a4dfb1311120d_MD5.png]]
 
 Placing orders by phone.
 
@@ -41,7 +41,7 @@ When you call a shop to place a phone order, an operator is your facade to all s
 
 ##  Structure
 
-![[../../f2622a3d35c2aa6a833ec4d092fbcd16_MD5.png|f2622a3d35c2aa6a833ec4d092fbcd16_MD5]]
+![[../../f2622a3d35c2aa6a833ec4d092fbcd16_MD5.png|f2622a3d35c2aa6a833ec4d092fbcd16_MD5.png]]
 
 1.  The **Facade** provides convenient access to a particular part of the subsystem’s functionality. It knows where to direct the client’s request and how to operate all the moving parts.
 2.  An **Additional Facade** class can be created to prevent polluting a single facade with unrelated features that might make it yet another complex structure. Additional facades can be used by both clients and other facades.
@@ -53,7 +53,7 @@ When you call a shop to place a phone order, an operator is your facade to all s
 
 In this example, the **Facade** pattern simplifies interaction with a complex video conversion framework.
 
-![[../../4a1ae2c00ed039a2099090875e025824_MD5.png|4a1ae2c00ed039a2099090875e025824_MD5]]
+![[../../4a1ae2c00ed039a2099090875e025824_MD5.png|4a1ae2c00ed039a2099090875e025824_MD5.png]]
 
 An example of isolating multiple dependencies within a single facade class.
 

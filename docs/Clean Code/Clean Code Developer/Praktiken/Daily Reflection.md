@@ -16,7 +16,7 @@ title: Daily Reflection
 >**Warum?**
 >Keine Verbesserung, kein Fortschritt, kein Lernen ohne Reflexion. Aber nur, wenn Reflexion auch eingeplant wird, findet sie unter dem Druck des Tagesgeschäftes auch statt.
 
-Im Zentrum von [[../index|CCD]] steht die persönliche Entwicklung. Es geht also um Veränderung: Mit jedem Tag soll sich das [[../index#Wertesystem|CCD-Wertesysten]] ein klein wenig mehr im Projektalltag des [[../../Clean Code|Clean Code]] Developers manifestieren. Das ist die Pfadfinderregel des [[../index|CCD]]s auf sich selbst angewandt.
+Im Zentrum von [[../index|CCD]] steht die persönliche Entwicklung. Es geht also um Veränderung: Mit jedem Tag soll sich das [[../index#Wertesystem|CCD-Wertesysten]] ein klein wenig mehr im Projektalltag des [[../../index|Clean Code]] Developers manifestieren. Das ist die Pfadfinderregel des [[../index|CCD]]s auf sich selbst angewandt.
 
 So ein Veränderungsweg geht sich allerdings gerade allein nicht leicht. Wie also auf Kurs bleiben? Wie Fortschritt messen?
 
@@ -25,7 +25,7 @@ Ohne ein „Kontrollsystem“ etablieren zu wollen, glauben wir, dass dazu zweie
 1.  Kleinschrittige Planung
 2.  Reflexion nach jedem Schritt
 
-Unabhängig von Vorgaben durch eine Projektleitung sollten [[../../Clean Code|Clean Code]] Developer ihre Arbeit so einteilen, dass sie aus Aufgaben besteht, die an einem Arbeitstag zu bewältigen sind. Nur so kann am Abend jedes Tages eine Bilanz gezogen werden. Das halten wir für wichtig, um jeden Tag die Arbeit nicht mit in den Feierabend zu tragen. Da hat sie nichts zu suchen; der dient der Entspannung.
+Unabhängig von Vorgaben durch eine Projektleitung sollten [[../../index|Clean Code]] Developer ihre Arbeit so einteilen, dass sie aus Aufgaben besteht, die an einem Arbeitstag zu bewältigen sind. Nur so kann am Abend jedes Tages eine Bilanz gezogen werden. Das halten wir für wichtig, um jeden Tag die Arbeit nicht mit in den Feierabend zu tragen. Da hat sie nichts zu suchen; der dient der Entspannung.
 
 Durch solche kleinen Planungsschritte wird der Arbeitsalltag allerdings nicht nur befriedigender, weil sich jeden Tag über Erfolg oder Misserfolg entscheiden lässt. Die schiere Möglichkeit der Entscheidung am Abend – _Habe ich alle meine Aufgaben erledigt? Wie habe ich meine Aufgaben erledigt?_ – erlaubt auch die Reflexion über die Einhaltung des [[../index#Wertesystem|CCD-Wertesystems]].
 

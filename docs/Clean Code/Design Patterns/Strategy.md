@@ -18,7 +18,7 @@ tags: #cleancode/designpatterns
 
 ## Intent
 
-**Strategy** is a [[./Design Patterns#Behavioral|behavioral design pattern]] that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
+**Strategy** is a [[./index#Behavioral|behavioral design pattern]] that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 
 ## Problem
 
@@ -30,7 +30,7 @@ The first version of the app could only build the routes over roads. People who 
 
 However, that was only the beginning. Later you planned to add route building for cyclists. And even later, another option for building routes through all of a city’s tourist attractions.
 
-![[../../2ebaf6edc15a2db946e26eda44c402b6_MD5.png|2ebaf6edc15a2db946e26eda44c402b6_MD5]]
+![[../../2ebaf6edc15a2db946e26eda44c402b6_MD5.png|2ebaf6edc15a2db946e26eda44c402b6_MD5.png]]
 
 The code of the navigator became bloated.
 
@@ -50,7 +50,7 @@ The context isn’t responsible for selecting an appropriate algorithm for the j
 
 This way the context becomes independent of concrete strategies, so you can add new algorithms or modify existing ones without changing the code of the context or other strategies.
 
-![[../../d825db2695100d0e2617b24ab5ce60e4_MD5.png|d825db2695100d0e2617b24ab5ce60e4_MD5]]
+![[../../d825db2695100d0e2617b24ab5ce60e4_MD5.png|d825db2695100d0e2617b24ab5ce60e4_MD5.png]]
 
 Route planning strategies.
 
@@ -60,7 +60,7 @@ Even though given the same arguments, each routing class might build a different
 
 ## Real-World Analogy
 
-![[../../17451ba8526af91af1711f7f8e93f256_MD5.png|17451ba8526af91af1711f7f8e93f256_MD5]]
+![[../../17451ba8526af91af1711f7f8e93f256_MD5.png|17451ba8526af91af1711f7f8e93f256_MD5.png]]
 
 Various strategies for getting to the airport.
 
@@ -68,7 +68,7 @@ Imagine that you have to get to the airport. You can catch a bus, order a cab, o
 
 ## Structure
 
-![[../../6b3c4757eca12a7a9492b316d0696630_MD5.png|6b3c4757eca12a7a9492b316d0696630_MD5]]
+![[../../6b3c4757eca12a7a9492b316d0696630_MD5.png|6b3c4757eca12a7a9492b316d0696630_MD5.png]]
 
 1.  The **Context** maintains a reference to one of the concrete strategies and communicates with this object only via the strategy interface.
     

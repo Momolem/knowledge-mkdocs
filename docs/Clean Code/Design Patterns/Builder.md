@@ -21,7 +21,7 @@ tags:  #cleancode/designpatterns
 ## Problem
 Imagine a complex object that requires laborious, step-by-step initialization of many fields and nested objects. Such initialization code is usually buried inside a monstrous constructor with lots of parameters. Or even worse: scattered all over the client code.
 
-![[../../623fad2cd7f5d92ee586f5c1c0da7cdd_MD5.png|623fad2cd7f5d92ee586f5c1c0da7cdd_MD5]]
+![[../../623fad2cd7f5d92ee586f5c1c0da7cdd_MD5.png|623fad2cd7f5d92ee586f5c1c0da7cdd_MD5.png]]
 
 You might make the program too complex by creating a subclass for every possible configuration of an object.
 
@@ -31,7 +31,7 @@ The simplest solution is to extend the base `House` class and create a set of 
 
 There’s another approach that doesn’t involve breeding subclasses. You can create a giant constructor right in the base `House` class with all possible parameters that control the house object. While this approach indeed eliminates the need for subclasses, it creates another problem.
 
-![[../../511f88dcbd0de922ae475ea21ed7b2ba_MD5.png|511f88dcbd0de922ae475ea21ed7b2ba_MD5]]
+![[../../511f88dcbd0de922ae475ea21ed7b2ba_MD5.png|511f88dcbd0de922ae475ea21ed7b2ba_MD5.png]]
 
 The constructor with lots of parameters has its downside: not all the parameters are needed at all times.
 
@@ -41,7 +41,7 @@ In most cases most of the parameters will be unused, making [the constructor ca
 
 The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called _builders_.
 
-![[../../5cbee2f6a8e4c04d37c259a85c68e8e3_MD5.png|5cbee2f6a8e4c04d37c259a85c68e8e3_MD5]]
+![[../../5cbee2f6a8e4c04d37c259a85c68e8e3_MD5.png|5cbee2f6a8e4c04d37c259a85c68e8e3_MD5.png]]
 
 The Builder pattern lets you construct complex objects step by step. The Builder doesn’t allow other objects to access the product while it’s being built.
 
@@ -51,7 +51,7 @@ Some of the construction steps might require different implementation when you n
 
 In this case, you can create several different builder classes that implement the same set of building steps, but in a different manner. Then you can use these builders in the construction process (i.e., an ordered set of calls to the building steps) to produce different kinds of objects.
 
-![[../../67bef54422ae4cb6ac63e7f6fd787185_MD5.png|67bef54422ae4cb6ac63e7f6fd787185_MD5]]
+![[../../67bef54422ae4cb6ac63e7f6fd787185_MD5.png|67bef54422ae4cb6ac63e7f6fd787185_MD5.png]]
 
 Different builders execute the same task in various ways.
 
@@ -61,7 +61,7 @@ For example, imagine a builder that builds everything from wood and glass, a sec
 
 You can go further and extract a series of calls to the builder steps you use to construct a product into a separate class called _director_. The director class defines the order in which to execute the building steps, while the builder provides the implementation for those steps.
 
-![[../../4e175a96e685b940a7ab31184a57a5a1_MD5.png|4e175a96e685b940a7ab31184a57a5a1_MD5]]
+![[../../4e175a96e685b940a7ab31184a57a5a1_MD5.png|4e175a96e685b940a7ab31184a57a5a1_MD5.png]]
 
 The director knows which building steps to execute to get a working product.
 
@@ -71,7 +71,7 @@ In addition, the director class completely hides the details of product construc
 
 ##  Structure
 
-![[../../b32d3c0a623ddac8d9ba5ed217439aa7_MD5.png|b32d3c0a623ddac8d9ba5ed217439aa7_MD5]]
+![[../../b32d3c0a623ddac8d9ba5ed217439aa7_MD5.png|b32d3c0a623ddac8d9ba5ed217439aa7_MD5.png]]
 
 1.  The **Builder** interface declares product construction steps that are common to all types of builders.
 2.  **Concrete Builders** provide different implementations of the construction steps. Concrete builders may produce products that don’t follow the common interface.
@@ -83,7 +83,7 @@ In addition, the director class completely hides the details of product construc
 
 This example of the **Builder** pattern illustrates how you can reuse the same object construction code when building different types of products, such as cars, and create the corresponding manuals for them.
 
-![[../../cc639291b6999adeeacfb3f82bb0ee8e_MD5.png|cc639291b6999adeeacfb3f82bb0ee8e_MD5]]
+![[../../cc639291b6999adeeacfb3f82bb0ee8e_MD5.png|cc639291b6999adeeacfb3f82bb0ee8e_MD5.png]]
 
 The example of step-by-step construction of cars and the user guides that fit those car models.
 

@@ -26,13 +26,13 @@ Upon its completion, you pushed the last commit, built the game and sent it to y
 
 The actual problem was related to your particle system. Each particle, such as a bullet, a missile or a piece of shrapnel was represented by a separate object containing plenty of data. At some point, when the carnage on a player’s screen reached its climax, newly created particles no longer fit into the remaining RAM, so the program crashed.
 
-![[../../6f321b880f0607b322cb335d3901682b_MD5.png|6f321b880f0607b322cb335d3901682b_MD5]]
+![[../../6f321b880f0607b322cb335d3901682b_MD5.png|6f321b880f0607b322cb335d3901682b_MD5.png]]
 
 ##  Solution
 
 On closer inspection of the `Particle` class, you may notice that the color and sprite fields consume a lot more memory than other fields. What’s worse is that these two fields store almost identical data across all particles. For example, all bullets have the same color and sprite.
 
-![[../../f198a80a300538ce4f00dcad7236cefb_MD5.png|f198a80a300538ce4f00dcad7236cefb_MD5]]
+![[../../f198a80a300538ce4f00dcad7236cefb_MD5.png|f198a80a300538ce4f00dcad7236cefb_MD5.png]]
 
 Other parts of a particle’s state, such as coordinates, movement vector and speed, are unique to each particle. After all, the values of these fields change over time. This data represents the always changing context in which the particle exists, while the color and sprite remain constant for each particle.
 
@@ -40,7 +40,7 @@ This constant data of an object is usually called the _intrinsic state_. It liv
 
 The Flyweight pattern suggests that you stop storing the extrinsic state inside the object. Instead, you should pass this state to specific methods which rely on it. Only the intrinsic state stays within the object, letting you reuse it in different contexts. As a result, you’d need fewer of these objects since they only differ in the intrinsic state, which has much fewer variations than the extrinsic.
 
-![[../../ea1c5c3d1610a12800304b0012b08274_MD5.png|ea1c5c3d1610a12800304b0012b08274_MD5]]
+![[../../ea1c5c3d1610a12800304b0012b08274_MD5.png|ea1c5c3d1610a12800304b0012b08274_MD5.png]]
 
 Let’s return to our game. Assuming that we had extracted the extrinsic state from our particle class, only three different objects would suffice to represent all particles in the game: a bullet, a missile, and a piece of shrapnel. As you’ve probably guessed by now, an object that only stores the intrinsic state is called a flyweight.
 
@@ -50,7 +50,7 @@ Where does the extrinsic state move to? Some class should still store it, right?
 
 In our case, that’s the main `Game` object that stores all particles in the `particles` field. To move the extrinsic state into this class, you need to create several array fields for storing coordinates, vectors, and speed of each individual particle. But that’s not all. You need another array for storing references to a specific flyweight that represents a particle. These arrays must be in sync so that you can access all data of a particle using the same index.
 
-![[../../75ce7be0710b13897deea371a80613dd_MD5.png|75ce7be0710b13897deea371a80613dd_MD5]]
+![[../../75ce7be0710b13897deea371a80613dd_MD5.png|75ce7be0710b13897deea371a80613dd_MD5.png]]
 
 A more elegant solution is to create a separate context class that would store the extrinsic state along with reference to the flyweight object. This approach would require having just a single array in the container class.
 
@@ -68,7 +68,7 @@ There are several options where this method could be placed. The most obvious pl
 
 ## Structure
 
-![[../../d9152e7138ac1138d8caaab594fb508b_MD5.png|d9152e7138ac1138d8caaab594fb508b_MD5]]
+![[../../d9152e7138ac1138d8caaab594fb508b_MD5.png|d9152e7138ac1138d8caaab594fb508b_MD5.png]]
 
 1.  The Flyweight pattern is merely an optimization. Before applying it, make sure your program does have the RAM consumption problem related to having a massive number of similar objects in memory at the same time. Make sure that this problem can’t be solved in any other meaningful way.
 2.  The **Flyweight** class contains the portion of the original object’s state that can be shared between multiple objects. The same flyweight object can be used in many different contexts. The state stored inside a flyweight is called _intrinsic._ The state passed to the flyweight’s methods is called _extrinsic._
@@ -80,7 +80,7 @@ There are several options where this method could be placed. The most obvious pl
 ##  Pseudocode
 In this example, the **Flyweight** pattern helps to reduce memory usage when rendering millions of tree objects on a canvas.
 
-![[../../009181a75602c3b1309122d616e5b184_MD5.png|009181a75602c3b1309122d616e5b184_MD5]]
+![[../../009181a75602c3b1309122d616e5b184_MD5.png|009181a75602c3b1309122d616e5b184_MD5.png]]
 
 The pattern extracts the repeating intrinsic state from a main `Tree` class and moves it into the flyweight class `TreeType`.
 

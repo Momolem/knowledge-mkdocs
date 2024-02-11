@@ -13,7 +13,7 @@ title: SOLID
 ---
 #cleancode 
 # SOLID
-The SOLID Principles are a part of the [[./Clean Code|Clean Code]] Principles. The letters stand for:
+The SOLID Principles are a part of the [[./index|Clean Code]] Principles. The letters stand for:
 - [[./Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]
 - [[./Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]
 - [[./Clean Code Developer/Prinzipien/Liskov Substitution Principle|Liskov Substitution Principle]]

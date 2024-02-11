@@ -21,7 +21,7 @@ tags:  #cleancode/designpatterns
 ## Problem
 The State pattern is closely related to the concept of a _Finite-State Machine_ .
 
-![[../../99b27dd49126d782f25e31ae2b28ca8b_MD5.png|99b27dd49126d782f25e31ae2b28ca8b_MD5]]
+![[../../99b27dd49126d782f25e31ae2b28ca8b_MD5.png|99b27dd49126d782f25e31ae2b28ca8b_MD5.png]]
 
 Finite-State Machine.
 
@@ -33,7 +33,7 @@ You can also apply this approach to objects. Imagine that we have a `Document`�
 -   In `Moderation`, it makes the document public, but only if the current user is an administrator.
 -   In `Published`, it doesn’t do anything at all.
 
-![[../../a7d9f3ec7159a9a532d61d5f6c3f3f6e_MD5.png|a7d9f3ec7159a9a532d61d5f6c3f3f6e_MD5]]
+![[../../a7d9f3ec7159a9a532d61d5f6c3f3f6e_MD5.png|a7d9f3ec7159a9a532d61d5f6c3f3f6e_MD5.png]]
 
 Possible states and transitions of a document object.
 
@@ -68,7 +68,7 @@ The State pattern suggests that you create new classes for all possible states o
 
 Instead of implementing all behaviors on its own, the original object, called _context_, stores a reference to one of the state objects that represents its current state, and delegates all the state-related work to that object.
 
-![[../../0939fbae2a8646a79331a1b58c3ffc6f_MD5.png|0939fbae2a8646a79331a1b58c3ffc6f_MD5]]
+![[../../0939fbae2a8646a79331a1b58c3ffc6f_MD5.png|0939fbae2a8646a79331a1b58c3ffc6f_MD5.png]]
 
 Document delegates the work to a state object.
 
@@ -84,7 +84,7 @@ The buttons and switches in your smartphone behave differently depending on the 
 -   When the phone’s charge is low, pressing any button shows the charging screen.
 
 ## Structure
-![[../../b8d5cbb79c66c4f4160728a7bcf322ff_MD5.png|b8d5cbb79c66c4f4160728a7bcf322ff_MD5]]
+![[../../b8d5cbb79c66c4f4160728a7bcf322ff_MD5.png|b8d5cbb79c66c4f4160728a7bcf322ff_MD5.png]]
 1.  **Context** stores a reference to one of the concrete state objects and delegates to it all state-specific work. The context communicates with the state object via the state interface. The context exposes a setter for passing it a new state object.
 2.  The **State** interface declares the state-specific methods. These methods should make sense for all concrete states because you don’t want some of your states to have useless methods that will never be called.
 3.  **Concrete States** provide their own implementations for the state-specific methods. To avoid duplication of similar code across multiple states, you may provide intermediate abstract classes that encapsulate some common behavior.
@@ -95,7 +95,7 @@ The buttons and switches in your smartphone behave differently depending on the 
 ## Pseudocode
 In this example, the **State** pattern lets the same controls of the media player behave differently, depending on the current playback state.
 
-![[../../85773ac0ff6905eb0434f349f2735ed5_MD5.png|85773ac0ff6905eb0434f349f2735ed5_MD5]]
+![[../../85773ac0ff6905eb0434f349f2735ed5_MD5.png|85773ac0ff6905eb0434f349f2735ed5_MD5.png]]
 
 Example of changing object behavior with state objects.
 
