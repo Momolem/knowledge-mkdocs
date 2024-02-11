@@ -23,7 +23,7 @@ Imagine that you’re creating a data mining application that analyzes corporate
 
 The first version of the app could work only with DOC files. In the following version, it was able to support CSV files. A month later, you “taught” it to extract data from PDF files.
 
-![Data mining classes contained a lot of duplicate code](https://refactoring.guru/images/patterns/diagrams/template-method/problem.png)
+![[../../2419feeb6dfc05c36366e89893828ec0_MD5.png|2419feeb6dfc05c36366e89893828ec0_MD5]]
 
 Data mining classes contained a lot of duplicate code.
 
@@ -37,7 +37,7 @@ The Template Method pattern suggests that you break down an algorithm into a ser
 
 Let’s see how this will play out in our data mining app. We can create a base class for all three parsing algorithms. This class defines a template method consisting of a series of calls to various document-processing steps.
 
-![Template method defines the skeleton of the algorithm](https://refactoring.guru/images/patterns/diagrams/template-method/solution-en.png)
+![[../../5a6ae0f538c487d264e7500022506f92_MD5.png|5a6ae0f538c487d264e7500022506f92_MD5]]
 
 Template method breaks the algorithm into steps, allowing subclasses to override these steps but not the actual method.
 
@@ -54,7 +54,7 @@ There’s another type of step, called _hooks_. A hook is an optional step with
 
 ##  Real-World Analogy
 
-![Mass housing construction](https://refactoring.guru/images/patterns/diagrams/template-method/live-example.png)
+![[../../0c724b1adc9135a4794f512f5b2a7707_MD5.png|0c724b1adc9135a4794f512f5b2a7707_MD5]]
 
 A typical architectural plan can be slightly altered to better fit the client’s needs.
 
@@ -64,7 +64,7 @@ Each building step, such as laying the foundation, framing, building walls, inst
 
 ##  Structure
 
-![Structure of the Template Method design pattern](https://refactoring.guru/images/patterns/diagrams/template-method/structure.png)
+![[../../3b11dc438095a0ec8c8aaad9e739c7a9_MD5.png|3b11dc438095a0ec8c8aaad9e739c7a9_MD5]]
 
 1.  The **Abstract Class** declares methods that act as steps of an algorithm, as well as the actual template method which calls these methods in a specific order. The steps may either be declared `abstract` or have some default implementation.
     
@@ -75,7 +75,7 @@ Each building step, such as laying the foundation, framing, building walls, inst
 
 In this example, the **Template Method** pattern provides a “skeleton” for various branches of artificial intelligence in a simple strategy video game.
 
-![Structure of the Template Method pattern example](https://refactoring.guru/images/patterns/diagrams/template-method/example.png)
+![[../../1e73530119b17d36fe9ac0aca29abf33_MD5.png|1e73530119b17d36fe9ac0aca29abf33_MD5]]
 
 AI classes of a simple video game.
 

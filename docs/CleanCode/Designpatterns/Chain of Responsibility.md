@@ -25,7 +25,7 @@ Imagine that you’re working on an online ordering system. You want to restrict
 
 After a bit of planning, you realized that these checks must be performed sequentially. The application can attempt to authenticate a user to the system whenever it receives a request that contains the user’s credentials. However, if those credentials aren’t correct and authentication fails, there’s no reason to proceed with any other checks.
 
-![Problem, solved by Chain of Responsibility](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem1-en.png?id=dde084d408d2b14d632ba82583d16612)
+![[../../92943ed742e01c52282ec8320c88ff70_MD5.png|92943ed742e01c52282ec8320c88ff70_MD5]]
 
 The request must pass a series of checks before the ordering system itself can handle it.
 
@@ -38,7 +38,7 @@ During the next few months, you implemented several more of those sequential che
 -   Someone else suggested that you could speed up the system by returning cached results on repeated requests containing the same data. Hence, you added another check which lets the request pass through to the system only if there’s no suitable cached response.
     
 
-![With each new check the code became bigger, messier, and uglier](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem2-en.png?id=88c684d3eab7707bee7b1550a2d8ae04)
+![[../../9bba06693c87b5a0214d1f87f8358e06_MD5.png|9bba06693c87b5a0214d1f87f8358e06_MD5]]
 
 The bigger the code grew, the messier it became.
 
@@ -55,7 +55,7 @@ Here’s the best part: a handler can decide not to pass the request further dow
 
 In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it’s authentication checks or caching.
 
-![Handlers are lined-up one by one, forming a chain](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution1-en.png?id=dccad3e628bd2b8f1856c99369ca6e5b)
+![[../../0e2750a3ecb87cd5511cf009bc58f78b_MD5.png|0e2750a3ecb87cd5511cf009bc58f78b_MD5]]
 
 Handlers are lined up one by one, forming a chain.
 
@@ -63,14 +63,14 @@ However, there’s a slightly different approach (and it’s a bit more canonica
 
 For instance, when a user clicks a button, the event propagates through the chain of GUI elements that starts with the button, goes along its containers (like forms or panels), and ends up with the main application window. The event is processed by the first element in the chain that’s capable of handling it. This example is also noteworthy because it shows that a chain can always be extracted from an object tree.
 
-![A chain can be formed from a branch of an object tree](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution2-en.png?id=cc5bab096e1b37105e1027c43a92cc8a)
+![[../../45ba31b57ec8751bab5497aca7e79fdd_MD5.png|45ba31b57ec8751bab5497aca7e79fdd_MD5]]
 
 A chain can be formed from a branch of an object tree.
 
 It’s crucial that all handler classes implement the same interface. Each concrete handler should only care about the following one having the `execute` method. This way you can compose chains at runtime, using various handlers without coupling your code to their concrete classes.
 
 ## Real-World Analogy
-![Talking with tech support can be hard](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility-comic-1-en.png?id=bcd771fd1a61c754911bd580cd80463e)
+![[../../846af96f2f368de62d67c34c1143cee3_MD5.png|846af96f2f368de62d67c34c1143cee3_MD5]]
 
 A call to tech support can go through multiple operators.
 
@@ -84,7 +84,7 @@ Eventually, the operator passes your call to one of the engineers, who had proba
 
 ## Structure
 
-![Structure of the Chain Of Responsibility design pattern](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure.png?id=848f0fc8dca57a44974d63f8181f5406)
+![[../../047a2d50d7e3851bad99234307e10901_MD5.png|047a2d50d7e3851bad99234307e10901_MD5]]
 
 1.  The **Handler** declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
 2.  The **Base Handler** is an optional class where you can put the boilerplate code that’s common to all handler classes.
@@ -98,7 +98,7 @@ Eventually, the operator passes your call to one of the engineers, who had proba
 ## Pseudocode
 In this example, the **Chain of Responsibility** pattern is responsible for displaying contextual help information for active GUI elements.
 
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example-en.png?id=4b890b18dbff5193b3b538a438b6c5a4)
+![[../../925f4fcd13e6138af2040bfacb70c869_MD5.png|925f4fcd13e6138af2040bfacb70c869_MD5]]
 
 The GUI classes are built with the Composite pattern. Each element is linked to its container element. At any point, you can build a chain of elements that starts with the element itself and goes through all of its container elements.
 
@@ -106,7 +106,7 @@ The application’s GUI is usually structured as an object tree. For example, th
 
 A simple component can show brief contextual tooltips, as long as the component has some help text assigned. But more complex components define their own way of showing contextual help, such as showing an excerpt from the manual or opening a page in a browser.
 
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example2-en.png?id=ea5e6ea07b5cab132e51bac80467ca5a)
+![[../../56092c19281007b94e1716bc9d85bf1e_MD5.png|56092c19281007b94e1716bc9d85bf1e_MD5]]
 
 That’s how a help request traverses GUI objects.
 

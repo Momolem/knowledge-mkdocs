@@ -23,7 +23,7 @@ Imagine that you’re creating a text editor app. In addition to simple text edi
 
 At some point, you decided to let users undo any operations carried out on the text. This feature has become so common over the years that nowadays people expect every app to have it. For the implementation, you chose to take the direct approach. Before performing any operation, the app records the state of all objects and saves it in some storage. Later, when a user decides to revert an action, the app fetches the latest snapshot from the history and uses it to restore the state of all objects.
 
-![Reverting operations in the editor](https://refactoring.guru/images/patterns/diagrams/memento/problem1-en.png)
+![[../../241608e9d3be68716cda692b165769a0_MD5.png|241608e9d3be68716cda692b165769a0_MD5]]
 
 Before executing an operation, the app saves a snapshot of the objects’ state, which can later be used to restore objects to their previous state.
 
@@ -31,7 +31,7 @@ Let’s think about those state snapshots. How exactly would you produce one? Yo
 
 Ignore that problem for now and let’s assume that our objects behave like hippies: preferring open relations and keeping their state public. While this approach would solve the immediate problem and let you produce snapshots of objects’ states at will, it still has some serious issues. In the future, you might decide to refactor some of the editor classes, or add or remove some of the fields. Sounds easy, but this would also require changing the classes responsible for copying the state of the affected objects.
 
-![How to make a copy of the object’s private state?](https://refactoring.guru/images/patterns/diagrams/memento/problem2-en.png)
+![[../../583821d34ec4c5a8c65ab80a0a9cbee0_MD5.png|583821d34ec4c5a8c65ab80a0a9cbee0_MD5]]
 
 How to make a copy of the object’s private state?
 
@@ -49,7 +49,7 @@ The Memento pattern delegates creating the state snapshots to the actual owner o
 
 The pattern suggests storing the copy of the object’s state in a special object called _memento_. The contents of the memento aren’t accessible to any other object except the one that produced it. Other objects must communicate with mementos using a limited interface which may allow fetching the snapshot’s metadata (creation time, the name of the performed operation, etc.), but not the original object’s state contained in the snapshot.
 
-![The originator has full access to the memento, whereas the caretaker can only access the metadata](https://refactoring.guru/images/patterns/diagrams/memento/solution-en.png)
+![[../../4879f6bed200afcf49db130c7448ef06_MD5.png|4879f6bed200afcf49db130c7448ef06_MD5]]
 
 The originator has full access to the memento, whereas the caretaker can only access the metadata.
 
@@ -65,7 +65,7 @@ When a user triggers the undo, the history grabs the most recent memento from th
 
 The classic implementation of the pattern relies on support for nested classes, available in many popular programming languages (such as C++, C#, and Java).
 
-![Memento based on nested classes](https://refactoring.guru/images/patterns/diagrams/memento/structure1.png)
+![[../../1e91a9a1c59daf072bef16f47095b587_MD5.png|1e91a9a1c59daf072bef16f47095b587_MD5]]
 
 1.  The **Originator** class can produce snapshots of its own state, as well as restore its state from snapshots when needed.
     
@@ -82,7 +82,7 @@ The classic implementation of the pattern relies on support for nested classes, 
 
 There’s an alternative implementation, suitable for programming languages that don’t support nested classes (yeah, PHP, I’m talking about you).
 
-![Memento without nested classes](https://refactoring.guru/images/patterns/diagrams/memento/structure2.png)
+![[../../daefee88b21d0520c31952e26ec3f714_MD5.png|daefee88b21d0520c31952e26ec3f714_MD5]]
 
 1.  In the absence of nested classes, you can restrict access to the memento’s fields by establishing a convention that caretakers can work with a memento only through an explicitly declared intermediary interface, which would only declare methods related to the memento’s metadata.
     
@@ -93,7 +93,7 @@ There’s an alternative implementation, suitable for programming languages that
 
 There’s another implementation which is useful when you don’t want to leave even the slightest chance of other classes accessing the state of the originator through the memento.
 
-![Memento with strict encapsulation](https://refactoring.guru/images/patterns/diagrams/memento/structure3.png)
+![[../../6b45d36f532d82e3d86b5f40e0b51201_MD5.png|6b45d36f532d82e3d86b5f40e0b51201_MD5]]
 
 1.  This implementation allows having multiple types of originators and mementos. Each originator works with a corresponding memento class. Neither originators nor mementos expose their state to anyone.
     
@@ -105,7 +105,7 @@ There’s another implementation which is useful when you don’t want to leave 
 
 This example uses the Memento pattern alongside the [Command](https://refactoring.guru/design-patterns/command) pattern for storing snapshots of the complex text editor’s state and restoring an earlier state from these snapshots when needed.
 
-![Structure of the Memento example](https://refactoring.guru/images/patterns/diagrams/memento/example.png)
+![[../../a06d0d1616188bee2441e51cbffac532_MD5.png|a06d0d1616188bee2441e51cbffac532_MD5]]
 
 Saving snapshots of the text editor’s state.
 

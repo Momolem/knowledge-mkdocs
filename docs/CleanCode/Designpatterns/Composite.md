@@ -25,7 +25,7 @@ For example, imagine that you have two types of objects: `Products` and `Boxe
 
 Say you decide to create an ordering system that uses these classes. Orders could contain simple products without any wrapping, as well as boxes stuffed with products...and other boxes. How would you determine the total price of such an order?
 
-![Structure of a complex order](https://refactoring.guru/images/patterns/diagrams/composite/problem-en.png)
+![[../../511e164c2ffccef644f7499c67428cb1_MD5.png|511e164c2ffccef644f7499c67428cb1_MD5]]
 
 An order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree.
 
@@ -37,7 +37,7 @@ The Composite pattern suggests that you work with `Products` and `Boxes` thr
 
 How would this method work? For a product, it’d simply return the product’s price. For a box, it’d go over each item the box contains, ask its price and then return a total for this box. If one of these items were a smaller box, that box would also start going over its contents and so on, until the prices of all inner components were calculated. A box could even add some extra cost to the final price, such as packaging cost.
 
-![Solution suggested by the Composite pattern](https://refactoring.guru/images/patterns/content/composite/composite-comic-1-en.png)
+![[../../39d85a34dc78d1735829c620b444f34c_MD5.png|39d85a34dc78d1735829c620b444f34c_MD5]]
 
 The Composite pattern lets you run a behavior recursively over all components of an object tree.
 
@@ -45,14 +45,14 @@ The greatest benefit of this approach is that you don’t need to care about the
 
 ##  Real-World Analogy
 
-![An example of a military structure](https://refactoring.guru/images/patterns/diagrams/composite/live-example.png)
+![[../../4b2f8cbeac37cb06be23efbece83aa0a_MD5.png|4b2f8cbeac37cb06be23efbece83aa0a_MD5]]
 
 An example of a military structure.
 
 Armies of most countries are structured as hierarchies. An army consists of several divisions; a division is a set of brigades, and a brigade consists of platoons, which can be broken down into squads. Finally, a squad is a small group of real soldiers. Orders are given at the top of the hierarchy and passed down onto each level until every soldier knows what needs to be done.
 ## Structure
 
-![Structure of the Composite design pattern](https://refactoring.guru/images/patterns/diagrams/composite/structure-en.png)
+![[../../500239be31244276d46675ba2e6af6ae_MD5.png|500239be31244276d46675ba2e6af6ae_MD5]]
 
 1.  The **Component** interface describes operations that are common to both simple and complex elements of the tree.
 2.  The **Leaf** is a basic element of a tree that doesn’t have sub-elements.
@@ -66,7 +66,7 @@ Armies of most countries are structured as hierarchies. An army consists of seve
 ##  Pseudocode
 In this example, the **Composite** pattern lets you implement stacking of geometric shapes in a graphical editor.
 
-![Structure of the Composite example](https://refactoring.guru/images/patterns/diagrams/composite/example.png)
+![[../../b876525703433d12ae882dc574a89c97_MD5.png|b876525703433d12ae882dc574a89c97_MD5]]
 
 The geometric shapes editor example.
 

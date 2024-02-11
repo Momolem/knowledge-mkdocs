@@ -22,13 +22,13 @@ tags:  #cleancode/designpatterns
 ## Problem
 Say you have a dialog for creating and editing customer profiles. It consists of various form controls such as text fields, checkboxes, buttons, etc.
 
-![Chaotic relations between elements of the user interface](https://refactoring.guru/images/patterns/diagrams/mediator/problem1-en.png)
+![[../../37d7a04dad81c2552f0470aacc722961_MD5.png|37d7a04dad81c2552f0470aacc722961_MD5]]
 
 Relations between elements of the user interface can become chaotic as the application evolves.
 
 Some of the form elements may interact with others. For instance, selecting the “I have a dog” checkbox may reveal a hidden text field for entering the dog’s name. Another example is the submit button that has to validate values of all fields before saving the data.
 
-![Elements of the UI are interdependent](https://refactoring.guru/images/patterns/diagrams/mediator/problem2.png)
+![[../../a09540232a756f6c331a3aab5ac27a97_MD5.png|a09540232a756f6c331a3aab5ac27a97_MD5]]
 
 Elements can have lots of relations with other elements. Hence, changes to some elements may affect the others.
 
@@ -40,7 +40,7 @@ The Mediator pattern suggests that you should cease all direct communication bet
 
 In our example with the profile editing form, the dialog class itself may act as the mediator. Most likely, the dialog class is already aware of all of its sub-elements, so you won’t even need to introduce new dependencies into this class.
 
-![UI elements should communicate via the mediator.](https://refactoring.guru/images/patterns/diagrams/mediator/solution1-en.png)
+![[../../d4770ce0f346443374185fbc490fc7f3_MD5.png|d4770ce0f346443374185fbc490fc7f3_MD5]]
 
 UI elements should communicate indirectly, via the mediator object.
 
@@ -52,7 +52,7 @@ This way, the Mediator pattern lets you encapsulate a complex web of relations b
 
 ##  Real-World Analogy
 
-![Air traffic control tower](https://refactoring.guru/images/patterns/diagrams/mediator/live-example.png)
+![[../../e4731751970db6c14ff3d4430b6a48c7_MD5.png|e4731751970db6c14ff3d4430b6a48c7_MD5]]
 
 Aircraft pilots don’t talk to each other directly when deciding who gets to land their plane next. All communication goes through the control tower.
 
@@ -62,7 +62,7 @@ The tower doesn’t need to control the whole flight. It exists only to enforce 
 
 ##  Structure
 
-![Structure of the Mediator design pattern](https://refactoring.guru/images/patterns/diagrams/mediator/structure.png)
+![[../../984ffe30e8979eeb77dc09ce78003a63_MD5.png|984ffe30e8979eeb77dc09ce78003a63_MD5]]
 
 1.  **Components** are various classes that contain some business logic. Each component has a reference to a mediator, declared with the type of the mediator interface. The component isn’t aware of the actual class of the mediator, so you can reuse the component in other programs by linking it to a different mediator.
     
@@ -79,7 +79,7 @@ The tower doesn’t need to control the whole flight. It exists only to enforce 
 
 In this example, the **Mediator** pattern helps you eliminate mutual dependencies between various UI classes: buttons, checkboxes and text labels.
 
-![Structure of the Mediator pattern example](https://refactoring.guru/images/patterns/diagrams/mediator/example.png)
+![[../../6796e049e0bc38f591cafcb015221fdb_MD5.png|6796e049e0bc38f591cafcb015221fdb_MD5]]
 
 Structure of the UI dialog classes.
 

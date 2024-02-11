@@ -21,7 +21,7 @@ tags:  #cleancode/designpatterns
 
 **Observer** is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
 
-![Observer Design Pattern](https://refactoring.guru/images/patterns/content/observer/observer.png)
+![[../../79718e77d8d1b6593c9665eb169c8d15_MD5.png|79718e77d8d1b6593c9665eb169c8d15_MD5]]
 
 ##  Problem
 
@@ -29,7 +29,7 @@ Imagine that you have two types of objects: a `Customer` and a `Store`. The c
 
 The customer could visit the store every day and check product availability. But while the product is still en route, most of these trips would be pointless.
 
-![Visiting store vs. sending spam](https://refactoring.guru/images/patterns/content/observer/observer-comic-1-en.png)
+![[../../66ce6e04bda7d281449aa66435669354_MD5.png|66ce6e04bda7d281449aa66435669354_MD5]]
 
 Visiting the store vs. sending spam
 
@@ -43,7 +43,7 @@ The object that has some interesting state is often called _subject_, but since
 
 The Observer pattern suggests that you add a subscription mechanism to the publisher class so individual objects can subscribe to or unsubscribe from a stream of events coming from that publisher. Fear not! Everything isn’t as complicated as it sounds. In reality, this mechanism consists of 1) an array field for storing a list of references to subscriber objects and 2) several public methods which allow adding subscribers to and removing them from that list.
 
-![Subscription mechanism](https://refactoring.guru/images/patterns/diagrams/observer/solution1-en.png)
+![[../../11cb8675d3057df2544de46c0dbbaa83_MD5.png|11cb8675d3057df2544de46c0dbbaa83_MD5]]
 
 A subscription mechanism lets individual objects subscribe to event notifications.
 
@@ -53,7 +53,7 @@ Real apps might have dozens of different subscriber classes that are interested 
 
 That’s why it’s crucial that all subscribers implement the same interface and that the publisher communicates with them only via that interface. This interface should declare the notification method along with a set of parameters that the publisher can use to pass some contextual data along with the notification.
 
-![Notification methods](https://refactoring.guru/images/patterns/diagrams/observer/solution2-en.png)
+![[../../eea707e5a1a0555ae5684058d94aa34a_MD5.png|eea707e5a1a0555ae5684058d94aa34a_MD5]]
 
 Publisher notifies subscribers by calling the specific notification method on their objects.
 
@@ -61,7 +61,7 @@ If your app has several different types of publishers and you want to make your 
 
 ##  Real-World Analogy
 
-![Magazine and newspaper subscriptions](https://refactoring.guru/images/patterns/content/observer/observer-comic-2-en.png)
+![[../../e849069bb018965c27faa8c752ec2ab4_MD5.png|e849069bb018965c27faa8c752ec2ab4_MD5]]
 
 Magazine and newspaper subscriptions.
 
@@ -71,7 +71,7 @@ The publisher maintains a list of subscribers and knows which magazines they’r
 
 ##  Structure
 
-![Structure of the Observer design pattern](https://refactoring.guru/images/patterns/diagrams/observer/structure.png)
+![[../../341bf99267898ae6886e4145bd8477f0_MD5.png|341bf99267898ae6886e4145bd8477f0_MD5]]
 
 1.  The **Publisher** issues events of interest to other objects. These events occur when the publisher changes its state or executes some behaviors. Publishers contain a subscription infrastructure that lets new subscribers join and current subscribers leave the list.
     
@@ -90,7 +90,7 @@ The publisher maintains a list of subscribers and knows which magazines they’r
 
 In this example, the **Observer** pattern lets the text editor object notify other service objects about changes in its state.
 
-![Structure of the Observer pattern example](https://refactoring.guru/images/patterns/diagrams/observer/example.png)
+![[../../9784f4670a11c4ed189c21ecba65a1eb_MD5.png|9784f4670a11c4ed189c21ecba65a1eb_MD5]]
 
 Notifying objects about events that happen to other objects.
 
