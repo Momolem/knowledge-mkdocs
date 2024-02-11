@@ -7,6 +7,7 @@ tags:
   - is
 linter-yaml-title-alias: Adaptierbarkeit der Schnittstelle
 ---
+
 - Nutzer\*innen haben oft unterschiedliche Vorlieben
 - Anpassung der Nutzeroberfläche als Nutzer\*in möglich
 - Speicherung der Anpassungen in den User Profiles
