@@ -236,8 +236,8 @@ If you wonder why we need the `accept` method in this example, my article [Vi
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| _[[../Open Closed Principle|Open Closed Principle]]_. You can introduce a new behavior that can work with objects of different classes without changing these classes. | You need to update all visitors each time a class gets added to or removed from the element hierarchy. |
-| _[[../Single Responsibility Principle|Single Responsibility Principle]]_. You can move multiple versions of the same behavior into the same class. | Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with. |
+| _[[../Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]_. You can introduce a new behavior that can work with objects of different classes without changing these classes. | You need to update all visitors each time a class gets added to or removed from the element hierarchy. |
+| _[[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]_. You can move multiple versions of the same behavior into the same class. | Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with. |
 | A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an [[./Composite|object tree]], and apply the visitor to each object of this structure. ||
 
 ## Relations with Other Patterns
