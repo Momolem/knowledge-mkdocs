@@ -175,7 +175,7 @@ class MonstersAI extends GameAI is
 | Pros | Cons |
 | --- | --- |
 | You can let clients override only certain parts of a large algorithm, making them less affected by changes that happen to other parts of the algorithm. |  Some clients may be limited by the provided skeleton of an algorithm.|
-| You can pull the duplicate code into a superclass. | You might violate the [[../Liskov Substitution Principle|Liskov Substitution Principle]] by suppressing a default step implementation via a subclass. |
+| You can pull the duplicate code into a superclass. | You might violate the [[../Clean Code Developer/Prinzipien/Liskov Substitution Principle|Liskov Substitution Principle]] by suppressing a default step implementation via a subclass. |
 | | Template methods tend to be harder to maintain the more steps they have. |
 
 ## Relations with Other Patterns
