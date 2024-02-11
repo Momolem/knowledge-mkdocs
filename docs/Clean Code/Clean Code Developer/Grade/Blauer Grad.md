@@ -5,14 +5,10 @@ aliases:
 tags:
   - cleancode
 title: Blauer Grad
+wei: "5"
 ---
----
-share: true
-aliases: [Blue Grade]
-tags: [cleancode]
-title: Blauer Grad
----
-tags: #cleancode 
+
+tags: 
 
 # Blauer Grad
 ## Prinzipien
