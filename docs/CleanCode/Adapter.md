@@ -159,7 +159,7 @@ hole.fits(large_sqpeg_adapter) // false
 - **Use the pattern when you want to reuse several existing subclasses that lack some common functionality that can’t be added to the superclass.**
 	 You could extend each subclass and put the missing functionality into new child classes. However, you’ll need to duplicate the code across all of these new classes, which [smells really bad](Duplicate%20Code.md).
 	
-	The much more elegant solution would be to put the missing functionality into an adapter class. Then you would wrap objects with missing features inside the adapter, gaining needed features dynamically. For this to work, the target classes must have a common interface, and the adapter’s field should follow that interface. This approach looks very similar to the [Decorator](CleanCode/Decorator.md) pattern.
+	The much more elegant solution would be to put the missing functionality into an adapter class. Then you would wrap objects with missing features inside the adapter, gaining needed features dynamically. For this to work, the target classes must have a common interface, and the adapter’s field should follow that interface. This approach looks very similar to the [Decorator](./Decorator.md) pattern.
 
 ##  How to Implement
 
@@ -175,14 +175,14 @@ hole.fits(large_sqpeg_adapter) // false
 ##  Pros and Cons
 Pros  | Cons
  --- | --- 
-_[Single Responsibility Principle](CleanCode/Single%20Responsibility%20Principle.md)_. You can separate the interface or data conversion code from the primary business logic of the program. | The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code. 
-_[Open Closed Principle](CleanCode/Open%20Closed%20Principle.md)_. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface. |
+_[Single Responsibility Principle](./Single%20Responsibility%20Principle.md)_. You can separate the interface or data conversion code from the primary business logic of the program. | The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code. 
+_[Open Closed Principle](./Open%20Closed%20Principle.md)_. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface. |
 
 -    
 
 ##  Relations with Other Patterns
-- [Bridge](CleanCode/Bridge.md) is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, Adapter is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
-- Adapter changes the interface of an existing object, while [Decorator](CleanCode/Decorator.md) enhances an object without changing its [interface](interface.md). In addition, [Decorator](CleanCode/Decorator.md) supports recursive composition, which isn’t possible when you use Adapter.
-- Adapter provides a different interface to the wrapped object, [Proxy](CleanCode/Proxy.md) provides it with the same [interface](interface.md), and [Decorator](CleanCode/Decorator.md) provides it with an enhanced interface.
-- [Facade](CleanCode/Facade.md) defines a new interface for existing objects, whereas Adapter tries to make the existing interface usable. Adapter usually wraps just one object, while [Facade](CleanCode/Facade.md) works with an entire subsystem of objects.
-- [Bridge](CleanCode/Bridge.md), [State](CleanCode/State.md), [Strategy](CleanCode/Strategy.md) (and to some degree Adapter) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+- [Bridge](./Bridge.md) is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, Adapter is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
+- Adapter changes the interface of an existing object, while [Decorator](./Decorator.md) enhances an object without changing its [interface](interface.md). In addition, [Decorator](./Decorator.md) supports recursive composition, which isn’t possible when you use Adapter.
+- Adapter provides a different interface to the wrapped object, [Proxy](./Proxy.md) provides it with the same [interface](interface.md), and [Decorator](./Decorator.md) provides it with an enhanced interface.
+- [Facade](./Facade.md) defines a new interface for existing objects, whereas Adapter tries to make the existing interface usable. Adapter usually wraps just one object, while [Facade](./Facade.md) works with an entire subsystem of objects.
+- [Bridge](./Bridge.md), [State](./State.md), [Strategy](./Strategy.md) (and to some degree Adapter) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
