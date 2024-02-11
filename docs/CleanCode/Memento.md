@@ -206,6 +206,6 @@ class Command is
 | | Most dynamic programming languages, such as PHP, Python and JavaScript, can’t guarantee that the state within the memento stays untouched. |
 
 ## Relations with Other Patterns
-- You can use [Command](CleanCode/Command.md) and Memento together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a [Command](CleanCode/Command.md) gets executed.
-- You can use Memento along with [Iterator](CleanCode/Iterator.md) to capture the current iteration state and roll it back if necessary.
-- Sometimes [Prototype](CleanCode/Prototype.md) can be a simpler alternative to Memento. This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
+- You can use [Command](./Command.md) and Memento together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a [Command](./Command.md) gets executed.
+- You can use Memento along with [Iterator](./Iterator.md) to capture the current iteration state and roll it back if necessary.
+- Sometimes [Prototype](./Prototype.md) can be a simpler alternative to Memento. This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
