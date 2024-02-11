@@ -176,13 +176,13 @@ class ImageEditor is
     While implementing the methods of the component interface, remember that a container is supposed to be delegating most of the work to sub-elements.
 5. Finally, define the methods for adding and removal of child elements in the container.
     
-   Keep in mind that these operations can be declared in the component interface. This would violate the _[[../Interface Segragation Principle|Interface Segragation Principle]]_ because the methods will be empty in the leaf class. However, the client will be able to treat all the elements equally, even when composing the tree.
+   Keep in mind that these operations can be declared in the component interface. This would violate the _[[../Clean Code Developer/Prinzipien/Interface Segragation Principle|Interface Segragation Principle]]_ because the methods will be empty in the leaf class. However, the client will be able to treat all the elements equally, even when composing the tree.
 
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
 | You can work with complex tree structures more conveniently: use polymorphism and recursion to your advantage. |   It might be difficult to provide a common interface for classes whose functionality differs too much. In certain scenarios, you’d need to overgeneralize the component interface, making it harder to comprehend. |
-| _[[../Open Closed Principle|Open Closed Principle]]_. You can introduce new element types into the app without breaking the existing code, which now works with the object tree. ||
+| _[[../Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]_. You can introduce new element types into the app without breaking the existing code, which now works with the object tree. ||
 
 ## Relations with Other Patterns
 - You can use [[./Builder|Builder]] when creating complex Composite trees because you can program its construction steps to work recursively.
