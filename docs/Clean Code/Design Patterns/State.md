@@ -11,7 +11,8 @@ share: true
 tags: [cleancode/designpatterns]
 title: State
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # State
 
