@@ -7,6 +7,7 @@ tags:
   - is
 linter-yaml-title-alias: Unterstützung beim Aufbau mentaler Modelle
 ---
+
 - Wenn Menschen etwas lernen, versuchen sie es zu verstehen (Modellentwicklung)
 - Ziele des Prinzips
 	- Lernaufwand verringern
