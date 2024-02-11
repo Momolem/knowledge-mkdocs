@@ -14,7 +14,7 @@ aliases: [Root Cause Anaysis]
 linter-yaml-title-alias: Root Cause Anaysis
 title: Root Cause Anaysis
 ---
-#cleancode 
+ 
 # Root Cause Anaysis
 
 >**Warum?**
