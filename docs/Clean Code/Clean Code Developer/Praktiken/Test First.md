@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Test First
 ---
-tags: #cleancode 
+
+tags: 
 
 # Test First
 
