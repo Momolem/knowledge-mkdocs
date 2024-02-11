@@ -21,7 +21,7 @@ title: Single Responsibility Principle (SRP)
 >[!question]  **Warum?**
 >Fokus erleichtert das Verständnis. Eine Klasse mit genau einer Aufgabe ist verständlicher als ein Gemischtwarenladen.
 
-Das Single Responsibility Principle ([SRP](http://web.archive.org/web/20160716150726/http://objectmentor.com/resources/articles/srp.pdf)) ist eines der [SOLID](./SOLID.md) Prinzipien. Es lautet: Eine Klasse sollte nur **eine** Verantwortlichkeit haben.
+Das Single Responsibility Principle ([SRP](http://web.archive.org/web/20160716150726/http://objectmentor.com/resources/articles/srp.pdf)) ist eines der [[./SOLID|SOLID]] Prinzipien. Es lautet: Eine Klasse sollte nur **eine** Verantwortlichkeit haben.
 
 Hintergrund des Single Responsibility Principle ist die Überlegung, dass Änderungen oder Erweiterungen der Funktionalität einer Anwendung sich auf wenige Klassen beschränken sollen. Je mehr Klassen angepasst werden müssen, desto größer ist das Risiko, dass sich durch die erforderlichen Änderungen Probleme an Stellen ergeben, die im Kern nichts mit der Erweiterung zu tun haben. Eine Verletzung des Single Responsibility Principle führt zu Kopplung und damit zu erhöhter Komplexität, es wird schwieriger den Code zu verstehen.
 
