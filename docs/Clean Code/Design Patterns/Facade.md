@@ -11,7 +11,8 @@ share: true
 tags: [cleancode/designpatterns]
 title: Facade
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Facade
 

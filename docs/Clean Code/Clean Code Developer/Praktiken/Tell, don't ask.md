@@ -15,7 +15,8 @@ tags: [cleancode]
 linter-yaml-title-alias: Tell, don’t ask
 title: Tell, don’t ask
 ---
-tags: #cleancode 
+
+tags: 
 
 # Tell, don’t ask
 

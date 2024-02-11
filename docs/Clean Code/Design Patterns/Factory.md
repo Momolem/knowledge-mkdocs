@@ -11,7 +11,7 @@ share: true
 tags: [cleancode/designpatterns]
 title: Factory
 ---
-#cleancode/designpatterns 
+ 
 # Factory
 
 ## Intent

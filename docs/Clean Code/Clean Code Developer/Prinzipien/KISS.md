@@ -15,7 +15,7 @@ aliases: [Keep it simple, stupid (KISS)]
 linter-yaml-title-alias: Keep it simple, stupid (KISS)
 title: Keep it simple, stupid (KISS)
 ---
-#cleancode 
+ 
 # Keep it simple, stupid (KISS)
 
 >**Warum?**

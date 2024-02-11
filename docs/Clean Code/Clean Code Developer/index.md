@@ -12,7 +12,7 @@ aliases: [CCD]
 tags: [cleancode]
 title: Clean Code Developer
 ---
-#cleancode 
+ 
 # Clean Code Developer
 
 ## Die Grade

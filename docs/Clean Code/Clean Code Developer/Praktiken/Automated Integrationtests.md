@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Automated Integrationtests
 ---
-tags: #cleancode 
+
+tags: 
 
 # Automated Integrationtests
 

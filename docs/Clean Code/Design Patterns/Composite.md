@@ -12,7 +12,8 @@ aliases: [Object Tree]
 tags: [cleancode/designpatterns]
 title: Composite
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Composite
 

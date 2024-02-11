@@ -11,7 +11,8 @@ share: true
 tags: [cleancode/designpatterns]
 title: Template Method
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Template Method
 

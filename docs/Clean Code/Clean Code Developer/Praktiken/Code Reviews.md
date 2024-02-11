@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Code Reviews
 ---
-tags: #cleancode 
+
+tags: 
 
 # Code Reviews
 

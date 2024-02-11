@@ -11,7 +11,7 @@ share: true
 tags: [cleancode]
 title: Daily Reflection
 ---
-#cleancode 
+ 
 # Daily Reflection
 >**Warum?**
 >Keine Verbesserung, kein Fortschritt, kein Lernen ohne Reflexion. Aber nur, wenn Reflexion auch eingeplant wird, findet sie unter dem Druck des Tagesgeschäftes auch statt.

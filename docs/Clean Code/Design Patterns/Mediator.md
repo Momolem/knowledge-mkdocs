@@ -13,7 +13,8 @@ aliases: [Intermediary, Controller]
 tags: [cleancode/designpatterns]
 title: Mediator
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Mediator
 

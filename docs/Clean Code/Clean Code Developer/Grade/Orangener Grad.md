@@ -4,14 +4,9 @@ share: true
 tags:
   - cleancode
 title: Orangener Grad
+weigth: "2"
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Orangener Grad
----
-#cleancode 
+ 
 # Orangener Grad
 ## Prinzipien
 - [[../Prinzipien/Single Level of Abstraction|Single Level of Abstraction]]

@@ -14,7 +14,7 @@ aliases: [Stub, Dummy, Fake]
 tags: [cleancode]
 title: Mockups
 ---
-#cleancode 
+ 
 # Mockups
 
 >**Warum?**

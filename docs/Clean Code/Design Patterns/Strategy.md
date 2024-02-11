@@ -12,7 +12,8 @@ aliases: [Strategy Pattern]
 tags: [cleancode/designpatterns]
 title: Strategy
 ---
-tags: #cleancode/designpatterns 
+
+tags: 
 
 # Strategy
 

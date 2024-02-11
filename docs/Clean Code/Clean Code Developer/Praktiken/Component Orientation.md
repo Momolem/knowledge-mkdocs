@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Component Orientation
 ---
-tags: #cleancode 
+
+tags: 
 
 # Component Orientation
 

@@ -11,7 +11,7 @@ share: true
 tags: [cleancode]
 title: Simple Refactorings
 ---
-#cleancode 
+ 
 # Simple Refactorings
 
 >**Warum?**

@@ -15,7 +15,8 @@ tags: [cleancode]
 linter-yaml-title-alias: You Ain’t Gonna Need It 
 title: You Ain’t Gonna Need It 
 ---
-tags: #cleancode 
+
+tags: 
 
 # You Ain’t Gonna Need It 
 

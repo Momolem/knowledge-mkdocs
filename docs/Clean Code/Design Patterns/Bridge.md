@@ -11,7 +11,8 @@ share: true
 tags: [cleancode/designpatterns]
 title: Bridge
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Bridge
 

@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Share Experience
 ---
-tags: #cleancode 
+
+tags: 
 
 # Share Experience
 >**Warum?**

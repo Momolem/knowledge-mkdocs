@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Complex Refactorings
 ---
-tags: #cleancode 
+
+tags: 
 
 # Complex Refactorings
 

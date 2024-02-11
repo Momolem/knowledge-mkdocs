@@ -11,7 +11,7 @@ share: true
 tags: [cleancode]
 title: Liskov Substitution Principle
 ---
-#cleancode 
+ 
 # Liskov Substitution Principle
 
 >[!question] **Warum?**

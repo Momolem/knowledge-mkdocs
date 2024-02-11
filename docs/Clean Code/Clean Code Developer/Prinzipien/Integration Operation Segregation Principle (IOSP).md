@@ -11,7 +11,7 @@ share: true
 tags: [cleancode]
 title: Integration Operation Segregation Principle (IOSP)
 ---
-#cleancode 
+ 
 # Integration Operation Segregation Principle (IOSP)
 
 >**Warum?**

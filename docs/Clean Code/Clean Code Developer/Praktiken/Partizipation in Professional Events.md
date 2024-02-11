@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Partizipation in Professional Events
 ---
-tags: #cleancode 
+
+tags: 
 
 # Partizipation in Professional Events
 

@@ -5,14 +5,7 @@ aliases:
 tags:
   - cleancode
 title: Weißer Grad
+weigth: "6"
 ---
----
-share: true
-aliases: [White Grade]
-tags: [cleancode]
-title: Weißer Grad
----
-tags: #cleancode 
-
 # Weißer Grad
 Vereinigung aller Prinzipien und Praktiken

@@ -7,6 +7,7 @@ tags:
   - is
 linter-yaml-title-alias: Angemessene Rückkopplung
 ---
+
 - Unmittelbare Reaktion wichtig
 - Anwendung muss reagieren
 - Aktionen > 5s sollte quantitativ darüber informieren

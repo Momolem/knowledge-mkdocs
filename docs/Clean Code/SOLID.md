@@ -11,7 +11,7 @@ share: true
 tags: [cleancode]
 title: SOLID
 ---
-#cleancode 
+ 
 # SOLID
 The SOLID Principles are a part of the [[./index|Clean Code]] Principles. The letters stand for:
 - [[./Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]

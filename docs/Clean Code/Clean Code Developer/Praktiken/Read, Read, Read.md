@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Read, Read, Read
 ---
-tags: #cleancode 
+
+tags: 
 
 # Read, Read, Read
 

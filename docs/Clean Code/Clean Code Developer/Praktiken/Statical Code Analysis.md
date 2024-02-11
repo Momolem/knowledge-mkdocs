@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Statical Code Analysis
 ---
-tags:  #cleancode 
+
+tags:  
 
 # Statical Code Analysis
 

@@ -5,14 +5,9 @@ aliases:
 tags:
   - cleancode
 title: Gelber Grad
+w: "3"
 ---
----
-share: true
-aliases: [Yellow Grade]
-tags: [cleancode]
-title: Gelber Grad
----
-#cleancode 
+ 
 # Gelber Grad
 ## Prinzipien
 - [[../Prinzipien/Interface Segragation Principle|Interface Segragation Principle]]

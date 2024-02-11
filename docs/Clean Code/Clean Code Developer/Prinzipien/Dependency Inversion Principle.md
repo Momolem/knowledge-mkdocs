@@ -14,7 +14,7 @@ aliases: [Dependency Inversion Principle (DIP)]
 linter-yaml-title-alias: Dependency Inversion Principle (DIP)
 title: Dependency Inversion Principle (DIP)
 ---
-#cleancode 
+ 
 # Dependency Inversion Principle (DIP)
 
 >[!question] **Warum?**

@@ -12,7 +12,8 @@ aliases: [Snapshot]
 tags: [cleancode/designpatterns]
 title: Memento
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Memento
 
