@@ -5,14 +5,9 @@ aliases:
 tags:
   - cleancode
 title: Grüner Grad
+weigth: "4"
 ---
----
-share: true
-aliases: [Green Grade]
-tags: [cleancode]
-title: Grüner Grad
----
-#cleancode 
+
 # Grüner Grad
 ## Prinzipien
 - [[../Prinzipien/Open Closed Principle|Open Closed Principle]]
