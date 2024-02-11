@@ -7,6 +7,7 @@ tags:
   - is
 linter-yaml-title-alias: Reduktion der kognitiven Belastung
 ---
+
 - Wartezeiten und Verzögerungen auf ein Minimum reduzieren
 - Feedback geben
 - Angst bei der Benutzung vermeiden
