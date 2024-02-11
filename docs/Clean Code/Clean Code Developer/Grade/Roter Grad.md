@@ -5,14 +5,9 @@ aliases:
 tags:
   - cleancode
 title: Roter Grad
+weigth: "1"
 ---
----
-share: true
-aliases: [Red Grade]
-tags: [cleancode]
-title: Roter Grad
----
-#cleancode
+
 # Roter Grad
 ## Prinzipien
 - [[../Prinzipien/DRY|DRY]]
