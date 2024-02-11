@@ -5,7 +5,7 @@ aliases:
 tags:
   - cleancode
 title: Gelber Grad
-w: "3"
+weight: "3"
 ---
  
 # Gelber Grad
