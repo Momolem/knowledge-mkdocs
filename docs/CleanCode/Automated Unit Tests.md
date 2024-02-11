@@ -17,7 +17,7 @@ title: Automated Unit Tests
 >**Warum?**
 >Nur automatisierte Tests werden auch wirklich konsequent ausgeführt. Je punktgenauer sie Code testen, desto besser.
 
-Im [Orangenen Grad](./Orangener%20Grad.md) haben wir [Integration Tests](./Integration%20Tests.md) eingeführt, nun geht es um [Unit Tests](./Unit%20Test.md). Im Gegensatz zu [Integrationstests](./Integration%20Tests.md) wird bei [Unit Tests](./Unit%20Test.md) eine einzelne Funktionseinheit (vor allem Klassen, aber auch Methoden oder Komponenten) isoliert getestet. Dazu ist es erforderlich, diese Funktionseinheit von ihren Abhängigkeiten befreien zu können. Sollen [Unit Tests](./Unit%20Test.md) im Nachhinein für bestehenden Code ergänzt werden, sind häufig Refaktorisierungen erforderlich. Wir haben durch die [Integrationstests](./Integration%20Tests.md) die Sicherheit, dass wir dabei keine Fehler einbauen.
+Im [Orangenen Grad](./Clean%20Code%20Developer/Grade/Orangener%20Grad.md) haben wir [Integration Tests](./Integration%20Tests.md) eingeführt, nun geht es um [Unit Tests](./Unit%20Test.md). Im Gegensatz zu [Integrationstests](./Integration%20Tests.md) wird bei [Unit Tests](./Unit%20Test.md) eine einzelne Funktionseinheit (vor allem Klassen, aber auch Methoden oder Komponenten) isoliert getestet. Dazu ist es erforderlich, diese Funktionseinheit von ihren Abhängigkeiten befreien zu können. Sollen [Unit Tests](./Unit%20Test.md) im Nachhinein für bestehenden Code ergänzt werden, sind häufig Refaktorisierungen erforderlich. Wir haben durch die [Integrationstests](./Integration%20Tests.md) die Sicherheit, dass wir dabei keine Fehler einbauen.
 
 Automatisierte Tests bieten zweifachen Nutzen:
 

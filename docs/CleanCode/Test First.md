@@ -27,19 +27,19 @@ Die Definition der Schnittstellen der Codeeinheiten einer Software erfolgt aus d
 Das widerspricht dem häufigen Ansatz der bottom-up Definition von Codeeinheiten. Gern fangen Projekte an, eine Datenzugriffsschicht zu definieren und zu implementieren. Das ist verständlich, weil solch fundamentale Funktionalität doch scheinbar die Voraussetzung für alles weitere ist. Aber dieses Vorgehen ist problematisch, wie viele gescheiterte Projekte zeigen:
 
 -   Wer von unten nach oben, von innen nach außen spezifiziert und implementiert, bietet dem Kunden erst sehr spät einen Wert an. Das ist zumindest frustrierend, wenn nicht gar kontraproduktiv.
--   Wer bottom-up in der Spezifikation vorgeht, der spezifiziert ohne genaue Anforderungen des ultimativen Clients, des Benutzers. Was er also spezifiziert läuft Gefahr, am Ende zu allgemein und damit unhandlich zu sein – oder schlicht nicht gebraucht zu werden (eine Verletzung des [YAGNI](./You%20Ain't%20Gonna%20Need%20It.md)-Prinzips, s.o. und im [roten Grad](./Roter%20Grad.md)
+-   Wer bottom-up in der Spezifikation vorgeht, der spezifiziert ohne genaue Anforderungen des ultimativen Clients, des Benutzers. Was er also spezifiziert läuft Gefahr, am Ende zu allgemein und damit unhandlich zu sein – oder schlicht nicht gebraucht zu werden (eine Verletzung des [YAGNI](./You%20Ain't%20Gonna%20Need%20It.md)-Prinzips, s.o. und im [roten Grad](./Clean%20Code%20Developer/Grade/Roter%20Grad.md)
 -   Wer von unten nach oben implementiert, läuft Gefahr, nicht wirklich zu entkoppeln. Denn wenn tiefere Schichten nötig sind, um darüberliegende zu implementieren, dann werden wahrscheinlich keine wirklich isolierten [Unit Tests](./Unit%20Test.md) mit Attrappen eingesetzt und auch keine Inversion of Control.
 
-[Clean Code Developer](./Clean%20Code%20Developer.md) vermeiden diese Probleme jedoch. Sie spezifizieren Schnittstelle nicht nur vor den Implementationen (Contract-first, s.o. Komponentenorientierung), sondern auch von außen nach innen und ganz praktisch durch Codierung. Mit den Mitteln des automatisierten Testens ist es nämlich sehr einfach, Schnittstellen in kleinen Schritten in Form von Tests zu definieren.
+[Clean Code Developer](./Clean%20Code%20Developer/index.md) vermeiden diese Probleme jedoch. Sie spezifizieren Schnittstelle nicht nur vor den Implementationen (Contract-first, s.o. Komponentenorientierung), sondern auch von außen nach innen und ganz praktisch durch Codierung. Mit den Mitteln des automatisierten Testens ist es nämlich sehr einfach, Schnittstellen in kleinen Schritten in Form von Tests zu definieren.
 
 Test first fügt dadurch syntaktischen Kontrakten (z.B. Interfaces) eine semantische Seite hinzu. In Ermangelung anderer, formaler Methoden, um Semantik zu spezifizieren, sind Tests der einzige Weg, um Anforderungen zu formalisieren. Wer einem Entwickler eine Komponente zur Implementierung zuweisen will, der tut daher gut daran, nicht nur ihre „Oberfläche“ (API) syntaktisch vorzugeben, sondern auch das gewünschte Verhalten in Form von Tests.
 
 Das hat viele Vorteile:
 
 -   Die Form einer Schnittstelle ist unmittelbar Client-getrieben und damit maximal relevant. [YAGNI](./You%20Ain't%20Gonna%20Need%20It.md) hat keine Chance.
--   Die Tests sind nicht nur Tests, sondern auch Spezifikationsdokumentation. Nutzer einer Schnittstelle und Implementierer können sie gleichermaßen studieren. Eine separate Dokumentation erübrigt sich weitgehend. Das tut dem [DRY](./DRY.md)-Prinzip genüge.
+-   Die Tests sind nicht nur Tests, sondern auch Spezifikationsdokumentation. Nutzer einer Schnittstelle und Implementierer können sie gleichermaßen studieren. Eine separate Dokumentation erübrigt sich weitgehend. Das tut dem [DRY](./Clean%20Code%20Developer/Prinzipien/DRY.md)-Prinzip genüge.
 -   Die Spezifikationen sind nicht nur passive Texte, sondern ausführbarer Code. Wenn dann eine Implementation vorliegt, kann sie gegen diese Tests geprüft werden. Spezifikation und Test sind damit nicht zeitraubend aufeinanderfolgende Phasen. Das erhöht die Produktivität. Qualitätssicherung ist so der Implementation schon vorgeschaltet.
 
 Siehe auch unter [Tools](https://clean-code-developer.de/weitere-infos/werkzeuge/).
 
-Weiter geht’s mit dem [weißen Grad](./Wei%C3%9Fer%20Grad.md).
+Weiter geht’s mit dem [weißen Grad](./Clean%20Code%20Developer/Grade/Wei%C3%9Fer%20Grad.md).

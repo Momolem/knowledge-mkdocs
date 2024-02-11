@@ -33,6 +33,6 @@ Dennoch gibt es [Metriken](http://en.wikipedia.org/wiki/Software_metric), deren
 -   Für [Legacy Code](./Legacy%20Code.md) können die Tools den Status Quo erheben und somit eine Grundlinie definieren, mit der die weitere Entwicklung des Codes (zum Besseren) verglichen werden kann.
 -   Für neuen Code, der mit Wandelbarkeit im Blick geplant wurde, zeigt solch statische Codeanalyse, ob er das Ideal der Planung erfüllt.
 
-[CCD](./Clean%20Code%20Developer.md) sind nicht damit zufrieden, Code nur automatisiert zu testen. Sie haben auch immer ein Auge auf seine Wandelbarkeit, denn sie wissen, dass Kunden daran genauso interessiert sind – egal, ob sie es explizit gesagt haben oder nicht.
+[CCD](./Clean%20Code%20Developer/index.md) sind nicht damit zufrieden, Code nur automatisiert zu testen. Sie haben auch immer ein Auge auf seine Wandelbarkeit, denn sie wissen, dass Kunden daran genauso interessiert sind – egal, ob sie es explizit gesagt haben oder nicht.
 
 Siehe auch unter [Tools](https://clean-code-developer.de/weitere-infos/werkzeuge/).
