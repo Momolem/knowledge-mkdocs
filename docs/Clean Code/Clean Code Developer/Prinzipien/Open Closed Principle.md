@@ -14,7 +14,7 @@ aliases: [Open Closed Principle (OCP)]
 linter-yaml-title-alias: Open Closed Principle (OCP)
 title: Open Closed Principle (OCP)
 ---
-#cleancode 
+ 
 # Open Closed Principle (OCP)
 >[!question] **Warum?**
 >Weil das Risiko, durch neue Features ein bisher fehlerfreies System zu instabilisieren, so gering wie möglich gehalten werden sollte.
