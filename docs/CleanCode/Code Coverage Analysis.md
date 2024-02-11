@@ -18,9 +18,9 @@ tags: #cleancode
 >**Warum?**
 >Traue nur Tests, von denen du weißt, dass sie auch wirklich das Testareal abdecken.
 
-[Unit Tests](./Unit%20Test.md) sollten nach Möglichkeit alle Pfade durch unseren Code abdecken. Nur so gewinnen wir das Vertrauen, dass der Code korrekt arbeitet. Um in Erfahrung zu bringen, welche Codebereiche bislang nicht durch Tests abgedeckt sind, bedienen wir uns der _Code Coverage Analyse_. Diese dient dazu, Bereiche im Code aufzudecken, die noch nicht während der automatisierten Tests ausgeführt werden.
+[[./Unit Test|Unit Tests]] sollten nach Möglichkeit alle Pfade durch unseren Code abdecken. Nur so gewinnen wir das Vertrauen, dass der Code korrekt arbeitet. Um in Erfahrung zu bringen, welche Codebereiche bislang nicht durch Tests abgedeckt sind, bedienen wir uns der _Code Coverage Analyse_. Diese dient dazu, Bereiche im Code aufzudecken, die noch nicht während der automatisierten Tests ausgeführt werden.
 
-[Unit Tests](./Unit%20Test.md) sollten eigentlich 100% des zu testenden Codes abdecken. Zwar bedeutet das nicht automatisch, dass genügend Tests existieren, doch weniger als 100% Code Coverage zeigen an, dass es noch Taschen von Code gibt, über die überhaupt noch keine Korrektheitsaussage gemacht werden kann. 100% Codeabdeckung sind deshalb immer anzustreben.
+[[./Unit Test|Unit Tests]] sollten eigentlich 100% des zu testenden Codes abdecken. Zwar bedeutet das nicht automatisch, dass genügend Tests existieren, doch weniger als 100% Code Coverage zeigen an, dass es noch Taschen von Code gibt, über die überhaupt noch keine Korrektheitsaussage gemacht werden kann. 100% Codeabdeckung sind deshalb immer anzustreben.
 
 In der Praxis zeigt es sich jedoch, dass 100% Codeabdeckung nicht immer mit unmittelbar vertretbarem Aufwand erreicht werden können. Wie auch sonst im Leben kann die Mühe für die letzten 2,3,4 Prozent überproportional wachsen. Deshalb kann es nach genauer Analyse der Abdeckungslage akzeptabel sein, mit weniger als 100% zufrieden zu sein.
 
