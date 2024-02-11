@@ -24,6 +24,6 @@ In trivialen Fällen mag es möglich sein, direkt Code zu schreiben. Dennoch wir
 
 Spätestens, wenn eine Gruppe von Entwicklern gemeinsam als Team arbeiten möchte, muss der Entwurf zeitlich getrennt von der Umsetzung stattfinden. Andernfalls ist keine flüssige arbeitsteilige Vorgehensweise möglich.
 
-Der Entwurf ermöglicht es dem Team bzw. einem einzelnen Entwickler, bereits vor der Codierung über wichtige Prinzipien nachzudenken. Es entstehen bspw. erst gar keine Methoden oder Klassen mit mehreren Verantwortlichkeiten, da schon auf der Ebene des Entwurfs über das [Single Responsibility Principle](CleanCode/Single%20Responsibility%20Principle.md) nachgedacht werden kann. Damit erspart sich das Team den Refaktorisierungsaufwand der entsteht, wenn „drauf los“ codiert wird.
+Der Entwurf ermöglicht es dem Team bzw. einem einzelnen Entwickler, bereits vor der Codierung über wichtige Prinzipien nachzudenken. Es entstehen bspw. erst gar keine Methoden oder Klassen mit mehreren Verantwortlichkeiten, da schon auf der Ebene des Entwurfs über das [Single Responsibility Principle](./Single%20Responsibility%20Principle.md) nachgedacht werden kann. Damit erspart sich das Team den Refaktorisierungsaufwand der entsteht, wenn „drauf los“ codiert wird.
 
 Siehe auch [](https://flow-design.info/)[https://flow-design.info](https://flow-design.info).

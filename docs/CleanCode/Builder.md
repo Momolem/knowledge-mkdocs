@@ -280,12 +280,12 @@ class Application is
 | --- | --- |
 | You can construct objects step-by-step, defer construction steps or run steps recursively. |  The overall complexity of the code increases since the pattern requires creating multiple new classes. |
 | You can reuse the same construction code when building various representations of products. ||
-| [Single Responsibility Principle](CleanCode/Single%20Responsibility%20Principle.md). You can isolate complex construction code from the business logic of the product. ||
+| [Single Responsibility Principle](./Single%20Responsibility%20Principle.md). You can isolate complex construction code from the business logic of the product. ||
 
 
 ## Relations with Other Patterns
-- Many designs start by using [Factory](CleanCode/Factory.md) Method (less complicated and more customizable via subclasses) and evolve toward [Abstract Factory](CleanCode/Abstract%20Factory.md), [Prototype](CleanCode/Prototype.md), or [Builder](CleanCode/Builder.md) (more flexible, but more complicated).
-- Builder focuses on constructing complex objects step by step. [Abstract Factory](CleanCode/Abstract%20Factory.md) specializes in creating families of related objects. [Abstract Factory](CleanCode/Abstract%20Factory.md) returns the product immediately, whereas Builder lets you run some additional construction steps before fetching the product.
-- You can use Builder when creating complex [Composite](CleanCode/Composite.md) trees because you can program its construction steps to work recursively.
-- You can combine Builder with [Bridge](CleanCode/Bridge.md): the director class plays the role of the abstraction, while different builders act as implementations.
-- [Abstract Factories](CleanCode/Abstract%20Factory.md), [Builders](CleanCode/Builder.md) and [Prototypes](CleanCode/Prototype.md) can all be implemented as [Singletons](CleanCode/Singleton.md).
+- Many designs start by using [Factory](./Factory.md) Method (less complicated and more customizable via subclasses) and evolve toward [Abstract Factory](./Abstract%20Factory.md), [Prototype](./Prototype.md), or [Builder](Builder.md) (more flexible, but more complicated).
+- Builder focuses on constructing complex objects step by step. [Abstract Factory](./Abstract%20Factory.md) specializes in creating families of related objects. [Abstract Factory](./Abstract%20Factory.md) returns the product immediately, whereas Builder lets you run some additional construction steps before fetching the product.
+- You can use Builder when creating complex [Composite](./Composite.md) trees because you can program its construction steps to work recursively.
+- You can combine Builder with [Bridge](./Bridge.md): the director class plays the role of the abstraction, while different builders act as implementations.
+- [Abstract Factories](./Abstract%20Factory.md), [Builders](Builder.md) and [Prototypes](./Prototype.md) can all be implemented as [Singletons](./Singleton.md).

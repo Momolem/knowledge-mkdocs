@@ -74,7 +74,7 @@ Document delegates the work to a state object.
 
 To transition the context into another state, replace the active state object with another object that represents that new state. This is possible only if all state classes follow the same interface and the context itself works with these objects through that interface.
 
-This structure may look similar to the [Strategy Pattern](CleanCode/Strategy.md), but there’s one key difference. In the State pattern, the particular states may be aware of each other and initiate transitions from one state to another, whereas strategies almost never know about each other.
+This structure may look similar to the [Strategy Pattern](./Strategy.md), but there’s one key difference. In the State pattern, the particular states may be aware of each other and initiate transitions from one state to another, whereas strategies almost never know about each other.
 
 ## Real-World Analogy
 The buttons and switches in your smartphone behave differently depending on the current state of the device:
@@ -253,10 +253,10 @@ class PlayingState extends State is
 ## Pro and  Cons
 Pros | Cons
 ---| ---
-_[Single Responsibility Principle](CleanCode/Single%20Responsibility%20Principle.md)_. Organize the code related to particular states into separate classes. | Applying the pattern can be overkill if a state machine has only a few states or rarely changes. 
-_[Open Closed Principle](CleanCode/Open%20Closed%20Principle.md)_. Introduce new states without changing existing state classes or the context. |
+_[Single Responsibility Principle](./Single%20Responsibility%20Principle.md)_. Organize the code related to particular states into separate classes. | Applying the pattern can be overkill if a state machine has only a few states or rarely changes. 
+_[Open Closed Principle](./Open%20Closed%20Principle.md)_. Introduce new states without changing existing state classes or the context. |
 Simplify the code of the context by eliminating bulky state machine conditionals. |
 
 ## Relations with Other Patterns
-- [Bridge](CleanCode/Bridge.md), [State](CleanCode/State.md), [Strategy](CleanCode/Strategy.md) (and to some degree [Adapter](CleanCode/Adapter.md)) have very similar structures. Indeed, all of these patterns are based on [composition](composition.md), which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
-- State can be considered as an extension of [Strategy](CleanCode/Strategy.md). Both patterns are based on [composition](composition.md): they change the behavior of the context by delegating some work to helper objects. [Strategy](CleanCode/Strategy.md) makes these objects completely independent and unaware of each other. However, State doesn’t restrict dependencies between concrete states, letting them alter the state of the context at will.
+- [Bridge](./Bridge.md), [State](State.md), [Strategy Pattern](./Strategy.md) (and to some degree [Adapter](./Adapter.md)) have very similar structures. Indeed, all of these patterns are based on [composition](composition.md), which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+- State can be considered as an extension of [Strategy Pattern](./Strategy.md). Both patterns are based on [composition](composition.md): they change the behavior of the context by delegating some work to helper objects. [Strategy Pattern](./Strategy.md) makes these objects completely independent and unaware of each other. However, State doesn’t restrict dependencies between concrete states, letting them alter the state of the context at will.

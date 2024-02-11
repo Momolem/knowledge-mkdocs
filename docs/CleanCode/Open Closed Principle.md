@@ -19,7 +19,7 @@ title: Open Closed Principle (OCP)
 >[!question] **Warum?**
 >Weil das Risiko, durch neue Features ein bisher fehlerfreies System zu instabilisieren, so gering wie möglich gehalten werden sollte.
 
-Das *Open Closed Principle* ([OCP](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle)) besagt, dass eine Klasse offen für Erweiterungen sein muss, jedoch geschlossen gegenüber Modifikationen. Es ist ein weiteres der [SOLID](CleanCode/SOLID.md)-Prinzipien
+Das *Open Closed Principle* ([OCP](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle)) besagt, dass eine Klasse offen für Erweiterungen sein muss, jedoch geschlossen gegenüber Modifikationen. Es ist ein weiteres der [SOLID](./SOLID.md)-Prinzipien
 
 Prinzipien. Folgendes Codebeispiel soll verdeutlichen, wo das Problem liegt, wenn das Prinzip nicht befolgt wird:
 
@@ -47,7 +47,7 @@ public double Preis() {
 }
 ```
 
-Das problematische an dieser Form der Implementierung ist, dass die Klasse modifiziert werden muss, wenn eine weitere Art der Preisberechnung erforderlich wird. Die Gefahr dabei ist, dass bei dieser Modifikation Fehler gemacht werden und die bisher schon vorhandenen Funktionen nicht mehr ordnungsgemäß funktionieren. Auch wenn automatisierte [Unit Tests](CleanCode/Unit%20Test.md) und [Integrationstests](CleanCode/Integration%20Tests.md) vorhanden sind besteht das Risiko, neue Bugs zu hinterlassen, weil man keine hundertprozentige Testabdeckung erreichen kann. Gesucht ist also generell ein Verfahren, welches die Klasse erweiterbar macht, ohne dass dazu die Klasse selbst modifiziert werden muss. Dies kann z.B. mit Hilfe des *[Strategy Patterns](CleanCode/Strategy.md)* erreicht werden:
+Das problematische an dieser Form der Implementierung ist, dass die Klasse modifiziert werden muss, wenn eine weitere Art der Preisberechnung erforderlich wird. Die Gefahr dabei ist, dass bei dieser Modifikation Fehler gemacht werden und die bisher schon vorhandenen Funktionen nicht mehr ordnungsgemäß funktionieren. Auch wenn automatisierte [Unit Tests](./Unit%20Test.md) und [Integrationstests](./Integration%20Tests.md) vorhanden sind besteht das Risiko, neue Bugs zu hinterlassen, weil man keine hundertprozentige Testabdeckung erreichen kann. Gesucht ist also generell ein Verfahren, welches die Klasse erweiterbar macht, ohne dass dazu die Klasse selbst modifiziert werden muss. Dies kann z.B. mit Hilfe des *[Strategy Patterns](./Strategy.md)* erreicht werden:
 
 ```csharp
 public interface IPreisRechner {
@@ -80,4 +80,4 @@ public class Stammkunde : IPreisRechner {
 }
 ```
 
-Die konkrete Berechnung des Preises wird über ein Interface in andere Klassen ausgelagert. Dadurch ist es möglich, jederzeit neue Implementierungen des Interfaces zu ergänzen. Damit ist die Klasse offen für Erweiterungen, gleichzeitig aber geschlossen gegenüber Modifikationen. Bestehender Code kann z.B. mit dem [Refactoring](CleanCode/Refaktorisieren.md) [Replace Conditional with Strategy](http://www.industriallogic.com/xp/refactoring/conditionalWithStrategy.html) so umgestaltet werden, dass das Open Closed Principle eingehalten wird.
+Die konkrete Berechnung des Preises wird über ein Interface in andere Klassen ausgelagert. Dadurch ist es möglich, jederzeit neue Implementierungen des Interfaces zu ergänzen. Damit ist die Klasse offen für Erweiterungen, gleichzeitig aber geschlossen gegenüber Modifikationen. Bestehender Code kann z.B. mit dem [Refactoring](./Refaktorisieren.md) [Replace Conditional with Strategy](http://www.industriallogic.com/xp/refactoring/conditionalWithStrategy.html) so umgestaltet werden, dass das Open Closed Principle eingehalten wird.

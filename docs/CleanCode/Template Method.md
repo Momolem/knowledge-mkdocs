@@ -175,9 +175,9 @@ class MonstersAI extends GameAI is
 | Pros | Cons |
 | --- | --- |
 | You can let clients override only certain parts of a large algorithm, making them less affected by changes that happen to other parts of the algorithm. |  Some clients may be limited by the provided skeleton of an algorithm.|
-| You can pull the duplicate code into a superclass. | You might violate the [Liskov Substitution Principle](CleanCode/Liskov%20Substitution%20Principle.md) by suppressing a default step implementation via a subclass. |
+| You can pull the duplicate code into a superclass. | You might violate the [Liskov Substitution Principle](./Liskov%20Substitution%20Principle.md) by suppressing a default step implementation via a subclass. |
 | | Template methods tend to be harder to maintain the more steps they have. |
 
 ## Relations with Other Patterns
-- [Factory](CleanCode/Factory.md) Method is a specialization of Template Method. At the same time, a [Factory](CleanCode/Factory.md) Method may serve as a step in a large Template Method.
-- Template Method is based on inheritance: it lets you alter parts of an algorithm by extending those parts in subclasses. [Strategy](CleanCode/Strategy.md) is based on composition: you can alter parts of the object’s behavior by supplying it with different strategies that correspond to that behavior. Template Method works at the class level, so it’s static. [Strategy](CleanCode/Strategy.md) works on the object level, letting you switch behaviors at runtime.
+- [Factory](./Factory.md) Method is a specialization of Template Method. At the same time, a [Factory](./Factory.md) Method may serve as a step in a large Template Method.
+- Template Method is based on inheritance: it lets you alter parts of an algorithm by extending those parts in subclasses. [Strategy](./Strategy.md) is based on composition: you can alter parts of the object’s behavior by supplying it with different strategies that correspond to that behavior. Template Method works at the class level, so it’s static. [Strategy](./Strategy.md) works on the object level, letting you switch behaviors at runtime.

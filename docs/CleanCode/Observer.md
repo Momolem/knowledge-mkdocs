@@ -213,23 +213,23 @@ class Application is
 ##  Pros and Cons
 | Pros | Cons |
 | --- | --- |
-| _[Open Closed Principle](CleanCode/Open%20Closed%20Principle.md)_. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface). | Subscribers are notified in random order.|
+| _[Open Closed Principle](./Open%20Closed%20Principle.md)_. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface). | Subscribers are notified in random order.|
 | You can establish relations between objects at runtime. ||
 
 ##  Relations with Other Patterns
 
--   [Chain of Responsibility](CleanCode/Chain%20of%20Responsibility.md), [Command](CleanCode/Command.md), [Mediator](CleanCode/Mediator.md) and [Observer](CleanCode/Observer.md) address various ways of connecting senders and receivers of requests:
+-   [Chain of Responsibility](./Chain%20of%20Responsibility.md), [Command](./Command.md), [Mediator](./Mediator.md) and [Observer](Observer.md) address various ways of connecting senders and receivers of requests:
     
     -   _Chain of Responsibility_ passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
     -   _Command_ establishes unidirectional connections between senders and receivers.
     -   _Mediator_ eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
     -   _Observer_ lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   The difference between [Mediator](CleanCode/Mediator.md) and [Observer](CleanCode/Observer.md) is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
+-   The difference between [Mediator](./Mediator.md) and [Observer](Observer.md) is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
     
-    The primary goal of _[Mediator](CleanCode/Mediator.md)_ is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of _[Observer](CleanCode/Observer.md)_ is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
+    The primary goal of _[Mediator](./Mediator.md)_ is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of _[Observer](Observer.md)_ is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
     
-    There’s a popular implementation of the _[Mediator](CleanCode/Mediator.md)_ pattern that relies on _[Observer](CleanCode/Observer.md)_. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When _[Mediator](CleanCode/Mediator.md)_ is implemented this way, it may look very similar to _[Observer](CleanCode/Observer.md)_.
+    There’s a popular implementation of the _[Mediator](./Mediator.md)_ pattern that relies on _[Observer](Observer.md)_. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When _[Mediator](./Mediator.md)_ is implemented this way, it may look very similar to _[Observer](Observer.md)_.
     
-    When you’re confused, remember that you can implement the [Mediator](CleanCode/Mediator.md) pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble _[Observer](CleanCode/Observer.md)_ but will still be an instance of the [Mediator](CleanCode/Mediator.md) pattern.
+    When you’re confused, remember that you can implement the [Mediator](./Mediator.md) pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble _[Observer](Observer.md)_ but will still be an instance of the [Mediator](./Mediator.md) pattern.
     
     Now imagine a program where all components have become publishers, allowing dynamic connections between each other. There won’t be a centralized mediator object, only a distributed set of observers.

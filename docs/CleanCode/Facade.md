@@ -114,7 +114,7 @@ class Application is
 - **Use the Facade when you want to structure a subsystem into layers.**
 	Create facades to define entry points to each level of a subsystem. You can reduce coupling between multiple subsystems by requiring them to communicate only through facades.
 	
-	For example, let’s return to our video conversion framework. It can be broken down into two layers: video- and audio-related. For each layer, you can create a facade and then make the classes of each layer communicate with each another via those facades. This approach looks very similar to the [Mediator](CleanCode/Mediator.md) pattern.
+	For example, let’s return to our video conversion framework. It can be broken down into two layers: video- and audio-related. For each layer, you can create a facade and then make the classes of each layer communicate with each another via those facades. This approach looks very similar to the [Mediator](./Mediator.md) pattern.
 
 ## How to Implement
 1.  Check whether it’s possible to provide a simpler interface than what an existing subsystem already provides. You’re on the right track if this interface makes the client code independent from many of the subsystem’s classes.
@@ -128,11 +128,11 @@ class Application is
 | You can isolate your code from the complexity of a subsystem. | A facade can become a god object coupled to all classes of an app. |
 
 ## Relations with Other Patterns
-- [Facade](CleanCode/Facade.md) defines a new interface for existing objects, whereas [Adapter](CleanCode/Adapter.md) tries to make the existing interface usable. Adapter usually wraps just one object, while Facade works with an entire subsystem of objects.
-- [Abstract Factory ](CleanCode/Abstract%20Factory.md)can serve as an alternative to [Facade](CleanCode/Facade.md) when you only want to hide the way the subsystem objects are created from the client code.
-- [Flyweight](CleanCode/Flyweight.md) shows how to make lots of little objects, whereas [Facade](CleanCode/Facade.md) shows how to make a single object that represents an entire subsystem.
-- [Facade](CleanCode/Facade.md) and [Mediator](CleanCode/Mediator.md) have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
-	- [Facade](CleanCode/Facade.md) defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
-	- [Mediator](CleanCode/Mediator.md) centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
-- A [Facade](CleanCode/Facade.md) class can often be transformed into a [Singleton](CleanCode/Singleton.md) since a single facade object is sufficient in most cases.
-- [Facade](CleanCode/Facade.md) is similar to [Proxy](CleanCode/Proxy.md) in that both buffer a complex entity and initialize it on its own. Unlike [Facade](CleanCode/Facade.md), [Proxy](CleanCode/Proxy.md) has the same interface as its service object, which makes them interchangeable.
+- [Facade](Facade.md) defines a new interface for existing objects, whereas [Adapter](./Adapter.md) tries to make the existing interface usable. Adapter usually wraps just one object, while Facade works with an entire subsystem of objects.
+- [Abstract Factory ](CleanCode/Abstract%20Factory.md)can serve as an alternative to [Facade](Facade.md) when you only want to hide the way the subsystem objects are created from the client code.
+- [Flyweight](./Flyweight.md) shows how to make lots of little objects, whereas [Facade](Facade.md) shows how to make a single object that represents an entire subsystem.
+- [Facade](Facade.md) and [Mediator](./Mediator.md) have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
+	- [Facade](Facade.md) defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
+	- [Mediator](./Mediator.md) centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
+- A [Facade](Facade.md) class can often be transformed into a [Singleton](./Singleton.md) since a single facade object is sufficient in most cases.
+- [Facade](Facade.md) is similar to [Proxy](./Proxy.md) in that both buffer a complex entity and initialize it on its own. Unlike [Facade](Facade.md), [Proxy](./Proxy.md) has the same interface as its service object, which makes them interchangeable.

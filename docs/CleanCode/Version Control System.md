@@ -20,7 +20,7 @@ title: Version Control System
 >**Warum?**
 >Symptome behandeln bringt vielleicht schnell eine Linderung – langfristig kostet es aber mehr Aufwand. Wer stattdessen unter die Oberfläche von Problemen schaut, arbeitet am Ende effizienter.
 
-Unabdingbare Voraussetzung für jeden [Clean Code Developer](CleanCode/Clean%20Code%20Developer.md) ist es, seinen Code unter den Schutz eines Versionskontrollsystems zu stellen. Ob das Mercurial, Git, Subversion, VSS, TFS oder Vault ist, spielt dabei keine Rolle. Wir meinen nur, dass heute keine Arbeit an Code mehr durchgeführt werden sollte, ohne ihn in einem Versionskontrollsystem zu pflegen. Der Grund dafür ist ganz simpel: Ein Versionskontrollsystem befreit von Angst. Und Angstfreiheit ist nötig, um mutig die Prinzipien und Praktiken des CCD-Wertesystems umzusetzen.
+Unabdingbare Voraussetzung für jeden [Clean Code Developer](./Clean%20Code%20Developer.md) ist es, seinen Code unter den Schutz eines Versionskontrollsystems zu stellen. Ob das Mercurial, Git, Subversion, VSS, TFS oder Vault ist, spielt dabei keine Rolle. Wir meinen nur, dass heute keine Arbeit an Code mehr durchgeführt werden sollte, ohne ihn in einem Versionskontrollsystem zu pflegen. Der Grund dafür ist ganz simpel: Ein Versionskontrollsystem befreit von Angst. Und Angstfreiheit ist nötig, um mutig die Prinzipien und Praktiken des CCD-Wertesystems umzusetzen.
 
 Ein Versionskontrollsystem nimmt die Angst, etwas falsch und damit kaputt zu machen. Wenn Code in ihm gehalten wird, kann jeder CCD den Code nach Belieben verändern, ohne befürchten zu müssen, einen erreichten Stand zu zerstören. Nichts geht verloren. Das Versionskontrollsystem ist wie eine Zeitmaschine für Code.
 

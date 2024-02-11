@@ -16,7 +16,7 @@ tags:  #cleancode/designpatterns
 # Bridge
 
 ## Intent
-**Bridge** is a [structural design pattern](CleanCode/Design%20Patterns.md#structural) that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+**Bridge** is a [structural design pattern](./Design%20Patterns.md#structural) that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
 
 ## Problem
 _Abstraction?_ _Implementation?_ Sound scary? Stay calm and let’s consider a simple example.
@@ -168,7 +168,7 @@ remote = new AdvancedRemoteControl(radio)
 - **Use the Bridge if you need to be able to switch implementations at runtime.**
 	Although it’s optional, the Bridge pattern lets you replace the implementation object inside the abstraction. It’s as easy as assigning a new value to a field.
 
-By the way, this last item is the main reason why so many people confuse the Bridge with the [Strategy](CleanCode/Strategy.md) pattern. Remember that a pattern is more than just a certain way to structure your classes. It may also communicate intent and a problem being addressed.
+By the way, this last item is the main reason why so many people confuse the Bridge with the [Strategy](./Strategy.md) pattern. Remember that a pattern is more than just a certain way to structure your classes. It may also communicate intent and a problem being addressed.
 
 ## How to Implement
 1.  Identify the orthogonal dimensions in your classes. These independent concepts could be: abstraction/platform, domain/infrastructure, front-end/back-end, or interface/implementation.
@@ -184,12 +184,12 @@ By the way, this last item is the main reason why so many people confuse the Bri
 | --- | --- |
 | You can create platform-independent classes and apps. | You might make the code more complicated by applying the pattern to a highly cohesive class.|
 | The client code works with high-level abstractions. It isn’t exposed to the platform details. | |
-| [Open Closed Principle](CleanCode/Open%20Closed%20Principle.md) You can introduce new abstractions and implementations independently from each other. | |
-| [Single Responsibility Principle](CleanCode/Single%20Responsibility%20Principle.md). You can focus on high-level logic in the abstraction and on platform details in the implementation. | | 
+| [Open Closed Principle](./Open%20Closed%20Principle.md) You can introduce new abstractions and implementations independently from each other. | |
+| [Single Responsibility Principle](./Single%20Responsibility%20Principle.md). You can focus on high-level logic in the abstraction and on platform details in the implementation. | | 
 
 
 ## Relations with Other Patterns
-- Bridge is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, [Adapter](CleanCode/Adapter.md) is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
-- Bridge, [State](CleanCode/State.md), [Strategy](CleanCode/Strategy.md) (and to some degree [Adapter](CleanCode/Adapter.md)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
-- You can use [Abstract Factory](CleanCode/Abstract%20Factory.md) along with Bridge. This pairing is useful when some abstractions defined by Bridge can only work with specific implementations. In this case, [Abstract Factory](CleanCode/Abstract%20Factory.md) can encapsulate these relations and hide the complexity from the client code.
-- You can combine [Builder](CleanCode/Builder.md) with [Bridge](CleanCode/Bridge.md): the director class plays the role of the abstraction, while different builders act as implementations.
+- Bridge is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, [Adapter](./Adapter.md) is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
+- Bridge, [State](./State.md), [Strategy](./Strategy.md) (and to some degree [Adapter](./Adapter.md)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+- You can use [Abstract Factory](./Abstract%20Factory.md) along with Bridge. This pairing is useful when some abstractions defined by Bridge can only work with specific implementations. In this case, [Abstract Factory](./Abstract%20Factory.md) can encapsulate these relations and hide the complexity from the client code.
+- You can combine [Builder](./Builder.md) with [Bridge](Bridge.md): the director class plays the role of the abstraction, while different builders act as implementations.
