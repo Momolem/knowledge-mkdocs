@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: 
+tags: [DigitalGarden]
 share: true
 ---
 

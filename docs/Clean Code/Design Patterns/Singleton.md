@@ -3,13 +3,6 @@ aliases:
 share: true
 tags:
   - cleancode/designpatterns
-  - 1
-title: Singleton
----
----
-aliases: 
-share: true
-tags: [cleancode/designpatterns, 1]
 title: Singleton
 ---
 # Singleton
