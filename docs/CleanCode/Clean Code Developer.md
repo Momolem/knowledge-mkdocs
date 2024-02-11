@@ -16,12 +16,12 @@ title: Clean Code Developer
 # Clean Code Developer
 
 ## Die Grade
-- [Roter Grad](CleanCode/Roter%20Grad.md)
-- [Orangener Grad](CleanCode/Orangener%20Grad.md)
-- [Gelber Grad](CleanCode/Gelber%20Grad.md)
-- [Grüner Grad](CleanCode/Gr%C3%BCner%20Grad.md)
-- [Blauer Grad](CleanCode/Blauer%20Grad.md)
-- [Weißer Grad](CleanCode/Wei%C3%9Fer%20Grad.md)
+- [Roter Grad](./Roter%20Grad.md)
+- [Orangener Grad](./Orangener%20Grad.md)
+- [Gelber Grad](./Gelber%20Grad.md)
+- [Grüner Grad](./Gr%C3%BCner%20Grad.md)
+- [Blauer Grad](./Blauer%20Grad.md)
+- [Weißer Grad](./Wei%C3%9Fer%20Grad.md)
 ## Wertesystem
 ### Wandelbarkeit
 
@@ -88,39 +88,39 @@ Werte: Wandelbarkeit, Kontinuierliche Verbesserung
 
 Werte: Produktionseffizienz, Wandelbarkeit
 
-- Vorsicht vor Optimierungen! (Prinzip des [roten Grades](CleanCode/Roter%20Grad.md))
-- [You Ain't Gonna Need It](CleanCode/You%20Ain't%20Gonna%20Need%20It.md) (Prinzip des [blauen Grades](CleanCode/Blauer%20Grad.md))
-- [KISS](CleanCode/KISS.md) (Prinzip des [roten Grades](CleanCode/Roter%20Grad.md))
+- Vorsicht vor Optimierungen! (Prinzip des [roten Grades](./Roter%20Grad.md))
+- [You Ain't Gonna Need It](./You%20Ain't%20Gonna%20Need%20It.md) (Prinzip des [blauen Grades](./Blauer%20Grad.md))
+- [KISS](./KISS.md) (Prinzip des [roten Grades](./Roter%20Grad.md))
 
 #### 3. Isoliere Aspekte (Isolate Aspects (IA))
 
 Werte: 
 - Wandelbarkeit
-- [DRY](CleanCode/DRY.md)
-- [Separation of Concerns](CleanCode/Separation%20of%20Concerns.md)
-- [Single Level of Abstraction](CleanCode/Single%20Level%20of%20Abstraction.md)
-- [Single Responsibility Principle](CleanCode/Single%20Responsibility%20Principle.md)
-- [Interface Segragation Principle](CleanCode/Interface%20Segragation%20Principle.md)
-- [Design and Implementation Don't Overlapp](CleanCode/Design%20and%20Implementation%20Don't%20Overlapp.md)
-- [Integration Operation Segregation Principle (IOSP)](CleanCode/Integration%20Operation%20Segregation%20Principle%20(IOSP).md)
+- [DRY](./DRY.md)
+- [Separation of Concerns](./Separation%20of%20Concerns.md)
+- [Single Level of Abstraction](./Single%20Level%20of%20Abstraction.md)
+- [Single Responsibility Principle](./Single%20Responsibility%20Principle.md)
+- [Interface Segragation Principle](./Interface%20Segragation%20Principle.md)
+- [Design and Implementation Don't Overlapp](./Design%20and%20Implementation%20Don't%20Overlapp.md)
+- [Integration Operation Segregation Principle (IOSP)](./Integration%20Operation%20Segregation%20Principle%20(IOSP).md)
 
 #### 4. Minimiere Abhängigkeiten (Minimize Dependencies (MD))
 
 Werte:
 -   Wandelbarkeit
-- [Dependency Inversion Principle](CleanCode/Dependency%20Inversion%20Principle.md)
-- [Information Hiding Principle](CleanCode/Information%20Hiding%20Principle.md)
-- [Law of Demeter](CleanCode/Law%20of%20Demeter.md)
-- [Tell, don't ask](CleanCode/Tell,%20don't%20ask.md)
+- [Dependency Inversion Principle](./Dependency%20Inversion%20Principle.md)
+- [Information Hiding Principle](./Information%20Hiding%20Principle.md)
+- [Law of Demeter](./Law%20of%20Demeter.md)
+- [Tell, don't ask](./Tell,%20don't%20ask.md)
 
 #### 5. Halte Versprechen ein (Honor Pledges (HP))
 
 Werte: 
 - Wandelbarkeit oder auch: Minimize Surprises
-- [Liskov Substitution Principle](CleanCode/Liskov%20Substitution%20Principle.md)
-- [Principle of Least Astonishment](CleanCode/Principle%20of%20Least%20Astonishment.md)
+- [Liskov Substitution Principle](./Liskov%20Substitution%20Principle.md)
+- [Principle of Least Astonishment](./Principle%20of%20Least%20Astonishment.md)
 - Implementation spiegelt Entwurf
-- [Favour Composition over Inheritance](CleanCode/Favour%20Composition%20over%20Inheritance.md) (FCoI)
+- [Favour Composition over Inheritance](./Favour%20Composition%20over%20Inheritance.md) (FCoI)
 
 ### Praktisches
 
