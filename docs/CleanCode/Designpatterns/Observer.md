@@ -213,7 +213,7 @@ class Application is
 ##  Pros and Cons
 | Pros | Cons |
 | --- | --- |
-| _[[../Open Closed Principle|Open Closed Principle]]_. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface). | Subscribers are notified in random order.|
+| _[[../Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]_. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface). | Subscribers are notified in random order.|
 | You can establish relations between objects at runtime. ||
 
 ##  Relations with Other Patterns
