@@ -11,7 +11,7 @@ share: true
 tags: [cleancode]
 title: Beware of Premature Optimization
 ---
-#cleancode 
+ 
 # Beware of Premature Optimization
 
 >**Warum?**
