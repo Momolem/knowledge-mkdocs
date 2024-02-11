@@ -190,7 +190,7 @@ There are dozens of ways to utilize the Proxy pattern. Let’s go over the most 
 | You can control the service object without clients knowing about it. | The code may become more complicated since you need to introduce a lot of new classes. |
 | You can manage the lifecycle of the service object when clients don’t care about it. | The response from the service might get delayed. |
 | The proxy works even if the service object isn’t ready or is not available. ||
- | [[../Open Closed Principle|Open Closed Principle]]. You can introduce new proxies without changing the service or clients. ||
+ | [[../Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]. You can introduce new proxies without changing the service or clients. ||
  
 ## Relations with Other Patterns
 - [[./Adapter|Adapter]] provides a different interface to the wrapped object, Proxy provides it with the same interface, and [[./Decorator|Decorator]] provides it with an enhanced interface.
