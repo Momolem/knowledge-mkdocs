@@ -2,7 +2,7 @@
 aliases: 
 share: true
 tags:
-  - cleancode_designpatterns
+  - cleancode/designpatterns
 title: Builder
 ---
 ---
