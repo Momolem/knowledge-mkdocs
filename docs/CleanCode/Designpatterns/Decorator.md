@@ -24,13 +24,13 @@ Imagine that you’re working on a notification library which lets other program
 
 The initial version of the library was based on the `Notifier` class that had only a few fields, a constructor and a single `send` method. The method could accept a message argument from a client and send the message to a list of emails that were passed to the notifier via its constructor. A third-party app which acted as a client was supposed to create and configure the notifier object once, and then use it each time something important happened.
 
-![Structure of the library before applying the Decorator pattern](https://refactoring.guru/images/patterns/diagrams/decorator/problem1-en.png)
+![[../../e1ab0a21ec95c34c2d64c819c8e1884c_MD5.png|e1ab0a21ec95c34c2d64c819c8e1884c_MD5]]
 
 A program could use the notifier class to send notifications about important events to a predefined set of emails.
 
 At some point, you realize that users of the library expect more than just email notifications. Many of them would like to receive an SMS about critical issues. Others would like to be notified on Facebook and, of course, the corporate users would love to get Slack notifications.
 
-![Structure of the library after implementing other notification types](https://refactoring.guru/images/patterns/diagrams/decorator/problem2.png)
+![[../../a05661f95607c98806c8525fddc89169_MD5.png|a05661f95607c98806c8525fddc89169_MD5]]
 
 Each notification type is implemented as a notifier’s subclass.
 
@@ -40,7 +40,7 @@ But then someone reasonably asked you, “Why can’t you use several notificati
 
 You tried to address that problem by creating special subclasses which combined several notification methods within one class. However, it quickly became apparent that this approach would bloat the code immensely, not only the library code but the client code as well.
 
-![Structure of the library after creating class combinations](https://refactoring.guru/images/patterns/diagrams/decorator/problem3.png)
+![[../../a4d7f4908115a1efae71b9bf7316d71c_MD5.png|a4d7f4908115a1efae71b9bf7316d71c_MD5]]
 
 Combinatorial explosion of subclasses.
 
@@ -57,7 +57,7 @@ One of the ways to overcome these caveats is by using _Aggregation_ or _Compo
 
 With this new approach you can easily substitute the linked “helper” object with another, changing the behavior of the container at runtime. An object can use the behavior of various classes, having references to multiple objects and delegating them all kinds of work. Aggregation/composition is the key principle behind many design patterns, including Decorator. On that note, let’s return to the pattern discussion.
 
-![Inheritance vs. Aggregation](https://refactoring.guru/images/patterns/diagrams/decorator/solution1-en.png)
+![[../../f097c68ac15359b403a8168543a73547_MD5.png|f097c68ac15359b403a8168543a73547_MD5]]
 
 Inheritance vs. Aggregation
 
@@ -67,13 +67,13 @@ When does a simple wrapper become the real decorator? As I mentioned, the wrappe
 
 In our notifications example, let’s leave the simple email notification behavior inside the base `Notifier` class, but turn all other notification methods into decorators.
 
-![The solution with the Decorator pattern](https://refactoring.guru/images/patterns/diagrams/decorator/solution2.png)
+![[../../41204c4ebc299edd748e37dffcbb69e0_MD5.png|41204c4ebc299edd748e37dffcbb69e0_MD5]]
 
 Various notification methods become decorators.
 
 The client code would need to wrap a basic notifier object into a set of decorators that match the client’s preferences. The resulting objects will be structured as a stack.
 
-![Apps might configure complex stacks of notification decorators](https://refactoring.guru/images/patterns/diagrams/decorator/solution3-en.png)
+![[../../d7649ecd7fb2e673101c5fcc90e80353_MD5.png|d7649ecd7fb2e673101c5fcc90e80353_MD5]]
 
 Apps might configure complex stacks of notification decorators.
 
@@ -83,7 +83,7 @@ We could apply the same approach to other behaviors such as formatting messages 
 
 ##  Real-World Analogy
 
-![Example of the Decorator pattern](https://refactoring.guru/images/patterns/content/decorator/decorator-comic-1.png)
+![[../../2ff9b5b139efffcf5ab3a02e2d2d9224_MD5.png|2ff9b5b139efffcf5ab3a02e2d2d9224_MD5]]
 
 You get a combined effect from wearing multiple pieces of clothing.
 
@@ -91,7 +91,7 @@ Wearing clothes is an example of using decorators. When you’re cold, you wrap 
 
 ## Structure
 
-![Structure of the Decorator design pattern](https://refactoring.guru/images/patterns/diagrams/decorator/structure.png)
+![[../../cff1475e770bc39439afe918b5e27c54_MD5.png|cff1475e770bc39439afe918b5e27c54_MD5]]
 
 1.  The **Component** declares the common interface for both wrappers and wrapped objects.
     
@@ -107,7 +107,7 @@ Wearing clothes is an example of using decorators. When you’re cold, you wrap 
 ##  Pseudocode
 In this example, the **Decorator** pattern lets you compress and encrypt sensitive data independently from the code that actually uses this data.
 
-![Structure of the Decorator pattern example](https://refactoring.guru/images/patterns/diagrams/decorator/example.png)
+![[../../ef7afbe233d76ba5d924911745bee629_MD5.png|ef7afbe233d76ba5d924911745bee629_MD5]]
 
 The encryption and compression decorators example.
 
