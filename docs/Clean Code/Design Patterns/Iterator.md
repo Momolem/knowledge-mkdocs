@@ -11,7 +11,8 @@ share: true
 tags: [cleancode/designpatterns]
 title: Iterator
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Iterator
 
