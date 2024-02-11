@@ -12,7 +12,8 @@ aliases: [Clone]
 tags: [cleancode/designpatterns]
 title: Prototype
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Prototype
 
