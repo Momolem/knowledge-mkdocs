@@ -89,7 +89,7 @@ Werte: Wandelbarkeit, Kontinuierliche Verbesserung
 Werte: Produktionseffizienz, Wandelbarkeit
 
 - Vorsicht vor Optimierungen! (Prinzip des [[./Grade/Roter Grad|roten Grades]])
-- [[../You Ain't Gonna Need It|You Ain't Gonna Need It]] (Prinzip des [[./Grade/Blauer Grad|blauen Grades]])
+- [[./Prinzipien/You Ain't Gonna Need It|You Ain't Gonna Need It]] (Prinzip des [[./Grade/Blauer Grad|blauen Grades]])
 - [[./Prinzipien/KISS|KISS]] (Prinzip des [[./Grade/Roter Grad|roten Grades]])
 
 #### 3. Isoliere Aspekte (Isolate Aspects (IA))
@@ -97,28 +97,28 @@ Werte: Produktionseffizienz, Wandelbarkeit
 Werte: 
 - Wandelbarkeit
 - [[./Prinzipien/DRY|DRY]]
-- [[../Separation of Concerns|Separation of Concerns]]
-- [[../Single Level of Abstraction|Single Level of Abstraction]]
-- [[../Single Responsibility Principle|Single Responsibility Principle]]
-- [[../Interface Segragation Principle|Interface Segragation Principle]]
-- [[../Design and Implementation Don't Overlapp|Design and Implementation Don't Overlapp]]
+- [[./Prinzipien/Separation of Concerns|Separation of Concerns]]
+- [[./Prinzipien/Single Level of Abstraction|Single Level of Abstraction]]
+- [[./Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]
+- [[./Prinzipien/Interface Segragation Principle|Interface Segragation Principle]]
+- [[./Prinzipien/Design and Implementation Don't Overlapp|Design and Implementation Don't Overlapp]]
 - [[./Prinzipien/Integration Operation Segregation Principle (IOSP)|Integration Operation Segregation Principle (IOSP)]]
 
 #### 4. Minimiere Abhängigkeiten (Minimize Dependencies (MD))
 
 Werte:
 -   Wandelbarkeit
-- [[../Dependency Inversion Principle|Dependency Inversion Principle]]
-- [[../Information Hiding Principle|Information Hiding Principle]]
-- [[../Law of Demeter|Law of Demeter]]
-- [[../Tell, don't ask|Tell, don't ask]]
+- [[./Prinzipien/Dependency Inversion Principle|Dependency Inversion Principle]]
+- [[./Prinzipien/Information Hiding Principle|Information Hiding Principle]]
+- [[./Prinzipien/Law of Demeter|Law of Demeter]]
+- [[./Praktiken/Tell, don't ask|Tell, don't ask]]
 
 #### 5. Halte Versprechen ein (Honor Pledges (HP))
 
 Werte: 
 - Wandelbarkeit oder auch: Minimize Surprises
-- [[../Liskov Substitution Principle|Liskov Substitution Principle]]
-- [[../Principle of Least Astonishment|Principle of Least Astonishment]]
+- [[./Prinzipien/Liskov Substitution Principle|Liskov Substitution Principle]]
+- [[./Prinzipien/Principle of Least Astonishment|Principle of Least Astonishment]]
 - Implementation spiegelt Entwurf
 - [[./Prinzipien/Favour Composition over Inheritance|Favour Composition over Inheritance]] (FCoI)
 
