@@ -13,7 +13,8 @@ aliases: [Action, Transaction]
 tags: [cleancode/designpatterns]
 title: Command
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Command
 
