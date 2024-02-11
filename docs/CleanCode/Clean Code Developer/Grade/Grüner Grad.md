@@ -15,13 +15,13 @@ title: Grüner Grad
 #cleancode 
 # Grüner Grad
 ## Prinzipien
-- [[../../Open Closed Principle|Open Closed Principle]]
-- [[../../Tell, don't ask|Tell, don't ask]]
-- [[../../Law of Demeter|Law of Demeter]]
+- [[../Prinzipien/Open Closed Principle|Open Closed Principle]]
+- [[../Praktiken/Tell, don't ask|Tell, don't ask]]
+- [[../Prinzipien/Law of Demeter|Law of Demeter]]
 
 ## Praktiken
-- [[../../Continuous Integration|Continuous Integration]]
-- [[../../Statical Code Analysis|Statical Code Analysis]]
-- [[../../Inversion of Control Container|Inversion of Control Container]]
-- [[../../Share Experience|Share Experience]]
-- [[../../Error Measurement|Error Measurement]]
+- [[../Praktiken/Continuous Integration|Continuous Integration]]
+- [[../Praktiken/Statical Code Analysis|Statical Code Analysis]]
+- [[../Praktiken/Inversion of Control Container|Inversion of Control Container]]
+- [[../Praktiken/Share Experience|Share Experience]]
+- [[../Praktiken/Error Measurement|Error Measurement]]
