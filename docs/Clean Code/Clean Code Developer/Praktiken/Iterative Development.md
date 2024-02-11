@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Iterative Development
 ---
-tags: #cleancode 
+
+tags: 
 
 # Iterative Development
 
