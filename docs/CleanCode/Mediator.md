@@ -186,7 +186,7 @@ class Checkbox extends Component is
     
 3.  Implement the concrete mediator class. Consider storing references to all components inside the mediator. This way, you could call any component from the mediator’s methods.
     
-4.  You can go even further and make the mediator responsible for the creation and destruction of component objects. After this, the mediator may resemble a [Factory](CleanCode/Factory.md) or a [Facade](CleanCode/Facade.md).
+4.  You can go even further and make the mediator responsible for the creation and destruction of component objects. After this, the mediator may resemble a [Factory](./Factory.md) or a [Facade](./Facade.md).
     
 5.  Components should store a reference to the mediator object. The connection is usually established in the component’s constructor, where a mediator object is passed as an argument.
     
@@ -194,26 +194,26 @@ class Checkbox extends Component is
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| [Single Responsibility Principle](CleanCode/Single%20Responsibility%20Principle.md). You can extract the communications between various components into a single place, making it easier to comprehend and maintain. |  Over time a mediator can evolve into a [God Object](God%20Object.md).
-| [Open Closed Principle](CleanCode/Open%20Closed%20Principle.md). You can introduce new mediators without having to change the actual components. ||
+| [Single Responsibility Principle](./Single%20Responsibility%20Principle.md). You can extract the communications between various components into a single place, making it easier to comprehend and maintain. |  Over time a mediator can evolve into a [God Object](God%20Object.md).
+| [Open Closed Principle](./Open%20Closed%20Principle.md). You can introduce new mediators without having to change the actual components. ||
 | You can reduce coupling between various components of a program.||
 | You can reuse individual components more easily.||
 
 ## Relations with Other Patterns
-- [Chain of Responsibility](CleanCode/Chain%20of%20Responsibility.md), [Command](CleanCode/Command.md), Mediator and [Observer](CleanCode/Observer.md) address various ways of connecting senders and receivers of requests:
-	- [Chain of Responsibility](CleanCode/Chain%20of%20Responsibility.md) passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-	- [Command](CleanCode/Command.md) establishes unidirectional connections between senders and receivers.
+- [Chain of Responsibility](./Chain%20of%20Responsibility.md), [Command](./Command.md), Mediator and [Observer](./Observer.md) address various ways of connecting senders and receivers of requests:
+	- [Chain of Responsibility](./Chain%20of%20Responsibility.md) passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
+	- [Command](./Command.md) establishes unidirectional connections between senders and receivers.
 	- Mediator eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-	- [Observer](CleanCode/Observer.md) lets receivers dynamically subscribe to and unsubscribe from receiving requests.
-- [Facade](CleanCode/Facade.md) and Mediator have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
-	- [Facade](CleanCode/Facade.md) defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the [Facade](CleanCode/Facade.md). Objects within the subsystem can communicate directly.
+	- [Observer](./Observer.md) lets receivers dynamically subscribe to and unsubscribe from receiving requests.
+- [Facade](./Facade.md) and Mediator have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
+	- [Facade](./Facade.md) defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the [Facade](./Facade.md). Objects within the subsystem can communicate directly.
 	- Mediator centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
-- The difference between Mediator and [Observer](CleanCode/Observer.md) is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
+- The difference between Mediator and [Observer](./Observer.md) is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
 	
-	The primary goal of Mediator is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of [Observer](CleanCode/Observer.md) is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
+	The primary goal of Mediator is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of [Observer](./Observer.md) is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
 
-	There’s a popular implementation of the Mediator pattern that relies on [Observer](CleanCode/Observer.md). The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When Mediator is implemented this way, it may look very similar to [Observer](CleanCode/Observer.md).
+	There’s a popular implementation of the Mediator pattern that relies on [Observer](./Observer.md). The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When Mediator is implemented this way, it may look very similar to [Observer](./Observer.md).
 
-	When you’re confused, remember that you can implement the Mediator pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble [Observer](CleanCode/Observer.md) but will still be an instance of the Mediator pattern.
+	When you’re confused, remember that you can implement the Mediator pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble [Observer](./Observer.md) but will still be an instance of the Mediator pattern.
 
 	Now imagine a program where all components have become publishers, allowing dynamic connections between each other. There won’t be a centralized mediator object, only a distributed set of observers.
