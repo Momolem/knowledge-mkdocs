@@ -24,7 +24,7 @@ Say you have an object, and you want to create an exact copy of it. How would yo
 
 Nice! But there’s a catch. Not all objects can be copied that way because some of the object’s fields may be private and not visible from outside of the object itself.
 
-![What can go wrong when copying things “from the outside"?” width=](https://refactoring.guru/images/patterns/content/prototype/prototype-comic-1-en.png)
+![[../../2fd329ca6f0195ecab862df9f49bfe2f_MD5.png|2fd329ca6f0195ecab862df9f49bfe2f_MD5]]
 
 Copying an object “from the outside” [isn’t](https://refactoring.guru/cargo-cult) always possible.
 
@@ -37,7 +37,7 @@ The implementation of the `clone` method is very similar in all classes. The m
 
 An object that supports cloning is called a _prototype_. When your objects have dozens of fields and hundreds of possible configurations, cloning them might serve as an alternative to subclassing.
 
-![Pre-built prototypes](https://refactoring.guru/images/patterns/content/prototype/prototype-comic-2-en.png)
+![[../../83531eee738022cad23adaa39487c5e8_MD5.png|83531eee738022cad23adaa39487c5e8_MD5]]
 
 Pre-built prototypes can be an alternative to subclassing.
 
@@ -46,7 +46,7 @@ Here’s how it works: you create a set of objects, configured in various ways. 
 ## Real-World Analogy
 In real life, prototypes are used for performing various tests before starting mass production of a product. However, in this case, prototypes don’t participate in any actual production, playing a passive role instead.
 
-![The cell division](https://refactoring.guru/images/patterns/content/prototype/prototype-comic-3-en.png)
+![[../../a7c7ab73eddd146c9d595601e332806c_MD5.png|a7c7ab73eddd146c9d595601e332806c_MD5]]
 
 The division of a cell.
 
@@ -55,7 +55,7 @@ Since industrial prototypes don’t really copy themselves, a much closer analog
 ## Structure
 #### Basic implementation
 
-![The structure of the Prototype design pattern](https://refactoring.guru/images/patterns/diagrams/prototype/structure.png)
+![[../../eade1d87a653edde279ecf4e66b6bb7c_MD5.png|eade1d87a653edde279ecf4e66b6bb7c_MD5]]
 
 1.  The **Prototype** interface declares the cloning methods. In most cases, it’s a single `clone` method.
 2.  The **Concrete Prototype** class implements the cloning method. In addition to copying the original object’s data to the clone, this method may also handle some edge cases of the cloning process related to cloning linked objects, untangling recursive dependencies, etc.
@@ -63,14 +63,14 @@ Since industrial prototypes don’t really copy themselves, a much closer analog
 
 #### Prototype registry implementation
 
-![The prototype registry](https://refactoring.guru/images/patterns/diagrams/prototype/structure-prototype-cache.png)
+![[../../1314b78c0ded31766c14c1d1771aaa0f_MD5.png|1314b78c0ded31766c14c1d1771aaa0f_MD5]]
 
 1.  The **Prototype Registry** provides an easy way to access frequently-used prototypes. It stores a set of pre-built objects that are ready to be copied. The simplest prototype registry is a `name → prototype` hash map. However, if you need better search criteria than a simple name, you can build a much more robust version of the registry.
 
 ## Pseudocode
 In this example, the **Prototype** pattern lets you produce exact copies of geometric objects, without coupling the code to their classes.
 
-![The structure of the Prototype pattern example](https://refactoring.guru/images/patterns/diagrams/prototype/example.png)
+![[../../bc038ddd096195838fef7eda93d3075a_MD5.png|bc038ddd096195838fef7eda93d3075a_MD5]]
 
 Cloning a set of objects that belong to a class hierarchy.
 
