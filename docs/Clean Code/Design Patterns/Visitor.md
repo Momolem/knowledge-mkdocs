@@ -11,7 +11,8 @@ share: true
 tags: [cleancode/designpatterns]
 title: Visitor
 ---
-tags:  #cleancode/designpatterns 
+
+tags:  
 
 # Visitor
 
