@@ -11,7 +11,8 @@ share: true
 tags: [cleancode]
 title: Design before Implementation
 ---
-tags: #cleancode 
+
+tags: 
 
 # Design before Implementation
 
