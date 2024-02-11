@@ -5,12 +5,10 @@ site_author: Moritz Vogel
 
 theme:
     name: 'material'
-    logo: assets/meta/favicons.png
-    favicon: assets/meta/favicons.png
+    logo: assets/meta/icon.png
+    favicon: assets/meta/favicon.png
     custom_dir: overrides
-    font:
-        text: Ubuntu
-        code: Ubuntu Mono
+    font: false
     language: de
     palette:
 
