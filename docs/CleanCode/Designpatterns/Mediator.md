@@ -194,8 +194,8 @@ class Checkbox extends Component is
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| [[../Single Responsibility Principle|Single Responsibility Principle]]. You can extract the communications between various components into a single place, making it easier to comprehend and maintain. |  Over time a mediator can evolve into a [[God Object|God Object]].
-| [[../Open Closed Principle|Open Closed Principle]]. You can introduce new mediators without having to change the actual components. ||
+| [[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]. You can extract the communications between various components into a single place, making it easier to comprehend and maintain. |  Over time a mediator can evolve into a [[God Object|God Object]].
+| [[../Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]. You can introduce new mediators without having to change the actual components. ||
 | You can reduce coupling between various components of a program.||
 | You can reuse individual components more easily.||
 
