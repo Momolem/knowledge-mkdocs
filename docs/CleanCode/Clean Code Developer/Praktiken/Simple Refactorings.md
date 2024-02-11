@@ -20,7 +20,7 @@ title: Simple Refactorings
 
 Um Code immer ein wenig besser zu hinterlassen, als man ihn vorgefunden hat, sind mehr oder weniger große Eingriffe nötig. Die kann ein Clean Code Developer dank des Versionskontrollsystems angstfrei vornehmen. Doch wie macht er sich die Arbeit möglichst einfach?
 
-Das Schlüsselwort lautet „Refaktorisierung“. [Martin Fowler](Martin%20Fowler.md) hat das [Refaktorisieren/Refactoring](http://www.amazon.de/Refactoring-Studentenausgabe-vorhandener-verbessern-Programmers/dp/3827322782) in seinem gleichnamigen Buch als grundlegende Technik zur Erhöhung der Codequalität beschrieben. Er definiert darin eine Anzahl von Codeveränderungsmustern, um „code smells“, d.h. suboptimale Strukturen oder allgemeiner Missachtungen von Prinzipien, zu bereinigen.
+Das Schlüsselwort lautet „Refaktorisierung“. [[Martin Fowler|Martin Fowler]] hat das [Refaktorisieren/Refactoring](http://www.amazon.de/Refactoring-Studentenausgabe-vorhandener-verbessern-Programmers/dp/3827322782) in seinem gleichnamigen Buch als grundlegende Technik zur Erhöhung der Codequalität beschrieben. Er definiert darin eine Anzahl von Codeveränderungsmustern, um „code smells“, d.h. suboptimale Strukturen oder allgemeiner Missachtungen von Prinzipien, zu bereinigen.
 
 Für den roten Grad ist darin vor allem die Refaktorisierung [Methode extrahieren](http://martinfowler.com/refactoring/catalog/extractMethod.html) relevant, um dem DRY-Prinzip zu genügen. Die wenden Clean Code Developer an, um mehrfach vorkommenden Code in eine Methode zu extrahieren, die statt seiner an den Wiederholungsorten aufgerufen wird.
 
