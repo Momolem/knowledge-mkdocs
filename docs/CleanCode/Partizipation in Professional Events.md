@@ -22,7 +22,7 @@ Um nicht nur „im eigenen Saft zu schmoren“, ist es wichtig, regelmäßig mit
 
 Bei den regionalen User Groups steht der Erfahrungsaustausch im Vordergrund. Der ist wichtig. Je länger der aber innerhalb derselben Gruppe stattfindet, je besser man die Gesprächspartner kennt, desto mehr gleichen sich die Meinungen auch in einer User Group wieder an. Deshalb ist es wichtig, immer wieder auch über diesen Tellerrand hinaus zu schauen. Neues Gedankenfutter und Diskussionen mit ganz anderen Entwicklern bieten dafür überregionale Entwicklerkonferenzen.
 
-Für Gedankenaustausch und Inspiration sollte ein [CCD](./Clean%20Code%20Developer/index.md) also drei Ebenen im Blick behalten: das eigene Entwicklerteam, die regionale User Group und die überregionale Konferenz. Jede Ebene hat dabei ihren eigenen Rhythmus: täglich, monatlich, jährlich.
+Für Gedankenaustausch und Inspiration sollte ein [[./Clean Code Developer/index|CCD]] also drei Ebenen im Blick behalten: das eigene Entwicklerteam, die regionale User Group und die überregionale Konferenz. Jede Ebene hat dabei ihren eigenen Rhythmus: täglich, monatlich, jährlich.
 
 Links:
 -   [.Net User Groups in Deutschlands](http://ineta-deutschland.de/user-groups/)
