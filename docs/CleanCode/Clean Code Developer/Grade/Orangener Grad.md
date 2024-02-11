@@ -14,13 +14,13 @@ title: Orangener Grad
 #cleancode 
 # Orangener Grad
 ## Prinzipien
-- [[../../Single Level of Abstraction|Single Level of Abstraction]]
-- [[../../Single Responsibility Principle|Single Responsibility Principle]]
-- [[../../Separation of Concerns|Separation of Concerns]]
-- [[../../Source Code Conventions|Source Code Conventions]]
+- [[../Prinzipien/Single Level of Abstraction|Single Level of Abstraction]]
+- [[../Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]
+- [[../Prinzipien/Separation of Concerns|Separation of Concerns]]
+- [[../Prinzipien/Source Code Conventions|Source Code Conventions]]
 
 ## Praktiken
-- [[../../Issue Tracking|Issue Tracking]]
--  [[../../Automated Integrationtests|Automated Integrationtests]]
-- [[../../Read, Read, Read|Read, Read, Read]]
-- [[../../Code Reviews|Code Reviews]]
+- [[../Praktiken/Issue Tracking|Issue Tracking]]
+- [[../Praktiken/Automated Integrationtests|Automated Integrationtests]]
+- [[../Praktiken/Read, Read, Read|Read, Read, Read]]
+- [[../Praktiken/Code Reviews|Code Reviews]]
