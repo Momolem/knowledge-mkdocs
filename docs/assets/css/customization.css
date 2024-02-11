@@ -8,112 +8,260 @@ DONT FORGET TO EDIT THE URL
 
 /* latin-ext */
 @font-face {
-    font-family: 'Red Hat Mono';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(../fonts/jVyY7nDnA2uf2zVvFAhhzEs-VMSjJpBTfgjwQW_Iy7jHuF4Q.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  
-  /* latin */
-  @font-face {
-    font-family: 'Red Hat Mono';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(../fonts/jVyY7nDnA2uf2zVvFAhhzEs-VMSjJpBTfgjwQW_Iy7bHuA.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  
-  /* latin-ext */
-  @font-face {
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../fonts/-nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0ujy.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  
-  /* latin */
-  @font-face {
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../fonts/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0g.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  
-  /* latin-ext */
-  @font-face {
-    font-family: 'Roboto Serif';
-    font-style: normal;
-    font-weight: 500;
-    font-stretch: 100%;
-    font-display: swap;
-    src: url(../onts/R70mjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuimXPEWoRldX48gvjL4_HUPM_kB_qXSET5Jyh0xOI.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  /* latin */
-  @font-face {
-    font-family: 'Roboto Serif';
-    font-style: normal;
-    font-weight: 500;
-    font-stretch: 100%;
-    font-display: swap;
-    src: url(../fonts/R70mjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuimXPEWoRldX48gvjL4_HUPM_kB_qXSET5KSh0.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+  font-family: 'Red Hat Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/jVyY7nDnA2uf2zVvFAhhzEs-VMSjJpBTfgjwQW_Iy7jHuF4Q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
-  :root {
-    --md-text-font: "Roboto Serif"; 
-    --md-code-font: "Red Hat Mono";
-  }
+/* latin */
+@font-face {
+  font-family: 'Red Hat Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/jVyY7nDnA2uf2zVvFAhhzEs-VMSjJpBTfgjwQW_Iy7bHuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-  .md-typeset h1 {
-    font-family: "DM Serif Display";
-  }
+/* latin-ext */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/-nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0ujy.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/R70mjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuimXPEWoRldX48gvjL4_HUPM_kB_qXSET5Jyh0xOI.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/R70mjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuimXPEWoRldX48gvjL4_HUPM_kB_qXSET5KSh0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lexxend';
+  src: url(../fonts/Lexend.ttf) format('truetype');
+}
+
+
+:root {
+  /* --momolem-bg-color: rgba(255, 255, 255, 1);
+  --momolem-text-color: rgba(35, 49, 66, 1);
+  --momolem-text-soft-color: rgba(66, 75, 87, 1);
+  --momolem-text-strong-color: rgba(74, 74, 74, 1);
+  --momolem-subtle-color: rgba(247, 249, 254, 1);
+  --momolem-border-color: rgba(219, 232, 251, 1);
+  --momolem-shadow-color: rgba(166, 193, 230, 1);
+  --momolem-input-color: rgba(255, 255, 255, 1);
+  --momolem-outline-color: rgba(154, 197, 250, 1);
+  --momolem-mark-color: rgba(0, 138, 215, 0.08);
+  --momolem-special-color: rgba(0, 138, 215, 1);
+  --momolem-special-bg-color: rgba(0, 142, 221, 1);
+  --momolem-special-text-color: rgba(255, 255, 255, 1);
+  --momolem-special-shadow-color: rgba(69, 96, 127, 1);
+  --momolem-special-mark-color: rgba(255, 255, 255, 0.08);
+  --momolem-light-color: rgba(237, 244, 255, 1);
+  --momolem-dark-color: rgba(51, 72, 97, 1);
+  --momolem-text-color-rgb: 35, 49, 66;
+  --momolem-bg-color-rgb: 255, 255, 255;
+  --momolem-subtle-color-rgb: 247, 249, 254;
+  --momolem-special-color-rgb: 0, 138, 215;
+  --momolem-special-text-color-rgb: 255, 255, 255;
+  --momolem-special-bg-color-rgb: 0, 142, 221;
+  --momolem-shadow-color-rgb: 166, 193, 230;
+  --momolem-special-shadow-color-rgb: 69, 96, 127;
+  --momolem-outline-color-rgb: 154, 197, 250;
+  --momolem-dark-color-rgb: 51, 72, 97;
+  --momolem-light-color-rgb: 237, 244, 255; */
+
+  --md-text-font: "Lexxend";
+  --md-code-font: "Red Hat Mono";
+
+  --h1-font-size: 3rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 1rem;
+  --h5-font-size: 0.875rem;
+  --h6-font-size: 0.85rem;
+
+
+}
+
+:root, [data-md-color-scheme="momolem-dark"] {
+  --momolem-bg-color: rgba(32, 32, 32, 1);
+  --momolem-text-color: rgba(219, 223, 230, 1);
+  --momolem-text-soft-color: rgba(183, 188, 196, 1);
+  --momolem-text-strong-color: rgba(187, 187, 187, 1);
+  --momolem-subtle-color: rgba(32, 37, 43, 1);
+  --momolem-border-color: rgba(36, 49, 66, 1);
+  --momolem-shadow-color: rgba(0, 0, 0, 1);
+  --momolem-input-color: rgba(28, 28, 28, 1);
+  --momolem-outline-color: rgba(82, 164, 237, 1);
+  --momolem-mark-color: rgba(49, 144, 217, 0.08);
+  --momolem-special-color: rgba(49, 144, 217, 1);
+  --momolem-special-bg-color: rgba(32, 103, 156, 1);
+  --momolem-special-text-color: rgba(219, 223, 230, 1);
+  --momolem-special-shadow-color: rgba(20, 31, 44, 1);
+  --momolem-special-mark-color: rgba(219, 223, 230, 0.08);
+  --momolem-light-color: rgba(187, 214, 251, 1);
+  --momolem-dark-color: rgba(37, 54, 73, 1);
+  --momolem-text-color-rgb: 219, 223, 230;
+  --momolem-bg-color-rgb: 32, 32, 32;
+  --momolem-subtle-color-rgb: 32, 37, 43;
+  --momolem-border-color-rgb: 36, 49, 66;
+  --momolem-special-color-rgb: 49, 144, 217;
+  --momolem-special-text-color-rgb: 219, 223, 230;
+  --momolem-special-bg-color-rgb: 32, 103, 156;
+  --momolem-shadow-color-rgb: 0, 0, 0;
+  --momolem-special-shadow-color-rgb: 20, 31, 44;
+  --momolem-outline-color-rgb: 82, 164, 237;
+  --momolem-dark-color-rgb: 37, 54, 73;
+  --momolem-light-color-rgb: 187, 214, 251;
+
+  --gray: #202020;
+  --color-content: #e3e3e3;
+
+  --md-primary-fg-color: var(--momolem-subtle-color);
+  --md-primary-fg-color--light: var(--momolem-light-color);
+  --md-primary-fg-color--dark: var(--momolem-dark-color);
+  --md-primary-bg-color: var(--momolem-special-color);
+  --md-primary-bg-color--light: var(--momolem-subtle-color);
+
+  --md-typeset-a-color: var(--momolem-special-color);
+  --md-typeset-color: var(--momolem-text-color);
+
+  --md-accent-fg-color: var(--momolem-special-color);
+  --md-accent-fg-color--transparent: rgba(var(--momolem-special-color-rgb), 0.1);
+  --md-accent-bg-color: var(--momolem-bg-color);
+  --md-accent-bg-color--light: var(--momolem-subtle-color);
+
+  --md-default-fg-color: var(--momolem-text-color);
+  --md-default-bg-color: var(--momolem-bg-color);
+
+  --md-default-fg-color--light: var(--momolem-text-soft-color);
+  --md-default-fg-color--lighter: var(--momolem-subtle-color);
+}
+
+.not_found {
+  background-color: var(--momolem-dark-color);
+  color: var(--momolem-text-strong-color);
+  border-color: var(--momolem-border-color);
+}
+
+.md-typeset h1:first-child {
+  --h1-font-size: 3rem;
+}
+
+.md-typeset>h2 {
+  --h2-font-size: 2rem;
+}
+
+.md-typeset>h3 {
+  --h3-font-size: 1.5rem;
+}
+
+
+.md-typeset h1 {
+  font-size: var(--h1-font-size)
+}
+
+.md-typeset h2 {
+  font-size: var(--h2-font-size)
+}
+
+.md-typeset h3 {
+  font-size: var(--h3-font-size)
+}
+
+.md-typeset h4 {
+  font-size: var(--h4-font-size)
+}
+
+.md-typeset h5 {
+  font-size: var(--h5-font-size)
+}
+
+.md-typeset h6 {
+  font-size: var(--h6-font-size)
+}
+
+.md-typeset h1,
+h2,
+h3,
+h4,
+h5,
+h8 {
+  font-family: "DM Serif Display";
+}
 
 .md-typeset details.wiki,
 .md-typeset .admonition.wiki {
-    border-color: transparent;
-    background-color: transparent;
+  border-color: transparent;
+  background-color: transparent;
 }
 
 .md-typeset .wiki>.admonition-title,
 .md-typeset .wiki>.summary {
-    display: none;
+  display: none;
 }
 
 .md-typeset .wiki>.admonition-title::before {
-    background-color: transparent;
-    -webkit-mask-image: var(--md-admonition-icon--grid);
-    mask-image: var(--md-admonition-icon--grid);
+  background-color: transparent;
+  -webkit-mask-image: var(--md-admonition-icon--grid);
+  mask-image: var(--md-admonition-icon--grid);
 }
 
 .admonition.wiki {
-    float: left;
-    margin-right: 0.8rem;
-    margin-top: 0;
-    width: 11.7rem;
+  float: left;
+  margin-right: 0.8rem;
+  margin-top: 0;
+  width: 11.7rem;
 }
 
 .admonition.wiki h1 {
-    text-align: center;
-    padding-top: 0.5em;
-    margin-bottom: 0;
+  text-align: center;
+  padding-top: 0.5em;
+  margin-bottom: 0;
 }
 
 .admonition.wiki thead {
-    display: none;
+  display: none;
 }
 
 .admonition.wiki td:first-child {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .admonition.wiki table {
-    border: 0;
+  border: 0;
 }

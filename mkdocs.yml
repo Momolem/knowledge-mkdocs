@@ -6,7 +6,7 @@ site_author: Moritz Vogel
 theme:
     name: 'material'
     logo: assets/meta/icon.png
-    favicon: assets/meta/favicon.png
+    favicon: assets/meta/favicon.ico
     custom_dir: overrides
     font: false
     language: de
@@ -15,17 +15,17 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: light blue
+      primary: pink
+      accent: deep orange
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue
-      accent: indigo
+      primary: custom
+      accent: custom
+      scheme: momolem-dark
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
