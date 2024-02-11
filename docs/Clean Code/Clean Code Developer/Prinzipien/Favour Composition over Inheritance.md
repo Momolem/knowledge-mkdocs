@@ -14,7 +14,7 @@ aliases: [Favour Composition over Inheritance (FCoI)]
 linter-yaml-title-alias: Favour Composition over Inheritance (FCoI)
 title: Favour Composition over Inheritance (FCoI)
 ---
-#cleancode 
+ 
 # Favour Composition over Inheritance (FCoI)
 
 >**Warum?**
