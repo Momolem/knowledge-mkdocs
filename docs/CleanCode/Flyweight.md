@@ -4,7 +4,7 @@ aliases:
   - Flyweight Factory
   - Cache
 tags:
-  - cleancode_designpatterns
+  - cleancode/designpatterns
 title: Flyweight
 ---
 ---

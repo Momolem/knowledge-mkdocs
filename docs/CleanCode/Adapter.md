@@ -3,7 +3,7 @@ share: true
 aliases:
   - Wrapper
 tags:
-  - cleancode_designpatterns
+  - cleancode/designpatterns
 title: Adapter
 ---
 ---

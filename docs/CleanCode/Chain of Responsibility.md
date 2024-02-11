@@ -4,7 +4,7 @@ aliases:
   - CoR
   - Chain of Command
 tags:
-  - cleancode_designpatterns
+  - cleancode/designpatterns
 title: Chain of Responsibility
 ---
 ---

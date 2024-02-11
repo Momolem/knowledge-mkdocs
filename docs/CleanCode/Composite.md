@@ -3,7 +3,7 @@ share: true
 aliases:
   - Object Tree
 tags:
-  - cleancode_designpatterns
+  - cleancode/designpatterns
 title: Composite
 ---
 ---

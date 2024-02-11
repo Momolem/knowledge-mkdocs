@@ -5,7 +5,7 @@ aliases:
   - Refaktorisierung
   - Refactoring
 tags:
-  - cleancode_refactoring
+  - cleancode/refactoring
 title: Refaktorisieren
 ---
 ---
