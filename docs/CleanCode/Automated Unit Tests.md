@@ -12,12 +12,12 @@ tags: [cleancode]
 title: Automated Unit Tests
 ---
 #cleancode 
-# Automated [Unit Tests](./Unit%20Test.md)
+# Automated [[./Unit Test|Unit Tests]]
 
 >**Warum?**
 >Nur automatisierte Tests werden auch wirklich konsequent ausgeführt. Je punktgenauer sie Code testen, desto besser.
 
-Im [Orangenen Grad](./Clean%20Code%20Developer/Grade/Orangener%20Grad.md) haben wir [Integration Tests](./Integration%20Tests.md) eingeführt, nun geht es um [Unit Tests](./Unit%20Test.md). Im Gegensatz zu [Integrationstests](./Integration%20Tests.md) wird bei [Unit Tests](./Unit%20Test.md) eine einzelne Funktionseinheit (vor allem Klassen, aber auch Methoden oder Komponenten) isoliert getestet. Dazu ist es erforderlich, diese Funktionseinheit von ihren Abhängigkeiten befreien zu können. Sollen [Unit Tests](./Unit%20Test.md) im Nachhinein für bestehenden Code ergänzt werden, sind häufig Refaktorisierungen erforderlich. Wir haben durch die [Integrationstests](./Integration%20Tests.md) die Sicherheit, dass wir dabei keine Fehler einbauen.
+Im [[./Clean Code Developer/Grade/Orangener Grad|Orangenen Grad]] haben wir [[./Integration Tests|Integration Tests]] eingeführt, nun geht es um [[./Unit Test|Unit Tests]]. Im Gegensatz zu [[./Integration Tests|Integrationstests]] wird bei [[./Unit Test|Unit Tests]] eine einzelne Funktionseinheit (vor allem Klassen, aber auch Methoden oder Komponenten) isoliert getestet. Dazu ist es erforderlich, diese Funktionseinheit von ihren Abhängigkeiten befreien zu können. Sollen [[./Unit Test|Unit Tests]] im Nachhinein für bestehenden Code ergänzt werden, sind häufig Refaktorisierungen erforderlich. Wir haben durch die [[./Integration Tests|Integrationstests]] die Sicherheit, dass wir dabei keine Fehler einbauen.
 
 Automatisierte Tests bieten zweifachen Nutzen:
 

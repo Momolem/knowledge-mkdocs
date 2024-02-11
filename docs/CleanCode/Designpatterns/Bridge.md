@@ -16,7 +16,7 @@ tags:  #cleancode/designpatterns
 # Bridge
 
 ## Intent
-**Bridge** is a [structural design pattern](./Design%20Patterns.md#structural) that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+**Bridge** is a [[./Design Patterns#Structural|structural design pattern]] that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
 
 ## Problem
 _Abstraction?_ _Implementation?_ Sound scary? Stay calm and let’s consider a simple example.
@@ -32,7 +32,7 @@ Adding new shape types and colors to the hierarchy will grow it exponentially. F
 ## Solution
 This problem occurs because we’re trying to extend the shape classes in two independent dimensions: by form and by color. That’s a very common issue with class inheritance.
 
-The Bridge pattern attempts to solve this problem by switching from [inheritance](inheritance.md) to the object composition. What this means is that you extract one of the dimensions into a separate class hierarchy, so that the original classes will reference an object of the new hierarchy, instead of having all of its state and behaviors within one class.
+The Bridge pattern attempts to solve this problem by switching from [[inheritance|inheritance]] to the object composition. What this means is that you extract one of the dimensions into a separate class hierarchy, so that the original classes will reference an object of the new hierarchy, instead of having all of its state and behaviors within one class.
 
 ![Solution suggested by the Bridge pattern](https://refactoring.guru/images/patterns/diagrams/bridge/solution-en.png)
 
@@ -42,7 +42,7 @@ Following this approach, we can extract the color-related code into its own clas
 
 #### Abstraction and Implementation
 
-The [GoF](Gang%20of%20Four.md) book  introduces the terms _Abstraction_ and _Implementation_ as part of the Bridge definition. In my opinion, the terms sound too academic and make the pattern seem more complicated than it really is. Having read the simple example with shapes and colors, let’s decipher the meaning behind the [GoF](Gang%20of%20Four.md) book’s scary words.
+The [[Gang of Four|GoF]] book  introduces the terms _Abstraction_ and _Implementation_ as part of the Bridge definition. In my opinion, the terms sound too academic and make the pattern seem more complicated than it really is. Having read the simple example with shapes and colors, let’s decipher the meaning behind the [[Gang of Four|GoF]] book’s scary words.
 
 _Abstraction_ (also called _interface_) is a high-level control layer for some entity. This layer isn’t supposed to do any real work on its own. It should delegate the work to the _implementation_ layer (also called _platform_).
 
@@ -168,7 +168,7 @@ remote = new AdvancedRemoteControl(radio)
 - **Use the Bridge if you need to be able to switch implementations at runtime.**
 	Although it’s optional, the Bridge pattern lets you replace the implementation object inside the abstraction. It’s as easy as assigning a new value to a field.
 
-By the way, this last item is the main reason why so many people confuse the Bridge with the [Strategy](./Strategy.md) pattern. Remember that a pattern is more than just a certain way to structure your classes. It may also communicate intent and a problem being addressed.
+By the way, this last item is the main reason why so many people confuse the Bridge with the [[./Strategy|Strategy]] pattern. Remember that a pattern is more than just a certain way to structure your classes. It may also communicate intent and a problem being addressed.
 
 ## How to Implement
 1.  Identify the orthogonal dimensions in your classes. These independent concepts could be: abstraction/platform, domain/infrastructure, front-end/back-end, or interface/implementation.
@@ -184,12 +184,12 @@ By the way, this last item is the main reason why so many people confuse the Bri
 | --- | --- |
 | You can create platform-independent classes and apps. | You might make the code more complicated by applying the pattern to a highly cohesive class.|
 | The client code works with high-level abstractions. It isn’t exposed to the platform details. | |
-| [Open Closed Principle](../Open%20Closed%20Principle.md) You can introduce new abstractions and implementations independently from each other. | |
-| [Single Responsibility Principle](../Single%20Responsibility%20Principle.md). You can focus on high-level logic in the abstraction and on platform details in the implementation. | | 
+| [[../Open Closed Principle|Open Closed Principle]] You can introduce new abstractions and implementations independently from each other. | |
+| [[../Single Responsibility Principle|Single Responsibility Principle]]. You can focus on high-level logic in the abstraction and on platform details in the implementation. | | 
 
 
 ## Relations with Other Patterns
-- Bridge is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, [Adapter](./Adapter.md) is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
-- Bridge, [State](./State.md), [Strategy](./Strategy.md) (and to some degree [Adapter](./Adapter.md)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
-- You can use [Abstract Factory](./Abstract%20Factory.md) along with Bridge. This pairing is useful when some abstractions defined by Bridge can only work with specific implementations. In this case, [Abstract Factory](./Abstract%20Factory.md) can encapsulate these relations and hide the complexity from the client code.
-- You can combine [Builder](./Builder.md) with [Bridge](Bridge.md): the director class plays the role of the abstraction, while different builders act as implementations.
+- Bridge is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, [[./Adapter|Adapter]] is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
+- Bridge, [[./State|State]], [[./Strategy|Strategy]] (and to some degree [[./Adapter|Adapter]]) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+- You can use [[./Abstract Factory|Abstract Factory]] along with Bridge. This pairing is useful when some abstractions defined by Bridge can only work with specific implementations. In this case, [[./Abstract Factory|Abstract Factory]] can encapsulate these relations and hide the complexity from the client code.
+- You can combine [[./Builder|Builder]] with [[Bridge|Bridge]]: the director class plays the role of the abstraction, while different builders act as implementations.

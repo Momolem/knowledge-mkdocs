@@ -211,7 +211,7 @@ class Application is
 
 If you wonder why we need the `accept` method in this example, my article [Visitor and Double Dispatch](https://refactoring.guru/design-patterns/visitor-double-dispatch) addresses this question in detail.
 ##  Applicability
-- **Use the Visitor when you need to perform an operation on all elements of a complex object structure (for example, an [object tree](./Composite.md)).**
+- **Use the Visitor when you need to perform an operation on all elements of a complex object structure (for example, an [[./Composite|object tree]]).**
 	The Visitor pattern lets you execute an operation over a set of objects with different classes by having a visitor object implement several variants of the same operation, which correspond to all target classes.
 - **Use the Visitor to clean up the business logic of auxiliary behaviors.**
 	The pattern lets you make the primary classes of your app more focused on their main jobs by extracting all other behaviors into a set of visitor classes.
@@ -236,11 +236,11 @@ If you wonder why we need the `accept` method in this example, my article [Vi
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| _[Open Closed Principle](../Open%20Closed%20Principle.md)_. You can introduce a new behavior that can work with objects of different classes without changing these classes. | You need to update all visitors each time a class gets added to or removed from the element hierarchy. |
-| _[Single Responsibility Principle](../Single%20Responsibility%20Principle.md)_. You can move multiple versions of the same behavior into the same class. | Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with. |
-| A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an [object tree](./Composite.md), and apply the visitor to each object of this structure. ||
+| _[[../Open Closed Principle|Open Closed Principle]]_. You can introduce a new behavior that can work with objects of different classes without changing these classes. | You need to update all visitors each time a class gets added to or removed from the element hierarchy. |
+| _[[../Single Responsibility Principle|Single Responsibility Principle]]_. You can move multiple versions of the same behavior into the same class. | Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with. |
+| A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an [[./Composite|object tree]], and apply the visitor to each object of this structure. ||
 
 ## Relations with Other Patterns
-- You can treat Visitor as a powerful version of the [Command](./Command.md) pattern. Its objects can execute operations over various objects of different classes.
-- You can use Visitor to execute an operation over an entire [object tree](./Composite.md) tree.
-- You can use Visitor along with [Iterator](./Iterator.md) to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
+- You can treat Visitor as a powerful version of the [[./Command|Command]] pattern. Its objects can execute operations over various objects of different classes.
+- You can use Visitor to execute an operation over an entire [[./Composite|object tree]] tree.
+- You can use Visitor along with [[./Iterator|Iterator]] to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.

@@ -212,13 +212,13 @@ class Application is
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| _[Single Responsibility Principle](../Single%20Responsibility%20Principle.md)_. You can clean up the client code and the collections by extracting bulky traversal algorithms into separate classes. |  Applying the pattern can be an overkill if your app only works with simple collections. |
-| [Open Closed Principle](../Open%20Closed%20Principle.md). You can implement new types of collections and iterators and pass them to existing code without breaking anything. | Using an iterator may be less efficient than going through elements of some specialized collections directly.|
+| _[[../Single Responsibility Principle|Single Responsibility Principle]]_. You can clean up the client code and the collections by extracting bulky traversal algorithms into separate classes. |  Applying the pattern can be an overkill if your app only works with simple collections. |
+| [[../Open Closed Principle|Open Closed Principle]]. You can implement new types of collections and iterators and pass them to existing code without breaking anything. | Using an iterator may be less efficient than going through elements of some specialized collections directly.|
 | You can iterate over the same collection in parallel because each iterator object contains its own iteration state. ||
 | For the same reason, you can delay an iteration and continue it when needed. | |
  
 ## Relations with Other Patterns
-- You can use Iterators to traverse [Composite](./Composite.md) trees.
-- You can use [Factory](./Factory.md) Method along with Iterator to let collection subclasses return different types of iterators that are compatible with the collections.
-- You can use [Memento](./Memento.md) along with Iterator to capture the current iteration state and roll it back if necessary.
-- You can use [Visitor](./Visitor.md) along with Iterator to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
+- You can use Iterators to traverse [[./Composite|Composite]] trees.
+- You can use [[./Factory|Factory]] Method along with Iterator to let collection subclasses return different types of iterators that are compatible with the collections.
+- You can use [[./Memento|Memento]] along with Iterator to capture the current iteration state and roll it back if necessary.
+- You can use [[./Visitor|Visitor]] along with Iterator to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.

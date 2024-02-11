@@ -18,7 +18,7 @@ tags: #cleancode
 >**Warum?**
 >Umsetzung, die von der Planung beliebig abweichen kann, führt direkt in die Unwartbarkeit. Umsetzung braucht daher einen durch die Planung vorgegebenen physischen Rahmen.
 
-Architektur und Implementation sollen nicht überlappen, damit sie das [DRY](./Clean%20Code%20Developer/Prinzipien/DRY.md)-Prinzip nicht verletzten. So werden Inkonsistenzen vermieden, die dadurch entstehen können, dass auf der einen Seite etwas geändert wird, ohne diese Änderung auf der anderen Seite nachzuführen.
+Architektur und Implementation sollen nicht überlappen, damit sie das [[./Clean Code Developer/Prinzipien/DRY|DRY]]-Prinzip nicht verletzten. So werden Inkonsistenzen vermieden, die dadurch entstehen können, dass auf der einen Seite etwas geändert wird, ohne diese Änderung auf der anderen Seite nachzuführen.
 
 Nichtsdestotrotz macht die Architektur aber ja Aussagen über die Implementation. Nicht ihre Details, aber ihre grundsätzliche Form. Architektur definiert die Strukturelemente und deren Beziehungen innerhalb eines Codesystems. Implementation existiert also auch bei Abwesenheit von Überlappungen nicht unabhängig von Architektur, sondern sozusagen in ihr.
 

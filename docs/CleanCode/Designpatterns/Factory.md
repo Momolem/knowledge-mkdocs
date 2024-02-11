@@ -215,12 +215,12 @@ Therefore, you need to have a regular method capable of creating new objects as 
 | Pros | Cons |
 | --- | --- |
 | You avoid tight coupling between the creator and the concrete products. | The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern. The best case scenario is when you’re introducing the pattern into an existing hierarchy of creator classes. |
-|  _[Single Responsibility Principle](../Single%20Responsibility%20Principle.md)_. You can move the product creation code into one place in the program, making the code easier to support. | |
-| _[Open Closed Principle](../Open%20Closed%20Principle.md)_. You can introduce new types of products into the program without breaking existing client code. |
+|  _[[../Single Responsibility Principle|Single Responsibility Principle]]_. You can move the product creation code into one place in the program, making the code easier to support. | |
+| _[[../Open Closed Principle|Open Closed Principle]]_. You can introduce new types of products into the program without breaking existing client code. |
 ## Relations with Other Patterns
-- Many designs start by using Factory Method (less complicated and more customizable via subclasses) and evolve toward [Abstract Factory](./Abstract%20Factory.md), [Prototype](./Prototype.md), or [Builder](./Builder.md) (more flexible, but more complicated).
-- [Abstract Factory](./Abstract%20Factory.md) classes are often based on a set of Factory Methods, but you can also use [Prototype](./Prototype.md) to compose the methods on these classes.
-- You can use Factory Method along with [Iterator](./Iterator.md) to let collection subclasses return different types of iterators that are compatible with the collections.
-- [Prototype](./Prototype.md) isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand, [Prototype](./Prototype.md) requires a complicated initialization of the cloned object. Factory Method is based on inheritance but doesn’t require an initialization step.
-- Factory Method is a specialization of [Template Method](./Template%20Method.md). At the same time, a Factory Method may serve as a step in a large [Template Method](./Template%20Method.md).
+- Many designs start by using Factory Method (less complicated and more customizable via subclasses) and evolve toward [[./Abstract Factory|Abstract Factory]], [[./Prototype|Prototype]], or [[./Builder|Builder]] (more flexible, but more complicated).
+- [[./Abstract Factory|Abstract Factory]] classes are often based on a set of Factory Methods, but you can also use [[./Prototype|Prototype]] to compose the methods on these classes.
+- You can use Factory Method along with [[./Iterator|Iterator]] to let collection subclasses return different types of iterators that are compatible with the collections.
+- [[./Prototype|Prototype]] isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand, [[./Prototype|Prototype]] requires a complicated initialization of the cloned object. Factory Method is based on inheritance but doesn’t require an initialization step.
+- Factory Method is a specialization of [[./Template Method|Template Method]]. At the same time, a Factory Method may serve as a step in a large [[./Template Method|Template Method]].
  
