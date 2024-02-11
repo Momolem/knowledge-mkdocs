@@ -14,7 +14,7 @@ aliases: [Version Control, VCS, Versionskontrolle]
 tags: [cleancode]
 title: Version Control System
 ---
-#cleancode 
+ 
 # Version Control System
 
 >**Warum?**
