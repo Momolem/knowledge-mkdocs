@@ -280,7 +280,7 @@ class Application is
 | --- | --- |
 | You can construct objects step-by-step, defer construction steps or run steps recursively. |  The overall complexity of the code increases since the pattern requires creating multiple new classes. |
 | You can reuse the same construction code when building various representations of products. ||
-| [[../Single Responsibility Principle|Single Responsibility Principle]]. You can isolate complex construction code from the business logic of the product. ||
+| [[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]. You can isolate complex construction code from the business logic of the product. ||
 
 
 ## Relations with Other Patterns

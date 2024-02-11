@@ -16,14 +16,14 @@ tags: #cleancode
 
 # Blauer Grad
 ## Prinzipien
-- [[../../Design and Implementation Don't Overlapp|Design and Implementation Don't Overlapp]]
-- [[../../Implementation Reflects Design|Implementation Reflects Design]]
-- [[../../You Ain't Gonna Need It|You Ain't Gonna Need It]]
+- [[../Prinzipien/Design and Implementation Don't Overlapp|Design and Implementation Don't Overlapp]]
+- [[../Prinzipien/Implementation Reflects Design|Implementation Reflects Design]]
+- [[../Prinzipien/You Ain't Gonna Need It|You Ain't Gonna Need It]]
 
-## Prakiken
-- [[../../Design before Implementation|Design before Implementation]]
-- [[../../Continuous Delivery|Continuous Delivery]]
-- [[../../Iterative Development|Iterative Development]]
-- [[../../Incremental Development|Incremental Development]]
-- [[../../Component Orientation|Component Orientation]]
-- [[../../Test First|Test First]]
+## Praktiken
+- [[../Praktiken/Design before Implementation|Design before Implementation]]
+- [[../Praktiken/Continuous Delivery|Continuous Delivery]]
+- [[../Praktiken/Iterative Development|Iterative Development]]
+- [[../Praktiken/Incremental Development|Incremental Development]]
+- [[../Praktiken/Component Orientation|Component Orientation]]
+- [[../Praktiken/Test First|Test First]]

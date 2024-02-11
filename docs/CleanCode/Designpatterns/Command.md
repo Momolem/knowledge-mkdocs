@@ -44,7 +44,7 @@ And here’s the ugliest part. Some operations, such as copying/pasting text, wo
 Initially, when our app only had the toolbar, it was okay to place the implementation of various operations into the button subclasses. In other words, having the code for copying text inside the `CopyButton` subclass was fine. But then, when you implement context menus, shortcuts, and other stuff, you have to either duplicate the operation’s code in many classes or make menus dependent on buttons, which is an even worse option.
 
 ## Solution
-Good software design is often based on the _principle of [[../Separation of Concerns|Separation of Concerns]]_, which usually results in breaking an app into layers. The most common example: a layer for the graphical user interface and another layer for the business logic. The GUI layer is responsible for rendering a beautiful picture on the screen, capturing any input and showing results of what the user and the app are doing. However, when it comes to doing something important, like calculating the trajectory of the moon or composing an annual report, the GUI layer delegates the work to the underlying layer of business logic.
+Good software design is often based on the _principle of [[../Clean Code Developer/Prinzipien/Separation of Concerns|Separation of Concerns]]_, which usually results in breaking an app into layers. The most common example: a layer for the graphical user interface and another layer for the business logic. The GUI layer is responsible for rendering a beautiful picture on the screen, capturing any input and showing results of what the user and the app are doing. However, when it comes to doing something important, like calculating the trajectory of the moon or composing an annual report, the GUI layer delegates the work to the underlying layer of business logic.
 
 In the code it might look like this: a GUI object calls a method of a business logic object, passing it some arguments. This process is usually described as one object sending another a _request_.
 
@@ -271,8 +271,8 @@ class Application is
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| [[../Single Responsibility Principle|Single Responsibility Principle]]. You can decouple classes that invoke operations from classes that perform these operations. |The code may become more complicated since you’re introducing a whole new layer between senders and receivers.|
-| [[../Open Closed Principle|Open Closed Principle]]. You can introduce new commands into the app without breaking existing client code. ||
+| [[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]. You can decouple classes that invoke operations from classes that perform these operations. |The code may become more complicated since you’re introducing a whole new layer between senders and receivers.|
+| [[../Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]. You can introduce new commands into the app without breaking existing client code. ||
 | You can implement undo/redo. ||
 | You can implement deferred execution of operations. ||
 | You can assemble a set of simple commands into a complex one.||

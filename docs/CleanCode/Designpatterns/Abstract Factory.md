@@ -203,8 +203,8 @@ class ApplicationConfigurator is
 | --- | --- |
 | You can be sure that the products you’re getting from a factory are compatible with each other. | The code may become more complicated than it should be, since a lot of new interfaces and classes are introduced along with the pattern. |
 | You avoid tight coupling between concrete products and client code. | |
-| _[[../Single Responsibility Principle|Single Responsibility Principle]]_. You can extract the product creation code into one place, making the code easier to support. ||
-| _[[../Open Closed Principle|Open Closed Principle]]_. You can introduce new variants of products without breaking existing client code.|| 
+| _[[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]_. You can extract the product creation code into one place, making the code easier to support. ||
+| _[[../Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]_. You can introduce new variants of products without breaking existing client code.|| 
 
 ## Relations with Other Patterns
 - Many designs start by using [[./Factory|Factory]] Method (less complicated and more customizable via subclasses) and evolve toward [[Abstract Factory|Abstract Factory]], [[./Prototype|Prototype]], or [[./Builder|Builder]] (more flexible, but more complicated).

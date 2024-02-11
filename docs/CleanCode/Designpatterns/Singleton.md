@@ -19,7 +19,7 @@ tags: #cleancode/designpatterns
 **Singleton** is a [[./Design Patterns#Creational|creational design pattern]] that lets you ensure that a class has **only one instance**, while providing a global access point to this instance.
 
 ## Problem
-The Singleton pattern solves two problems at the same time, violating the _[[../Single Responsibility Principle|Single Responsibility Principle]]_:
+The Singleton pattern solves two problems at the same time, violating the _[[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]_:
 
 1.  **Ensure that a class has just a single instance**. Why would anyone want to control how many instances a class has? The most common reason for this is to control access to some shared resource—for example, a database or a file.
     
@@ -126,7 +126,7 @@ class Application is
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| You can be sure that a class has only a single instance. | Violates the _[[../Single Responsibility Principle|Single Responsibility Principle]]_. The pattern solves two problems at the time. |
+| You can be sure that a class has only a single instance. | Violates the _[[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]_. The pattern solves two problems at the time. |
 | You gain a global access point to that instance. |  The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other. |
 | The singleton object is initialized only when it’s requested for the first time. |  The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other. |
 | | The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other. |

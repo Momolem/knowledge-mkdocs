@@ -231,8 +231,8 @@ class Application is
 | Pros | Cons |
 | --- | --- |
 |You can control the order of request handling. | Some requests may end up unhandled. |
-| [[../Single Responsibility Principle|Single Responsibility Principle]]. You can decouple classes that invoke operations from classes that perform operations. | |
-| [[../Open Closed Principle|Open Closed Principle]]. You can introduce new handlers into the app without breaking the existing client code. ||
+| [[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]. You can decouple classes that invoke operations from classes that perform operations. | |
+| [[../Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]. You can introduce new handlers into the app without breaking the existing client code. ||
 
 ## Relations with Other Patterns
 - [[Chain of Responsibility|Chain of Responsibility]], [[./Command|Command]], [[./Mediator|Mediator]] and [[./Observer|Observer]] address various ways of connecting senders and receivers of requests:

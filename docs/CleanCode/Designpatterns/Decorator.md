@@ -262,7 +262,7 @@ class ApplicationConfigurator is
 | You can extend an object’s behavior without making a new subclass. | It’s hard to remove a specific wrapper from the wrappers stack.|
 | You can add or remove responsibilities from an object at runtime. | It’s hard to implement a decorator in such a way that its behavior doesn’t depend on the order in the decorators stack. |
 | You can combine several behaviors by wrapping an object into multiple decorators. | The initial configuration code of layers might look pretty ugly.
-|  [[../Single Responsibility Principle|Single Responsibility Principle]]. You can divide a monolithic class that implements many possible variants of behavior into several smaller classes. ||
+|  [[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]. You can divide a monolithic class that implements many possible variants of behavior into several smaller classes. ||
 
 ## Relations with Other Patterns
 [[./Adapter|Adapter]] changes the interface of an existing object, while Decorator enhances an object without changing its interface. In addition, Decorator supports recursive composition, which isn’t possible when you use [[./Adapter|Adapter]].

@@ -175,8 +175,8 @@ hole.fits(large_sqpeg_adapter) // false
 ##  Pros and Cons
 Pros  | Cons
  --- | --- 
-_[[../Single Responsibility Principle|Single Responsibility Principle]]_. You can separate the interface or data conversion code from the primary business logic of the program. | The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code. 
-_[[../Open Closed Principle|Open Closed Principle]]_. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface. |
+_[[../Clean Code Developer/Prinzipien/Single Responsibility Principle|Single Responsibility Principle]]_. You can separate the interface or data conversion code from the primary business logic of the program. | The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code. 
+_[[../Clean Code Developer/Prinzipien/Open Closed Principle|Open Closed Principle]]_. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface. |
 
 -    
 
