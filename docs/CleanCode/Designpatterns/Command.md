@@ -23,19 +23,19 @@ tags:  #cleancode/designpatterns
 ## Problem
 Imagine that you’re working on a new text-editor app. Your current task is to create a toolbar with a bunch of buttons for various operations of the editor. You created a very neat `Button` class that can be used for buttons on the toolbar, as well as for generic buttons in various dialogs.
 
-![Problem solved by the Command pattern](https://refactoring.guru/images/patterns/diagrams/command/problem1.png)
+![[../../6be91e4ca8df69a2f86c73509f4df1c9_MD5.png|6be91e4ca8df69a2f86c73509f4df1c9_MD5]]
 
 All buttons of the app are derived from the same class.
 
 While all of these buttons look similar, they’re all supposed to do different things. Where would you put the code for the various click handlers of these buttons? The simplest solution is to create tons of subclasses for each place where the button is used. These subclasses would contain the code that would have to be executed on a button click.
 
-![Lots of button subclasses](https://refactoring.guru/images/patterns/diagrams/command/problem2.png)
+![[../../8f188040e25525247695573cf5f8e3e1_MD5.png|8f188040e25525247695573cf5f8e3e1_MD5]]
 
 Lots of button subclasses. What can go wrong?
 
 Before long, you realize that this approach is deeply flawed. First, you have an enormous number of subclasses, and that would be okay if you weren’t risking breaking the code in these subclasses each time you modify the base `Button` class. Put simply, your GUI code has become awkwardly dependent on the volatile code of the business logic.
 
-![Several classes implement the same functionality](https://refactoring.guru/images/patterns/diagrams/command/problem3-en.png)
+![[../../8bd6880db4562c6bcaeca63cdf30f76a_MD5.png|8bd6880db4562c6bcaeca63cdf30f76a_MD5]]
 
 Several classes implement the same functionality.
 
@@ -48,7 +48,7 @@ Good software design is often based on the _principle of [[../Clean Code Develo
 
 In the code it might look like this: a GUI object calls a method of a business logic object, passing it some arguments. This process is usually described as one object sending another a _request_.
 
-![The GUI layer may access the business logic layer directly](https://refactoring.guru/images/patterns/diagrams/command/solution1-en.png)
+![[../../d2e4e36515fd1b5a290531ccb08a562f_MD5.png|d2e4e36515fd1b5a290531ccb08a562f_MD5]]
 
 The GUI objects may access the business logic objects directly.
 
@@ -56,7 +56,7 @@ The Command pattern suggests that GUI objects shouldn’t send these requests di
 
 Command objects serve as links between various GUI and business logic objects. From now on, the GUI object doesn’t need to know what business logic object will receive the request and how it’ll be processed. The GUI object just triggers the command, which handles all the details.
 
-![Accessing the business logic layer via a command.](https://refactoring.guru/images/patterns/diagrams/command/solution2-en.png)
+![[../../49fb0c3a58905a1b12f21fcc31bef9d1_MD5.png|49fb0c3a58905a1b12f21fcc31bef9d1_MD5]]
 
 Accessing the business logic layer via a command.
 
@@ -64,7 +64,7 @@ The next step is to make your commands implement the same interface. Usually it 
 
 You might have noticed one missing piece of the puzzle, which is the request parameters. A GUI object might have supplied the business-layer object with some parameters. Since the command execution method doesn’t have any parameters, how would we pass the request details to the receiver? It turns out the command should be either pre-configured with this data, or capable of getting it on its own.
 
-![The GUI objects delegate the work to commands](https://refactoring.guru/images/patterns/diagrams/command/solution3-en.png)
+![[../../208d404f7379dda22dff5e7ee04eadad_MD5.png|208d404f7379dda22dff5e7ee04eadad_MD5]]
 
 The GUI objects delegate the work to commands.
 
@@ -77,7 +77,7 @@ Other GUI elements, such as menus, shortcuts or entire dialogs, can be implement
 As a result, commands become a convenient middle layer that reduces coupling between the GUI and business logic layers. And that’s only a fraction of the benefits that the Command pattern can offer!
 
 ## Real-World Analogy
-![Making an order in a restaurant](https://refactoring.guru/images/patterns/content/command/command-comic-1.png)
+![[../../13b0ccd66c1cce1590314d60b8ee4633_MD5.png|13b0ccd66c1cce1590314d60b8ee4633_MD5]]
 
 Making an order in a restaurant.
 
@@ -88,7 +88,7 @@ The paper order serves as a command. It remains in a queue until the chef is rea
 
 ## Structure
 
-![Structure of the Command design pattern](https://refactoring.guru/images/patterns/diagrams/command/structure.png)
+![[../../3f932360fc4f944296ce6d3265f123df_MD5.png|3f932360fc4f944296ce6d3265f123df_MD5]]
 
 1.  The **Sender** class (aka _invoker_) is responsible for initiating requests. This class must have a field for storing a reference to a command object. The sender triggers that command instead of sending the request directly to the receiver. Note that the sender isn’t responsible for creating the command object. Usually, it gets a pre-created command from the client via the constructor.
 2.  The **Command** interface usually declares just a single method for executing the command.
@@ -99,7 +99,7 @@ The paper order serves as a command. It remains in a queue until the chef is rea
 ## Pseudocode
 In this example, the **Command** pattern helps to track the history of executed operations and makes it possible to revert an operation if needed.
 
-![Structure of the Command pattern example](https://refactoring.guru/images/patterns/diagrams/command/example.png)
+![[../../4c0498dd403cd4352b116f1abd52ddd9_MD5.png|4c0498dd403cd4352b116f1abd52ddd9_MD5]]
 
 Undoable operations in a text editor.
 
