@@ -18,7 +18,7 @@ tags:  #cleancode/designpatterns
 # Chain of Responsibility
 
 ## Intent
-**Chain of Responsibility** is a [behavioral design pattern](./Design%20Patterns.md#behavioral) that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+**Chain of Responsibility** is a [[./Design Patterns#Behavioral|behavioral design pattern]] that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
 ## Problem
 Imagine that you’re working on an online ordering system. You want to restrict access to the system so only authenticated users can create orders. Also, users who have administrative permissions must have full access to all orders.
@@ -231,19 +231,19 @@ class Application is
 | Pros | Cons |
 | --- | --- |
 |You can control the order of request handling. | Some requests may end up unhandled. |
-| [Single Responsibility Principle](../Single%20Responsibility%20Principle.md). You can decouple classes that invoke operations from classes that perform operations. | |
-| [Open Closed Principle](../Open%20Closed%20Principle.md). You can introduce new handlers into the app without breaking the existing client code. ||
+| [[../Single Responsibility Principle|Single Responsibility Principle]]. You can decouple classes that invoke operations from classes that perform operations. | |
+| [[../Open Closed Principle|Open Closed Principle]]. You can introduce new handlers into the app without breaking the existing client code. ||
 
 ## Relations with Other Patterns
-- [Chain of Responsibility](Chain%20of%20Responsibility.md), [Command](./Command.md), [Mediator](./Mediator.md) and [Observer](./Observer.md) address various ways of connecting senders and receivers of requests:
-	- [Chain of Responsibility](Chain%20of%20Responsibility.md) passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-	- [Command](./Command.md) establishes unidirectional connections between senders and receivers.
-	- [Mediator](./Mediator.md) eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-	- [Observer](./Observer.md) lets receivers dynamically subscribe to and unsubscribe from receiving requests.
-- [Chain of Responsibility](Chain%20of%20Responsibility.md) is often used in conjunction with [Composite](./Composite.md). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
-- Handlers in [Chain of Responsibility](Chain%20of%20Responsibility.md) can be implemented as [Commands](./Command.md). In this case, you can execute a lot of different operations over the same context object, represented by a request.
+- [[Chain of Responsibility|Chain of Responsibility]], [[./Command|Command]], [[./Mediator|Mediator]] and [[./Observer|Observer]] address various ways of connecting senders and receivers of requests:
+	- [[Chain of Responsibility|Chain of Responsibility]] passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
+	- [[./Command|Command]] establishes unidirectional connections between senders and receivers.
+	- [[./Mediator|Mediator]] eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
+	- [[./Observer|Observer]] lets receivers dynamically subscribe to and unsubscribe from receiving requests.
+- [[Chain of Responsibility|Chain of Responsibility]] is often used in conjunction with [[./Composite|Composite]]. In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+- Handlers in [[Chain of Responsibility|Chain of Responsibility]] can be implemented as [[./Command|Commands]]. In this case, you can execute a lot of different operations over the same context object, represented by a request.
 	
 	However, there’s another approach, where the request itself is a Command object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
-- [Chain of Responsibility](Chain%20of%20Responsibility.md) and [Decorator](./Decorator.md) have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
+- [[Chain of Responsibility|Chain of Responsibility]] and [[./Decorator|Decorator]] have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
 	
-	The [CoR](Chain%20of%20Responsibility.md) handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various Decorators can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
+	The [[Chain of Responsibility|CoR]] handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various Decorators can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
