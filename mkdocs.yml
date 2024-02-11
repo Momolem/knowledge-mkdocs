@@ -34,7 +34,6 @@ theme:
         - navigation.top
         - navigation.tabs
         - navigation.tabs.sticky
-        - navigation.expand
         - search.suggest
         - search.highlight
 
@@ -78,6 +77,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
   - search
+  - mkdocs-nav-weight
   - meta-descriptions
   - git-revision-date-localized:
       type: date
@@ -93,8 +93,8 @@ plugins:
       custom-attributes: 'assets/css/custom_attributes.css'
   - custom-attributes:
       file: 'assets/css/custom_attributes.css'
-#  - tags:
-#     tags_file: tags.md
+  - tags:
+      tags_file: tags.md
   - encryptcontent:
       title_prefix: '🔐'
       summary: 'Private page'
