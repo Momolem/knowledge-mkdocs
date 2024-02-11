@@ -5,7 +5,7 @@ aliases:
 tags:
   - cleancode
 title: Blauer Grad
-wei: "5"
+weigth: "5"
 ---
 
 tags: 
