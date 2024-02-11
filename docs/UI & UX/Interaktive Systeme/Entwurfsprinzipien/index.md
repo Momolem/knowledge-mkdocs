@@ -29,4 +29,4 @@ Prinzipien, die die Benutzungsschnittstelle betreffen:
 10. [Abbruch und Rückgängigmachen von Aktionen](docs/main/UI%20&%20UX/Interaktive%20Systeme/Entwurfsprinzipien/Abbruch%20und%20Rückgängigmachen%20von%20Aktionen.md),  
 11. [Berücksichtigung von Fehlern](docs/main/UI%20&%20UX/Interaktive%20Systeme/Entwurfsprinzipien/Berücksichtigung%20von%20Fehlern.md),  
 12. [Erwartungskonformes Verhalten](docs/main/UI%20&%20UX/Interaktive%20Systeme/Entwurfsprinzipien/Erwartungskonformes%20Verhalten.md) und  
-13. [Adaptierbarkeit der Schnittstelle](docs/main/UI%20&%20UX/Interaktive%20Systeme/Entwurfsprinzipien/Adaptierbarkeit%20der%20Schnittstelle.md)
+13. [Adaptierbarkeit der Schnittstelle](docs/main/UI%20&%20UX/Interaktive%20Systeme/Entwurfsprinzipien/Adaptierbarkeit%20der%20Schnittstelle.md) 
