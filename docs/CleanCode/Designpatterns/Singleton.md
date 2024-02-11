@@ -28,7 +28,7 @@ The Singleton pattern solves two problems at the same time, violating the _[[..
     Note that this behavior is impossible to implement with a regular constructor since a constructor call **must** always return a new object by design.
     
 
-![The global access to an object](https://refactoring.guru/images/patterns/content/singleton/singleton-comic-1-en.png)
+![[../../2c4e230c7684846d0fbda90ffa22a4f2_MD5.png|2c4e230c7684846d0fbda90ffa22a4f2_MD5]]
 
 Clients may not even realize that they’re working with the same object all the time.
 
@@ -53,7 +53,7 @@ If your code has access to the Singleton class, then it’s able to call the Sin
 The government is an excellent example of the Singleton pattern. A country can have only one official government. Regardless of the personal identities of the individuals who form governments, the title, “The Government of X”, is a global point of access that identifies the group of people in charge.
 
 ## Structure
-![The structure of the Singleton pattern](https://refactoring.guru/images/patterns/diagrams/singleton/structure-en.png)
+![[../../d910100bc125f7da193e0893da65cd24_MD5.png|d910100bc125f7da193e0893da65cd24_MD5]]
 
 ## Pseudocode
 
