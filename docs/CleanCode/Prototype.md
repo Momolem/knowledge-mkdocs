@@ -201,10 +201,10 @@ class Application is
 | You get an alternative to inheritance when dealing with configuration presets for complex objects.||
 
 ## Relations with Other Patterns
-- Many designs start by using [Factory](CleanCode/Factory.md) Method (less complicated and more customizable via subclasses) and evolve toward [Abstract Factory](CleanCode/Abstract%20Factory.md), Prototype, or [Builder](CleanCode/Builder.md) (more flexible, but more complicated).
-- Abstract [Factory](CleanCode/Factory.md) classes are often based on a set of [Factory](CleanCode/Factory.md) Methods, but you can also use Prototype to compose the methods on these classes.
+- Many designs start by using [Factory](./Factory.md) Method (less complicated and more customizable via subclasses) and evolve toward [Abstract Factory](./Abstract%20Factory.md), Prototype, or [Builder](./Builder.md) (more flexible, but more complicated).
+- Abstract [Factory](./Factory.md) classes are often based on a set of [Factory](./Factory.md) Methods, but you can also use Prototype to compose the methods on these classes.
 - Prototype can help when you need to save copies of Commands into history.
 - Designs that make heavy use of Composite and Decorator can often benefit from using Prototype. Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
-- Prototype isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand, Prototype requires a complicated initialization of the cloned object. [Factory](CleanCode/Factory.md) Method is based on inheritance but doesn’t require an initialization step.
+- Prototype isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand, Prototype requires a complicated initialization of the cloned object. [Factory](./Factory.md) Method is based on inheritance but doesn’t require an initialization step.
 - Sometimes Prototype can be a simpler alternative to Memento. This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
-- [Abstract Factory](CleanCode/Abstract%20Factory.md), [Builders](CleanCode/Builder.md) and [Prototype](CleanCode/Prototype.md) can all be implemented as [Singleton](CleanCode/Singleton.md).
+- [Abstract Factory](./Abstract%20Factory.md), [Builders](./Builder.md) and [Prototype](Prototype.md) can all be implemented as [Singleton](./Singleton.md).
