@@ -5,6 +5,13 @@ tags:
   - cleancode/designpatterns
 title: Singleton
 ---
+---
+aliases: 
+share: true
+tags: [cleancode/designpatterns]
+title: Singleton
+---
+
 # Singleton
 ## Intent
 **Singleton** is a [[./index#Creational|creational design pattern]] that lets you ensure that a class has **only one instance**, while providing a global access point to this instance.
@@ -27,7 +34,7 @@ Clients may not even realize that they’re working with the same object all the
     
     Just like a global variable, the Singleton pattern lets you access some object from anywhere in the program. However, it also protects that instance from being overwritten by other code.
     
-    There’s another side to this problem: you don’t want the code that solves problem to be scattered all over your program. It’s much better to have it within one class, especially if the rest of your code already depends on it.
+    There’s another side to this problem: you don’t want the code that solves problem 1 to be scattered all over your program. It’s much better to have it within one class, especially if the rest of your code already depends on it.
     
 
 Nowadays, the Singleton pattern has become so popular that people may call something a _singleton_ even if it solves just one of the listed problems.
