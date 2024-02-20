@@ -1,13 +1,4 @@
 ---
-tags:
-  - cleancode
-aliases:
-  - CleanCode
-linter-yaml-title-alias: CleanCode
-title: CleanCode
-share: true
----
----
 tags: [cleancode]
 aliases:
   - CleanCode
