@@ -5,12 +5,6 @@ tags:
   - cleancode
 title: SOLID
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: SOLID
----
  
 # SOLID
 The SOLID Principles are a part of the [[./index|Clean Code]] Principles. The letters stand for:

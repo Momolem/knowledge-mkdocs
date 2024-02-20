@@ -7,13 +7,6 @@ aliases:
 linter-yaml-title-alias: Root Cause Anaysis
 title: Root Cause Anaysis
 ---
----
-share: true
-tags: [cleancode]
-aliases: [Root Cause Anaysis]
-linter-yaml-title-alias: Root Cause Anaysis
-title: Root Cause Anaysis
----
  
 # Root Cause Anaysis
 

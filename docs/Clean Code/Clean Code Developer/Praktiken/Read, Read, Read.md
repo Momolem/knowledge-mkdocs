@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Read, Read, Read
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Read, Read, Read
----
-
-tags: 
 
 # Read, Read, Read
 

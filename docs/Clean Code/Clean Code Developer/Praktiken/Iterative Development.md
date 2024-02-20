@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Iterative Development
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Iterative Development
----
-
-tags: 
 
 # Iterative Development
 

@@ -14,9 +14,9 @@ theme:
 
     # Light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: pink
-      accent: deep orange
+      scheme: momolem-light
+      primary: custom
+      accent: custom
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode

@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Incremental Development
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Incremental Development
----
-
-tags: 
 
 # Incremental Development
 

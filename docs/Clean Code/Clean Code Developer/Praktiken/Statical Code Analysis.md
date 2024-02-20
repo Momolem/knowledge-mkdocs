@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Statical Code Analysis
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Statical Code Analysis
----
-
-tags:  
 
 # Statical Code Analysis
 

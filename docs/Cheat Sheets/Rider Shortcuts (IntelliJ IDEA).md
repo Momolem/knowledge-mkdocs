@@ -7,10 +7,7 @@ tags:
   - keymap
   - shortcuts
 ---
----
-share: true
-tags: [cheat, refactoring, rider, keymap, shortcuts]
----
+
 ## Refactoring
 | Name | Shortcut |
 | ---- | ---- |

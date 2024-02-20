@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Error Measurement
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Error Measurement
----
-
-tags: 
 
 # Error Measurement
 

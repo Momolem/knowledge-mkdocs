@@ -5,12 +5,6 @@ tags:
   - cleancode
 title: Boy Scout Rule
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Boy Scout Rule
----
  
 # Boy Scout Rule
 

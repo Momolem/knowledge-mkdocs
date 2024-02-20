@@ -8,12 +8,6 @@ tags:
   - cleancode
 title: Mockups
 ---
----
-share: true
-aliases: [Stub, Dummy, Fake]
-tags: [cleancode]
-title: Mockups
----
  
 # Mockups
 

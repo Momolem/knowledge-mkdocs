@@ -6,14 +6,6 @@ tags:
   - cleancode
 title: Continuous Delivery
 ---
----
-share: true
-aliases: [CD]
-tags: [cleancode]
-title: Continuous Delivery
----
-
-tags: 
 
 # Continuous Delivery
 

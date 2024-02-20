@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Complex Refactorings
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Complex Refactorings
----
-
-tags: 
 
 # Complex Refactorings
 

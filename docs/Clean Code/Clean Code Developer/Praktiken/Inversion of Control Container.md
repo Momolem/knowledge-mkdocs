@@ -6,12 +6,6 @@ tags:
   - cleancode
 title: Inversion of Control Container
 ---
----
-share: true
-aliases: [IoC]
-tags: [cleancode]
-title: Inversion of Control Container
----
  
 # Inversion of Control Container
 

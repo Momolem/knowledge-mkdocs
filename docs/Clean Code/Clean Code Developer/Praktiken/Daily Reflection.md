@@ -5,12 +5,6 @@ tags:
   - cleancode
 title: Daily Reflection
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Daily Reflection
----
  
 # Daily Reflection
 >**Warum?**

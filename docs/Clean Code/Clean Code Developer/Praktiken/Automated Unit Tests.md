@@ -5,12 +5,6 @@ tags:
   - cleancode
 title: Automated Unit Tests
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Automated Unit Tests
----
  
 # Automated [[../../Unit Test|Unit Tests]]
 

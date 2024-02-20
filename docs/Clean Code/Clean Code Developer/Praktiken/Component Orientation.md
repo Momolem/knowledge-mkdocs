@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Component Orientation
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Component Orientation
----
-
-tags: 
 
 # Component Orientation
 

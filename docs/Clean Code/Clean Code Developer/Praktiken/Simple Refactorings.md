@@ -5,13 +5,7 @@ tags:
   - cleancode
 title: Simple Refactorings
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Simple Refactorings
----
- 
+
 # Simple Refactorings
 
 >**Warum?**

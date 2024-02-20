@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Issue Tracking
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Issue Tracking
----
-
-tags: 
 
 # Issue Tracking
 

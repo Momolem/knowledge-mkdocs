@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Design before Implementation
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Design before Implementation
----
-
-tags: 
 
 # Design before Implementation
 

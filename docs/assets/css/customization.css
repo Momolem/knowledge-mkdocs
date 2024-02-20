@@ -148,9 +148,6 @@ DONT FORGET TO EDIT THE URL
   --momolem-dark-color-rgb: 37, 54, 73;
   --momolem-light-color-rgb: 187, 214, 251;
 
-  --gray: #202020;
-  --color-content: #e3e3e3;
-
   --md-primary-fg-color: var(--momolem-subtle-color);
   --md-primary-fg-color--light: var(--momolem-light-color);
   --md-primary-fg-color--dark: var(--momolem-dark-color);
@@ -159,6 +156,8 @@ DONT FORGET TO EDIT THE URL
 
   --md-typeset-a-color: var(--momolem-special-color);
   --md-typeset-color: var(--momolem-text-color);
+  --md-typeset-table-color: var(--momolem-border-color);
+  --md-typeset-table-color--light: var(--momolem-special-mark-color);
 
   --md-accent-fg-color: var(--momolem-special-color);
   --md-accent-fg-color--transparent: rgba(var(--momolem-special-color-rgb), 0.1);
@@ -170,6 +169,78 @@ DONT FORGET TO EDIT THE URL
 
   --md-default-fg-color--light: var(--momolem-text-soft-color);
   --md-default-fg-color--lighter: var(--momolem-subtle-color);
+}
+
+
+:root, [data-md-color-scheme="momolem-light"] {
+  --momolem-bg-color: rgba(255, 255, 255, 1);
+  --momolem-text-color: rgba(35, 49, 66, 1);
+  --momolem-text-soft-color: rgba(66, 75, 87, 1);
+  --momolem-text-strong-color: rgba(74, 74, 74, 1);
+  --momolem-subtle-color: rgba(247, 249, 254, 1);
+  --momolem-border-color: rgba(219, 232, 251, 1);
+  --momolem-shadow-color: rgba(166, 193, 230, 1);
+  --momolem-input-color: rgba(255, 255, 255, 1);
+  --momolem-outline-color: rgba(154, 197, 250, 1);
+  --momolem-mark-color: rgba(0, 138, 215, 0.08);
+  --momolem-special-color: rgba(0, 138, 215, 1);
+  --momolem-special-bg-color: rgba(0, 142, 221, 1);
+  --momolem-special-text-color: rgba(255, 255, 255, 1);
+  --momolem-special-shadow-color: rgba(69, 96, 127, 1);
+  --momolem-special-mark-color: rgba(255, 255, 255, 0.08);
+  --momolem-light-color: rgba(237, 244, 255, 1);
+  --momolem-dark-color: rgba(51, 72, 97, 1);
+  --momolem-text-color-rgb: 35, 49, 66;
+  --momolem-bg-color-rgb: 255, 255, 255;
+  --momolem-subtle-color-rgb: 247, 249, 254;
+  --momolem-special-color-rgb: 0, 138, 215;
+  --momolem-special-text-color-rgb: 255, 255, 255;
+  --momolem-special-bg-color-rgb: 0, 142, 221;
+  --momolem-shadow-color-rgb: 166, 193, 230;
+  --momolem-special-shadow-color-rgb: 69, 96, 127;
+  --momolem-outline-color-rgb: 154, 197, 250;
+  --momolem-dark-color-rgb: 51, 72, 97;
+  --momolem-light-color-rgb: 237, 244, 255;
+
+  --md-primary-fg-color: var(--momolem-subtle-color);
+  --md-primary-fg-color--light: var(--momolem-light-color);
+  --md-primary-fg-color--dark: var(--momolem-dark-color);
+  --md-primary-bg-color: var(--momolem-special-color);
+  --md-primary-bg-color--light: var(--momolem-subtle-color);
+
+  --md-typeset-a-color: var(--momolem-special-color);
+  --md-typeset-color: var(--momolem-text-color);
+  --md-typeset-table-color: var(--momolem-border-color);
+  --md-typeset-table-color--light: var(--momolem-special-mark-color);
+
+  --md-accent-fg-color: var(--momolem-special-color);
+  --md-accent-fg-color--transparent: rgba(var(--momolem-special-color-rgb), 0.1);
+  --md-accent-bg-color: var(--momolem-bg-color);
+  --md-accent-bg-color--light: var(--momolem-subtle-color);
+
+  --md-default-fg-color: var(--momolem-text-color);
+  --md-default-bg-color: var(--momolem-bg-color);
+
+  --md-default-fg-color--light: var(--momolem-text-soft-color);
+  --md-default-fg-color--lighter: var(--momolem-subtle-color);
+}
+
+.md-search form {
+  background-color: var(--momolem-border-color);
+}
+
+.md-search input {
+  color: var(--momolem-text-color);
+  background-color: var(--momolem-border-color);
+}
+
+.md-search-result__meta {
+  color: var(--momolem-text-color);
+  background-color: var(--momolem-border-color);
+}
+
+.md-search input::placeholder {
+  color: var(--momolem-text-color);
 }
 
 .not_found {

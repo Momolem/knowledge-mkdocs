@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Code Reviews
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Code Reviews
----
-
-tags: 
 
 # Code Reviews
 

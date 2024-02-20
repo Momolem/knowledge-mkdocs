@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Share Experience
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Share Experience
----
-
-tags: 
 
 # Share Experience
 >**Warum?**

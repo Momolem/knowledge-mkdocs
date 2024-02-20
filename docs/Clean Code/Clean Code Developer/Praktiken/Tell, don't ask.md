@@ -8,15 +8,6 @@ tags:
 linter-yaml-title-alias: Tell, don’t ask
 title: Tell, don’t ask
 ---
----
-share: true
-aliases: [Tell, don’t ask]
-tags: [cleancode]
-linter-yaml-title-alias: Tell, don’t ask
-title: Tell, don’t ask
----
-
-tags: 
 
 # Tell, don’t ask
 

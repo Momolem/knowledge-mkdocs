@@ -6,12 +6,6 @@ tags:
   - cleancode
 title: Clean Code Developer
 ---
----
-share: true
-aliases: [CCD]
-tags: [cleancode]
-title: Clean Code Developer
----
  
 # Clean Code Developer
 

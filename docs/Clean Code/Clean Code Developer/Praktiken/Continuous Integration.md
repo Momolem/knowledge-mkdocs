@@ -6,14 +6,6 @@ tags:
   - cleancode
 title: Continuous Integration
 ---
----
-share: true
-aliases: [CI]
-tags: [cleancode]
-title: Continuous Integration
----
-
-tags: 
 
 # Continuous Integration
 

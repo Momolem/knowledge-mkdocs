@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Automated Integrationtests
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Automated Integrationtests
----
-
-tags: 
 
 # Automated Integrationtests
 

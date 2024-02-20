@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Partizipation in Professional Events
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Partizipation in Professional Events
----
-
-tags: 
 
 # Partizipation in Professional Events
 

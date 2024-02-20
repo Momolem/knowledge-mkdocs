@@ -5,14 +5,6 @@ tags:
   - cleancode
 title: Test First
 ---
----
-aliases: 
-share: true
-tags: [cleancode]
-title: Test First
----
-
-tags: 
 
 # Test First
 
