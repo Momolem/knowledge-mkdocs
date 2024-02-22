@@ -7,7 +7,10 @@ tags:
   - keymap
   - shortcuts
 ---
-
+---
+share: true
+tags: [cheat, refactoring, rider, keymap, shortcuts]
+---
 ## Refactoring
 | Name | Shortcut |
 | ---- | ---- |
@@ -20,3 +23,4 @@ tags:
 | Introduce Parameter | CTRL+ALT+P |
 | Introduce Varialbe | CTRL+ALT+V |
 | Safe Delete | ALT+DELETE |
+| Change Signature | CTRL+F6 |
