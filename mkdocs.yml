@@ -121,9 +121,10 @@ extra_css:
     - assets/css/custom_attributes.css
     - assets/css/customization.css
 extra:
+  manifest: 'assets/meta/manifest.json'
   SEO: assets/meta/SEO.png
   comments: False #disable comments globally
-  generate_graph: True #generate the graph of the site
+  generate_graph: False #generate the graph of the site
   attachments: 'assets/img' #path to the folder where the attachments are stored
   no-auto-h1: True #disable the automatic generation of h1 if no h1 is found
   blog_list:

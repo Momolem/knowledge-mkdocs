@@ -1,0 +1,31 @@
+{
+    "name": "Momolem's Knowledge",
+    "short_name": "Knowledge",
+    "start_url": "/knowledge-mkdocs/index.html",
+    "scope": "/knowledge-mkdocs/",
+    "icons": [
+      {
+        "src": "favicon192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "favicon512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "favicon.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+      },
+      {
+        "src": "favicon.svg",
+        "sizes": "1024x1024",
+        "type": "image/svg+xml"
+      }
+    ],
+    "theme_color": "#3190d9",
+    "background_color": "#202020",
+    "display": "standalone"
+  }
