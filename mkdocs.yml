@@ -97,6 +97,8 @@ plugins:
       tags_file: tags.md
   - encryptcontent:
       title_prefix: '🔐'
+      password_inventory:
+          secret: !ENV VAULT_PW
       summary: 'Private page'
       placeholder: 'Password'
       decryption_failure_message: 'Invalid password'
