@@ -23,4 +23,5 @@ jobs:
   deploy:
     uses: Momolem/mkdocs-publisher-actions/.github/workflows/deploy.yml@main
     secrets:
+      ENCRYPTCONTENT_PASSWORD: ${{ secrets.ENCRYPTCONTENT_PASSWORD }}
       GH_PAT: ${{ secrets.GITHUB_TOKEN }}
