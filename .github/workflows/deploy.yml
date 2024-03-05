@@ -11,7 +11,9 @@ on:
       - 'docs/**'
       - 'mkdocs.yml'
       - 'requirements.txt'
-
+env:
+  VAULT_PW: ${{ secrets.VAULT_PW }}
+  
 permissions:
   contents: write
   pages: write
@@ -22,5 +24,3 @@ jobs:
     uses: ObsidianPublisher/actions/.github/workflows/deploy.yml@main
     secrets:
       GH_PAT: ${{ secrets.GITHUB_TOKEN }}
-    env:
-      VAULT_PW: ${{ secrets.VAULT_PW }}
