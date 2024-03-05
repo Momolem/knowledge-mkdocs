@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   deploy:
-    uses: Momolem/mkdocs-publisher-actions/.github/workflows/deploy.yml@main
+    uses: Momolem/mkdocs-publisher-actions/.github/workflows/deploy.yml@feature/encryptcontent_env_support
     secrets:
       ENCRYPTCONTENT_PASSWORD: ${{ secrets.ENCRYPTCONTENT_PASSWORD }}
       GH_PAT: ${{ secrets.GITHUB_TOKEN }}
