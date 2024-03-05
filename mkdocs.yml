@@ -98,7 +98,7 @@ plugins:
   - encryptcontent:
       title_prefix: '🔐'
       password_inventory:
-          secret: !ENV VAULT_PW
+          secret: !ENV ENCRYPTCONTENT_PASSWORD
       summary: 'Private page'
       placeholder: 'Password'
       decryption_failure_message: 'Invalid password'
