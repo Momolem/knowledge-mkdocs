@@ -1,0 +1,96 @@
+[data-md-color-scheme="custom-light"] {
+
+    --md-primary-fg-color: var(--momolem-dark);
+    --md-primary-fg-color--light: var(--momolem-text-soft);
+    --md-primary-fg-color--dark: var(--momolem-text-strong);
+    --md-primary-bg-color: var(--momolem-background);
+    --md-primary-bg-color--light: var(--momolem-light);
+  
+    --md-accent-fg-color: var(--momolem-accent);
+    --md-accent-fg-color--transparent: var(--momolem-mark);
+    --md-accent-bg-color: var(--momolem-accent-bg);
+    --md-accent-bg-color--light: var(--momolem-light);
+
+    --md-default-bg-color: var(--momolem-background);
+    --md-default-fg-color: var(--momolem-accent-text);
+    --md-default-fg-color--light: var(--momolem-text-soft);
+
+    --md-typeset-color: var(--momolem-text);
+    --md-typeset-a-color: var(--momolem-accent-bg);
+  
+    --md-typeset-mark-color: var(--momolem-mark);
+  
+    --md-typeset-table-color: var(--momolem-outline);
+    --md-typeset-table-color--light: var(--momolem-light);
+
+    --momolem-background: #ffffff;
+    --momolem-text: #233142;
+    --momolem-text-soft: #424B57;
+    --momolem-text-strong: #4A4A4A;
+    --momolem-subtle: #f7f9fe;
+    --momolem-shadown: #A6C1E6;
+    --momolem-input: #ffffff;
+    --momolem-mark: rgb(0, 138, 215, 0.08);
+    --momolem-accent: #008Ad7;
+    --momolem-accent-bg: #008EDD;
+    --momolem-accent-text: #ffffff;
+    --momolem-accent-shadown: #45607f;
+    --momolem-accent-mark: rgb(49, 144, 217, 0.08);
+    --momolem-light: #EDF4FF;
+    --momolem-dark: #334861;
+    --momolem-outline: #9ac5fa;
+
+}
+
+
+
+[data-md-color-scheme="custom-dark"] {
+    color-scheme: dark;
+    
+    --md-primary-fg-color: var(--momolem-dark);
+    --md-primary-fg-color--light: var(--momolem-text-soft);
+    --md-primary-fg-color--dark: var(--momolem-text-strong);
+    --md-primary-bg-color: var(--momolem-text);
+    --md-primary-bg-color--light: var(--momolem-light);
+  
+    --md-accent-fg-color: var(--momolem-accent);
+    --md-accent-fg-color--transparent: var(--momolem-mark);
+    --md-accent-bg-color: var(--momolem-accent-bg);
+    --md-accent-bg-color--light: var(--momolem-light);
+
+    --md-default-bg-color: var(--momolem-background);
+    --md-default-fg-color: var(--momolem-accent-text);
+    --md-default-fg-color--light: var(--momolem-text-soft);
+
+    --md-typeset-color: var(--momolem-text);
+    --md-typeset-a-color: var(--momolem-accent-bg);
+  
+    --md-typeset-mark-color: var(--momolem-mark);
+  
+    --md-typeset-table-color: var(--momolem-outline);
+    --md-typeset-table-color--light: var(--momolem-light);
+
+    --momolem-background: #202020;
+    --momolem-text: #dbdfe6;
+    --momolem-text-soft: #b7bcc4;
+    --momolem-text-strong: #bbbbbb;
+    --momolem-subtle: #20252b;
+    --momolem-shadown: #000000;
+    --momolem-input: #1c1c1c;
+    --momolem-mark: rgb(49, 144, 217, 0.08);
+    --momolem-accent: #3190d9;
+    --momolem-accent-bg: #20679c;
+    --momolem-accent-text: #dbdfe6;
+    --momolem-accent-shadow: #141f2c;
+    --momolem-accent-mark: rgb(219, 223, 230, 0.08);
+    --momolem-light: #bbd6fb;
+    --momolem-dark: #253649;
+    --momolem-outline: #52a4ed;
+
+
+}
+
+[data-md-color-scheme="custom-dark"] .ezlinks_not_found {
+    background-color: #253649;
+    color: #dbdfe6
+}

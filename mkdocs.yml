@@ -14,21 +14,17 @@ theme:
     palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: light blue
+      scheme: custom-light
+      primary: custom
       toggle:
         icon: material/weather-night
-        name: Passer au mode sombre
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue grey
-      accent: light blue
+      scheme: custom-dark
+      primary: custom
       toggle:
         icon: material/weather-sunny
-        name: Passer en mode clair
     features:
         - navigation.indexes
         - navigation.top
@@ -96,7 +92,7 @@ plugins:
   - git-revision-date-localized:
       type: date
       fallback_to_build_date: true
-      locale: fr
+      locale: en
       custom_format: "%A %d %B %Y"
       enable_creation_date: true
   - ezlinks:
